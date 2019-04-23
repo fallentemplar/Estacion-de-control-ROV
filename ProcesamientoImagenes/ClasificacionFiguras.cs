@@ -58,8 +58,7 @@ namespace EstacionControl
             Pen plumaVerde = new Pen(Color.Green, 5);   // Triangulo
             Pen plumaAzul = new Pen(Color.Blue, 5);     // Triangulo
 
-            for (int i = 0, n = blobs.Length; i < n; i++)
-            {
+            for (int i = 0, n = blobs.Length; i < n; i++){
                 List<IntPoint> bordes = blobCounter.GetBlobsEdgePoints(blobs[i]);
 
                 DoublePoint centro;
@@ -74,10 +73,8 @@ namespace EstacionControl
                     PantallaEstacion.cantidadFiguras[0] = numeroCirculos;
                 }else{
                     List<IntPoint> esquinas;
-
                     // Verificar si es triángulo o cuadrilátero
-                    if (verificadorFormas.IsConvexPolygon(bordes, out esquinas))
-                    {
+                    if (verificadorFormas.IsConvexPolygon(bordes, out esquinas)){
                         // obtener subtipo
                         PolygonSubType subTipo = verificadorFormas.CheckPolygonSubType(esquinas);
                         Pen pluma;
@@ -85,16 +82,12 @@ namespace EstacionControl
                             pluma = (esquinas.Count == 4) ? plumaRoja : plumaAzul; //Rectangulo
                             numeroRectanculos++;
                             PantallaEstacion.cantidadFiguras[2] = numeroRectanculos;
-                        }
-                        else{
-                            if(esquinas.Count==4)
-                            {
+                        }else{
+                            if(esquinas.Count==4){
                                 pluma = plumaCafe;
                                 numeroCuadrados++;
                                 PantallaEstacion.cantidadFiguras[1] = numeroCuadrados;
-                            }
-                            else
-                            {
+                            }else{
                                 pluma = plumaVerde;
                                 numeroTriangulos++;
                                 PantallaEstacion.cantidadFiguras[3] = numeroTriangulos;
@@ -110,6 +103,7 @@ namespace EstacionControl
             plumaAzul.Dispose();
             plumaCafe.Dispose();
             g.Dispose();
+            numeroCuadrados--; //Por el rectángulo del borde de la imágen.
             Console.WriteLine("Rectangulos:{0}\nCirculos:{1}\nTriangulos:{2}\nCuadrados{3}", numeroRectanculos, numeroCirculos, numeroTriangulos, numeroCuadrados);
             return mapaBits;
         }

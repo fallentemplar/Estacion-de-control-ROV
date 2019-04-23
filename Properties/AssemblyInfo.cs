@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //[assembly: AssemblyTitle("IMAT_Control")]
-[assembly: AssemblyTitle("TMMx_Control")]
-[assembly: AssemblyDescription("Estación de control de TMMx para ROV Nautilus")]
+[assembly: AssemblyTitle("Estación de Control")]
+[assembly: AssemblyDescription("Estación de control para ROV")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Tecnologías Marinas México (TMMx) ")]
+[assembly: AssemblyCompany("Alexis Arturo Aguirre Roldán")]
 //[assembly: AssemblyProduct("IMAT_Control")]
-[assembly: AssemblyProduct("TMMx_Control")]
+[assembly: AssemblyProduct("Estación de Control")]
 [assembly: AssemblyCopyright("Derechos Reservados 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -34,7 +34,7 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("3.1.0.0")]
-[assembly: AssemblyFileVersion("3.1.0.0")]
+[assembly: AssemblyVersion("4.0.0.0")]
+[assembly: AssemblyFileVersion("4.0.0.0")]
 
 [assembly: log4net.Config.XmlConfigurator(ConfigFile = "log4net.config")]

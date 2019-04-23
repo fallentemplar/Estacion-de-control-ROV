@@ -51,6 +51,9 @@
     <Prefer32Bit>false</Prefer32Bit>
     <LangVersion>7.2</LangVersion>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>tmmx-nuevo %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AForge">
       <HintPath>ProcesamientoImagenes\AForge.NET\AForge.dll</HintPath>
@@ -228,6 +231,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="tmmx-nuevo %281%29.ico" />
     <None Include="Resources\QR.jpg" />
     <None Include="Resources\minirov.bmp" />
     <None Include="Resources\micro-rov.jpg" />
