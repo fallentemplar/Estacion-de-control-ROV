@@ -228,6 +228,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\QR.jpg" />
     <None Include="Resources\minirov.bmp" />
     <None Include="Resources\micro-rov.jpg" />
     <None Include="Resources\tmmx-nuevo.ico" />

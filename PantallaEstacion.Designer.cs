@@ -152,9 +152,9 @@
             // 
             // botonReconociento
             // 
-            this.botonReconociento.Location = new System.Drawing.Point(620, 583);
+            this.botonReconociento.Location = new System.Drawing.Point(624, 576);
             this.botonReconociento.Name = "botonReconociento";
-            this.botonReconociento.Size = new System.Drawing.Size(75, 61);
+            this.botonReconociento.Size = new System.Drawing.Size(68, 68);
             this.botonReconociento.TabIndex = 33;
             this.botonReconociento.Text = "Identificar Especies";
             this.botonReconociento.UseVisualStyleBackColor = true;
@@ -172,9 +172,11 @@
             // 
             // boton_generarQR
             // 
-            this.boton_generarQR.Location = new System.Drawing.Point(539, 583);
+            this.boton_generarQR.BackgroundImage = global::EstacionControl.Properties.Resources.QR;
+            this.boton_generarQR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.boton_generarQR.Location = new System.Drawing.Point(550, 576);
             this.boton_generarQR.Name = "boton_generarQR";
-            this.boton_generarQR.Size = new System.Drawing.Size(75, 23);
+            this.boton_generarQR.Size = new System.Drawing.Size(68, 68);
             this.boton_generarQR.TabIndex = 31;
             this.boton_generarQR.Text = "Generar QR";
             this.boton_generarQR.UseVisualStyleBackColor = true;
