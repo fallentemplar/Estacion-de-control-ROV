@@ -1,0 +1,81 @@
+2018-11-08 12:35:09,229 [1] INFO IMAT.Form1 - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2018-11-08 12:36:45,344 [1] INFO IMAT.Form1 - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2018-11-08 12:41:36,257 [1] INFO IMAT.Form1 - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2018-11-08 12:42:24,300 [1] INFO IMAT.Form1 - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2018-11-08 12:42:59,715 [1] INFO IMAT.Form1 - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2018-11-08 12:43:38,591 [1] INFO IMAT.Form1 - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2018-11-08 12:48:11,137 [1] INFO IMAT.Form1 - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2018-11-08 12:48:47,768 [1] INFO IMAT.Form1 - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2018-11-08 13:11:48,457 [1] INFO IMAT.Form1 - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2019-03-22 00:36:21,242 [1] INFO EstacionControl.PantallaEstacion - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2019-03-22 00:36:29,521 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-03-22 00:36:29,664 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-03-22 00:36:29,664 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-03-22 00:36:29,664 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-03-22 00:36:29,676 [5] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-03-22 11:08:02,402 [1] INFO EstacionControl.PantallaEstacion - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2019-03-22 11:08:33,892 [1] INFO EstacionControl.PantallaEstacion - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2019-03-22 11:09:15,428 [1] INFO EstacionControl.PantallaEstacion - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2019-03-22 11:14:12,204 [1] INFO EstacionControl.PantallaEstacion - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2019-03-22 11:18:47,185 [1] INFO EstacionControl.PantallaEstacion - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2019-03-22 11:37:44,476 [1] INFO EstacionControl.PantallaEstacion - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2019-03-22 11:37:58,166 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-03-22 11:37:58,168 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-03-22 11:37:58,168 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-03-22 11:37:58,168 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-03-22 11:37:58,177 [5] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-03-22 13:07:44,285 [1] INFO EstacionControl.PantallaEstacion - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2019-03-22 13:08:14,819 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-03-22 13:08:14,821 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-03-22 13:08:14,821 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-03-22 13:08:14,821 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-03-22 13:08:14,831 [5] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-03-22 13:08:34,078 [1] INFO EstacionControl.PantallaEstacion - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2019-03-22 13:10:00,493 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-03-22 13:10:00,494 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-03-22 13:10:00,494 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-03-22 13:10:00,495 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-03-22 13:10:00,504 [5] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-03-22 13:12:21,829 [1] INFO EstacionControl.PantallaEstacion - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2019-03-22 13:14:40,851 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-03-22 13:14:40,853 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-03-22 13:14:40,853 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-03-22 13:14:40,853 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-03-22 13:14:40,864 [5] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-03-22 13:16:56,069 [1] INFO EstacionControl.PantallaEstacion - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2019-03-22 13:16:58,229 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-03-22 13:16:58,230 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-03-22 13:16:58,231 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-03-22 13:16:58,231 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-03-22 13:16:58,240 [5] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-03-23 10:23:36,329 [1] INFO EstacionControl.PantallaEstacion - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
+2019-03-23 10:24:12,570 [1] ERROR EstacionControl.ConectividadRemota - No se pudo establecer la conexión
+2019-03-23 10:33:33,199 [1] ERROR EstacionControl.ConectividadRemota - No se pudo establecer la conexión
+2019-03-23 10:35:40,372 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-03-23 10:35:40,373 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-03-23 10:35:40,374 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-03-23 10:35:40,374 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-03-23 10:35:40,383 [5] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-04-18 12:27:28,544 [1] INFO EstacionControl.PantallaEstacion - ---------------------Iniciando ejecución-----------------------
+-------------------------------------------------------------------------------------------------------------
