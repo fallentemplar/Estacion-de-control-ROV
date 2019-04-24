@@ -3,8 +3,6 @@ using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
 using XInputDotNetPure;
-using System.IO;
-using System.Drawing.Imaging;
 using System.Net.Sockets;
 using log4net;
 using EstacionControl.Dispositivos.Sensores;
@@ -13,7 +11,6 @@ using System.Diagnostics;
 using AForge.Video.VFW;
 using EstacionControl.Ventanas;
 using EstacionControl.Dispositivos;
-using Microsoft.VisualBasic;
 
 namespace EstacionControl
 {

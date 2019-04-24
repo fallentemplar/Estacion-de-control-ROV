@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using AForge.Imaging.Filters;
 using Microsoft.VisualBasic;
@@ -25,9 +19,7 @@ namespace EstacionControl.Ventanas
         public MisionCanon()
         {   
             InitializeComponent();
-            
             imagen_procesamiento.Image = imagenProcesamiento;
-
             longitudes = new double[4]; //D1,D2,D3,L1
         }
 
