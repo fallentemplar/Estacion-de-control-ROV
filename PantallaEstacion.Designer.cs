@@ -434,8 +434,8 @@
             this.menuCinta.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
             this.herramientasToolStripMenuItem,
-            this.ayudaToolStripMenuItem,
-            this.misionesToolStripMenuItem});
+            this.misionesToolStripMenuItem,
+            this.ayudaToolStripMenuItem});
             this.menuCinta.Location = new System.Drawing.Point(0, 0);
             this.menuCinta.Name = "menuCinta";
             this.menuCinta.Size = new System.Drawing.Size(1268, 24);
@@ -523,7 +523,7 @@
             this.canonToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.calcularVolumenToolStripMenuItem});
             this.canonToolStripMenuItem.Name = "canonToolStripMenuItem";
-            this.canonToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.canonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.canonToolStripMenuItem.Text = "Cañón";
             // 
             // calcularVolumenToolStripMenuItem

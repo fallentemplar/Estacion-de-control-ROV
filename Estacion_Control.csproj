@@ -102,10 +102,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AcercaDe.cs">
+    <Compile Include="Ventanas\AcercaDe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AcercaDe.Designer.cs">
+    <Compile Include="Ventanas\AcercaDe.Designer.cs">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </Compile>
     <Compile Include="BitMaps.cs" />
@@ -159,7 +159,7 @@
     <Compile Include="Ventanas\VisorCamara.Designer.cs">
       <DependentUpon>VisorCamara.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AcercaDe.resx">
+    <EmbeddedResource Include="Ventanas\AcercaDe.resx">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CodigoQR.resx">
