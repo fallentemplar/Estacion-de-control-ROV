@@ -15,7 +15,7 @@ namespace EstacionControl.Ventanas
 {
     public partial class MisionCanon : Form
     {
-        private readonly double PROPORCION = 0.05;
+        private readonly double PROPORCION;
 
         private Image imagenProcesamiento;
 
@@ -23,7 +23,7 @@ namespace EstacionControl.Ventanas
         {
             
             InitializeComponent();
-            PROPORCION = 0.05;
+            PROPORCION = CalcularProporcion(distancia);
             imagenProcesamiento = Image.FromFile(@"E:\final.jpg");
             imagen_procesamiento.Image = imagenProcesamiento;
         }
@@ -45,6 +45,7 @@ namespace EstacionControl.Ventanas
             imagen_procesamiento.Image = imagenNueva;
             Grayscale filtro = new Grayscale(0.2125, 0.7154, 0.0721);
             Bitmap imagenEscalaGrises = filtro.Apply(imagenNueva);
+            imagenProcesamiento.Dispose();
             return imagenEscalaGrises;
         }
 
@@ -93,13 +94,18 @@ namespace EstacionControl.Ventanas
         private double DistanciaEuclidiana()
         {
             double pixeles = Math.Round(Math.Sqrt(Math.Pow(punto2.X - punto1.X, 2) + Math.Pow(punto2.Y - punto1.Y, 2)), 2);
-            MessageBox.Show("Pixeles: " + pixeles);
+            //MessageBox.Show("Pixeles: " + pixeles);
             return pixeles;
         }
 
         private void TamanoElemento(double pixeles)
         {
             MessageBox.Show("Tamaño: " + (pixeles * PROPORCION)+ " cm");
+        }
+
+        private double CalcularProporcion(double distancia)
+        {
+            return 0.0028136 * distancia + 0.0014068;
         }
     }
 }
