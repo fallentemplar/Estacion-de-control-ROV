@@ -16,9 +16,9 @@ namespace EstacionControl
         public Socket servidor;
         private byte[] dato;
 
-
+        int a { get; }
         //Variables de recepción de datos
-        int estado;
+        int estado;// { get; set; }
         float profundidad;
         float temperatura;
         float angX;
@@ -36,6 +36,7 @@ namespace EstacionControl
         {
             IP = ipD;
             puerto = 7000;
+            
         }
 
         public ConectividadRemota(string ipD,int port)
@@ -134,40 +135,30 @@ namespace EstacionControl
             dato[2] = valor[1];
             dato[3] = valor[2];
             dato[4] = valor[3];
-            try
-            {
+            try{
                 cliente.Send(dato);
-            }
-            catch
-            {
+            }catch{
 
             }
         }
-
 
         public void CerrarConexion()
         {
             if(cliente!=null && servidor!=null)
             {
-                try
-                {
+                try{
                     cliente.Shutdown(SocketShutdown.Both);
                     servidor.Shutdown(SocketShutdown.Both);
                     cliente.Disconnect(true);
                     servidor.Disconnect(true);
                     cliente.Close();
                     servidor.Close();
-                }
-                catch (NullReferenceException)
-                {
+                }catch (NullReferenceException){
                     log.Error("La conexión no ha sido inicializada, por tanto, no puede ser cerrada");
-                }
-                catch (SocketException)
-                {
+                }catch (SocketException){
                     log.Error("La conexión no ha sido inicializada, por tanto, no puede ser cerrada");
                 }
             }
-            
         }
 
         public void SolicitarRecepcion()
@@ -190,11 +181,11 @@ namespace EstacionControl
                     var info = servidor.Receive(buffer);
                 }
                 estado = (int)buffer[0];
-                //log.Info("\nEstado: " + Convert.ToString(estado,2));
                 profundidad = BitConverter.ToSingle(Fragmentar(buffer, 9), 0);
                 temperatura = BitConverter.ToSingle(Fragmentar(buffer, 13), 0);
                 angX = BitConverter.ToSingle(Fragmentar(buffer, 17), 0);
                 angY = BitConverter.ToSingle(Fragmentar(buffer, 21), 0);
+
                 //log.Info("\nProfundidad: " + profundidad + "\nTemperatura: " + temperatura + "\nAnguloX: " + angX + "\nAnguloY: " + angY);
                 Thread.Sleep(500);
             }
