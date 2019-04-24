@@ -9,36 +9,37 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AForge.Imaging.Filters;
-
+using Microsoft.VisualBasic;
 
 namespace EstacionControl.Ventanas
 {
     public partial class MisionCanon : Form
     {
-        private readonly double PROPORCION;
+        private double proporcion;
 
         private Image imagenProcesamiento;
+        private double distancia;
 
-        public MisionCanon(double distancia)
-        {
-            
+        double[] longitudes;
+
+        public MisionCanon()
+        {   
             InitializeComponent();
-            PROPORCION = CalcularProporcion(distancia);
-            imagenProcesamiento = Image.FromFile(@"E:\final.jpg");
+            
             imagen_procesamiento.Image = imagenProcesamiento;
+
+            longitudes = new double[4]; //D1,D2,D3,L1
         }
 
         private void MisionCanon_Load(object sender, EventArgs e)
         {
-            Image imagen = FiltroEscalaGrises();
-            imagen = FiltroContornos(imagen);
-            imagen_procesamiento.Image = imagen;
+            imagenProcesamiento = AbrirImagen();
+            FiltrarImagen();
         }
 
         private Image FiltroEscalaGrises()
         {
-            Image imagenOriginal = imagenProcesamiento;//Image.FromFile(@"E:\final.jpg", false);
-            //bm = new Bitmap(bm, 360, 240);
+            Image imagenOriginal = imagenProcesamiento;
             Bitmap imagenNueva = new Bitmap(imagenOriginal.Width, imagenOriginal.Height);
             Graphics grafico = Graphics.FromImage(imagenNueva);
             grafico.DrawImage(imagenOriginal, 0, 0);
@@ -94,18 +95,88 @@ namespace EstacionControl.Ventanas
         private double DistanciaEuclidiana()
         {
             double pixeles = Math.Round(Math.Sqrt(Math.Pow(punto2.X - punto1.X, 2) + Math.Pow(punto2.Y - punto1.Y, 2)), 2);
-            //MessageBox.Show("Pixeles: " + pixeles);
+            MessageBox.Show("Pixeles: " + pixeles);
             return pixeles;
         }
 
         private void TamanoElemento(double pixeles)
         {
-            MessageBox.Show("Tamaño: " + (pixeles * PROPORCION)+ " cm");
+            MessageBox.Show("Tamaño: " + (pixeles * proporcion)+ " cm");
+            campo_longitud.Text = (pixeles * proporcion).ToString();
         }
 
-        private double CalcularProporcion(double distancia)
+        private void CalcularProporcion()
         {
-            return 0.0028136 * distancia + 0.0014068;
+            proporcion = 0.0028136 * distancia + 0.0014068;
+        }
+
+        private void DistanciaObjetivo()
+        {
+            distancia = double.Parse(Interaction.InputBox("¿Distancia al objeto?", "Distancia", "13.5"));
+            //MessageBox.Show("Distancia: " + distancia + " cm");
+        }
+
+        private Image AbrirImagen()
+        {
+            Image imagen = null;
+            OpenFileDialog openDialog = new OpenFileDialog();
+            openDialog.Title = "Seleccionar foto.";
+            openDialog.Filter = "Imágenes (*.png;*.jpg)|*.png;*.jpg";
+            if (openDialog.ShowDialog() == DialogResult.OK)
+            {
+                string file = openDialog.FileName;
+                imagen = Image.FromFile(file);
+            }
+            DistanciaObjetivo();
+            CalcularProporcion();
+            return imagen;
+        }
+
+        private void boton_Capturar_Click(object sender, EventArgs e)
+        {
+            imagen_procesamiento.Image = AbrirImagen();
+            imagenProcesamiento = imagen_procesamiento.Image;
+            FiltrarImagen();           
+        }
+
+        private void FiltrarImagen()
+        {
+            Image imagen = FiltroEscalaGrises();
+            imagen = FiltroContornos(imagen);
+            imagen_procesamiento.Image = imagen;
+            imagenProcesamiento = imagen;
+        }
+
+        private void boton_D1_Click(object sender, EventArgs e)
+        {
+            longitudes[0] = double.Parse(campo_longitud.Text)/2;
+        }
+
+        private void boton_D2_Click(object sender, EventArgs e)
+        {
+            longitudes[1] = double.Parse(campo_longitud.Text)/2;
+        }
+
+        private void boton_D3_Click(object sender, EventArgs e)
+        {
+            longitudes[2] = double.Parse(campo_longitud.Text)/2;
+        }
+
+        private void boton_L1_Click(object sender, EventArgs e)
+        {
+            longitudes[3] = double.Parse(campo_longitud.Text);
+        }
+
+        private void boton_longitudes_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Diametro Mayor: " + longitudes[0] + "cm\nDiámetro menor: " + longitudes[1] + "cm\nDiámetro interno: " + longitudes[2] + "cm\nLongitud:    " + longitudes[3]+"cm");
+        }
+
+        private void boton_calcular_volumen_Click(object sender, EventArgs e)
+        {
+            double volumen = (1 / (double)3) * longitudes[3] * Math.PI * (Math.Pow(longitudes[0], 2) + Math.Pow(longitudes[1], 2)+longitudes[0]*longitudes[1]);
+            volumen -= Math.PI * Math.Pow(longitudes[2],2)*longitudes[3];
+            MessageBox.Show("Vol: " + volumen);
         }
     }
 }

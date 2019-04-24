@@ -638,8 +638,8 @@ namespace EstacionControl
 
         private void calcularVolumenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            double distancia = double.Parse(Interaction.InputBox("¿Distancia al objeto?", "Distancia", "13.5"));
-            MisionCanon misionCanon = new MisionCanon(distancia);
+            //double distancia = double.Parse(Interaction.InputBox("¿Distancia al objeto?", "Distancia", "13.5"));
+            MisionCanon misionCanon = new MisionCanon();
             misionCanon.ShowDialog();
         }
     }
