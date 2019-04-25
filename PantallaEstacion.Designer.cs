@@ -54,7 +54,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.indicador_ph = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.indicador_linternas = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.indicador_profundidad = new System.Windows.Forms.TextBox();
             this.indicador_temperatura = new System.Windows.Forms.TextBox();
@@ -67,12 +66,12 @@
             this.giroscopioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraciónDeCámarasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visorDeCámaraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.manualTécnicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.misionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.canonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calcularVolumenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manualTécnicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grupoCamaraSecundaria = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.boton_video2 = new System.Windows.Forms.Button();
@@ -93,6 +92,7 @@
             this.indicador_mini_desplegado = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.titulo = new System.Windows.Forms.Label();
+            this.indicador_linternas = new System.Windows.Forms.ProgressBar();
             this.camera_groupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.raspberry_logo)).BeginInit();
@@ -308,11 +308,11 @@
             // 
             // herramientasSensores
             // 
+            this.herramientasSensores.Controls.Add(this.indicador_linternas);
             this.herramientasSensores.Controls.Add(this.indicador_inductivo);
             this.herramientasSensores.Controls.Add(this.label3);
             this.herramientasSensores.Controls.Add(this.indicador_ph);
             this.herramientasSensores.Controls.Add(this.label2);
-            this.herramientasSensores.Controls.Add(this.indicador_linternas);
             this.herramientasSensores.Controls.Add(this.label4);
             this.herramientasSensores.Controls.Add(this.indicador_profundidad);
             this.herramientasSensores.Controls.Add(this.indicador_temperatura);
@@ -366,15 +366,6 @@
             this.label2.Size = new System.Drawing.Size(20, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Ph";
-            // 
-            // indicador_linternas
-            // 
-            this.indicador_linternas.BackColor = System.Drawing.Color.Gray;
-            this.indicador_linternas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.indicador_linternas.Location = new System.Drawing.Point(393, 46);
-            this.indicador_linternas.Name = "indicador_linternas";
-            this.indicador_linternas.Size = new System.Drawing.Size(100, 20);
-            this.indicador_linternas.TabIndex = 5;
             // 
             // label4
             // 
@@ -488,6 +479,29 @@
             this.visorDeCámaraToolStripMenuItem.Text = "Visor de cámara";
             this.visorDeCámaraToolStripMenuItem.Click += new System.EventHandler(this.visorDeCámaraToolStripMenuItem_Click);
             // 
+            // misionesToolStripMenuItem
+            // 
+            this.misionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.canonToolStripMenuItem});
+            this.misionesToolStripMenuItem.Name = "misionesToolStripMenuItem";
+            this.misionesToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.misionesToolStripMenuItem.Text = "Misiones";
+            // 
+            // canonToolStripMenuItem
+            // 
+            this.canonToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calcularVolumenToolStripMenuItem});
+            this.canonToolStripMenuItem.Name = "canonToolStripMenuItem";
+            this.canonToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.canonToolStripMenuItem.Text = "Cañón";
+            // 
+            // calcularVolumenToolStripMenuItem
+            // 
+            this.calcularVolumenToolStripMenuItem.Name = "calcularVolumenToolStripMenuItem";
+            this.calcularVolumenToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.calcularVolumenToolStripMenuItem.Text = "Calcular Volúmen";
+            this.calcularVolumenToolStripMenuItem.Click += new System.EventHandler(this.calcularVolumenToolStripMenuItem_Click);
+            // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -509,29 +523,6 @@
             this.manualTécnicoToolStripMenuItem.Name = "manualTécnicoToolStripMenuItem";
             this.manualTécnicoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.manualTécnicoToolStripMenuItem.Text = "Manual Técnico";
-            // 
-            // misionesToolStripMenuItem
-            // 
-            this.misionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.canonToolStripMenuItem});
-            this.misionesToolStripMenuItem.Name = "misionesToolStripMenuItem";
-            this.misionesToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.misionesToolStripMenuItem.Text = "Misiones";
-            // 
-            // canonToolStripMenuItem
-            // 
-            this.canonToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.calcularVolumenToolStripMenuItem});
-            this.canonToolStripMenuItem.Name = "canonToolStripMenuItem";
-            this.canonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.canonToolStripMenuItem.Text = "Cañón";
-            // 
-            // calcularVolumenToolStripMenuItem
-            // 
-            this.calcularVolumenToolStripMenuItem.Name = "calcularVolumenToolStripMenuItem";
-            this.calcularVolumenToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.calcularVolumenToolStripMenuItem.Text = "Calcular Volúmen";
-            this.calcularVolumenToolStripMenuItem.Click += new System.EventHandler(this.calcularVolumenToolStripMenuItem_Click);
             // 
             // grupoCamaraSecundaria
             // 
@@ -738,6 +729,14 @@
             this.titulo.TabIndex = 70;
             this.titulo.Text = "By Alexis Aguirre";
             // 
+            // indicador_linternas
+            // 
+            this.indicador_linternas.Location = new System.Drawing.Point(392, 46);
+            this.indicador_linternas.Name = "indicador_linternas";
+            this.indicador_linternas.Size = new System.Drawing.Size(100, 20);
+            this.indicador_linternas.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.indicador_linternas.TabIndex = 10;
+            // 
             // PantallaEstacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -795,7 +794,6 @@
         private System.Windows.Forms.Label etiqueta_profundidad;
         private System.Windows.Forms.Label etiqueta_temperatura;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox indicador_linternas;
         private System.Windows.Forms.Button boton_video1;
         private System.Windows.Forms.Button boton_fotografia1;
         private System.Windows.Forms.PictureBox control2_logo;
@@ -844,6 +842,7 @@
         private System.Windows.Forms.ToolStripMenuItem misionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem canonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calcularVolumenToolStripMenuItem;
+        private System.Windows.Forms.ProgressBar indicador_linternas;
     }
 }
 

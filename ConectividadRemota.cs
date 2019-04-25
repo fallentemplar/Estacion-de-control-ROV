@@ -121,8 +121,8 @@ namespace EstacionControl
             return conexionRealizada;
         }
         /*
-         *Método para enviar la información de los botones del control de XBOX a Raspberry
-         *Envía cada boton de manera individual cuando es presionado
+         * Método para enviar la información de los botones del control de XBOX a Raspberry
+         * Envía cada boton de manera individual cuando es presionado
          * dato[0] es el identificador del boton presionado
          * dato[1-4] es el valor del boton pulsado, convertido de un flotante a una cadena de bytes
          */
@@ -138,7 +138,7 @@ namespace EstacionControl
             try{
                 cliente.Send(dato);
             }catch{
-
+                log.Warn("No fue posible enviar datos");
             }
         }
 

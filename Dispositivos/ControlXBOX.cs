@@ -40,6 +40,7 @@ namespace EstacionControl
         //Botones D-Pad
         int vPadSup = 0;
         int vPadInf = 0;
+        int vPadVertical = 0;
         int vPadIzq = 0;
         int vPadDer = 0;
 
@@ -154,18 +155,26 @@ namespace EstacionControl
                     /////////////////////FIN LB Y RB///////////////////////////////////
 
                     ///////////////////D-PAD/////////////////////////////////////////////
-                    if (control1.DPad.Up.ToString().Equals("Pressed"))
+                    if (control1.DPad.Up.ToString().Equals("Pressed") && vPadVertical<100)
                     {
-                        vPadSup = 1;
-                        conector.EnviarDatos((Byte)BotonesXBOX.DU, (float)vPadSup);
+                        /*vPadSup = 1;
                         estacion.ActualizarIndicadores("linternas", true);
+                        conector.EnviarDatos((Byte)BotonesXBOX.DU, (float)vPadSup);*/
+                        vPadVertical += 20;
+                        estacion.ActualizarIndicadores("linternas", true);
+                        conector.EnviarDatos((Byte)BotonesXBOX.DU, (float)vPadVertical);
+                        Console.WriteLine("vPadVertical: " + vPadVertical);
                     }
 
-                    if (control1.DPad.Down.ToString().Equals("Pressed"))
+                    if (control1.DPad.Down.ToString().Equals("Pressed") && vPadVertical>0)
                     {
-                        vPadInf = 1;
-                        conector.EnviarDatos((Byte)BotonesXBOX.DD, (float)vPadInf);
+                        /*vPadInf = 1;
                         estacion.ActualizarIndicadores("linternas", false);
+                        conector.EnviarDatos((Byte)BotonesXBOX.DD, (float)vPadInf);*/
+                        vPadVertical -= 20;
+                        estacion.ActualizarIndicadores("linternas", false);
+                        conector.EnviarDatos((Byte)BotonesXBOX.DD, (float)vPadVertical);
+                        Console.WriteLine("vPadVertical: " + vPadVertical);
                     }
 
                     if (control1.DPad.Left.ToString().Equals("Pressed"))

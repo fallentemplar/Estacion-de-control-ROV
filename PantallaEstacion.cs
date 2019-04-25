@@ -74,6 +74,7 @@ namespace EstacionControl
 
             //Hilo para manejar el control de XBOX ONE
             actualizarControles = new Thread(new ThreadStart(controles.ActualizarEstadoOrdenes)) { IsBackground = true };
+            actualizarControles.Start();
 
             //Hilo de verificación de comunicación de dispositivos periféricos remotos
             dispositivosRemotos = new Thread(new ThreadStart(ComprobarDispositivosRemotos)) { IsBackground = true };
@@ -372,10 +373,11 @@ namespace EstacionControl
 
         private void EncenderLinternas(bool estado)
         {
-            if (estado)
-                indicador_linternas.BackColor = Color.Green;
-            else
-                indicador_linternas.BackColor = Color.Gray;
+            if (estado && indicador_linternas.Value < 100)
+                indicador_linternas.Value += 20;
+            else if (!estado && indicador_linternas.Value > 0)
+                indicador_linternas.Value -= 20;
+            Thread.Sleep(150);
         }
 
         private void Boton_fotografia_Click(object sender, EventArgs e) //Método para tomar fotografía y almacenarla en disco
