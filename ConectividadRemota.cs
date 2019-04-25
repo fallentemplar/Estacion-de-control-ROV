@@ -18,11 +18,11 @@ namespace EstacionControl
 
         int a { get; }
         //Variables de recepción de datos
-        int estado;// { get; set; }
-        float profundidad;
-        float temperatura;
-        float angX;
-        float angY;
+        public int estado { get; set; }
+        public float profundidad { get; set; }
+        public float temperatura { get; set; }
+        public float angX { get; set; }
+        public float angY { get; set; }
 
         //Bytes de comparación de dispositivos
         const byte byteServidor = 0b_0000_0001;
@@ -220,7 +220,7 @@ namespace EstacionControl
             return false;
         }
 
-        public int GetEstado()
+        /*public int GetEstado()
         {
             return estado;
         }
@@ -228,9 +228,9 @@ namespace EstacionControl
         public bool RaspberryConectada()
         {
             return conexionRealizada;
-        }
+        }*/
 
-        public float getTemperatura()
+        /*public float getTemperatura()
         {
             return temperatura;
         }
@@ -248,6 +248,6 @@ namespace EstacionControl
         public float getAngY()
         {
             return angY;
-        }
+        }*/
     }
 }

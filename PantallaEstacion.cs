@@ -169,13 +169,13 @@ namespace EstacionControl
                     //socketReceptor.servidor.Connected;//socketReceptor.OperadorAND("servidor", (byte)socketReceptor.GetEstado());
                     indicador_raspberry.Invoke(new delegado_raspberry(Raspberry_conexion), raspberry_conectado);
 
-                    arduino_conectado = socketReceptor.OperadorAND("arduino", (byte)socketReceptor.GetEstado());
+                    arduino_conectado = socketReceptor.OperadorAND("arduino", (byte)socketReceptor.estado);
                     indicador_arduino.Invoke(new delegado_arduino(Arduino_conexion), arduino_conectado);
 
-                    profTemp_conectado = socketReceptor.OperadorAND("sensores", (byte)socketReceptor.GetEstado());
+                    profTemp_conectado = socketReceptor.OperadorAND("sensores", (byte)socketReceptor.estado);
                     indicador_profundidad.Invoke(new delegado_profTemp(Sensores_conexion), profTemp_conectado);
 
-                    giroscopio_conectado = socketReceptor.OperadorAND("acelerometro", (byte)socketReceptor.GetEstado());
+                    giroscopio_conectado = socketReceptor.OperadorAND("acelerometro", (byte)socketReceptor.estado);
                     giroscopio.PintarGiroscopio();
                     Thread.Sleep(500);
                 }
@@ -264,8 +264,8 @@ namespace EstacionControl
                 indicador_temperatura.BackColor = colorCampos;
                 indicador_profundidad.BackColor = colorCampos;
                 indicador_temperatura.ForeColor = Color.Yellow;
-                indicador_temperatura.Text = string.Format("{0:0.00}", (double)socketReceptor.getTemperatura())+ " ºC";
-                indicador_profundidad.Text = string.Format("{0:0.00}", (double)socketReceptor.getProfundidad())+ " metros";
+                indicador_temperatura.Text = string.Format("{0:0.00}", (double)socketReceptor.temperatura)+ " ºC";
+                indicador_profundidad.Text = string.Format("{0:0.00}", (double)socketReceptor.profundidad)+ " metros";
             }
             else
             {

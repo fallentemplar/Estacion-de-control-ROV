@@ -68,8 +68,8 @@ namespace EstacionControl.Dispositivos.Sensores
 
         public void PintarGiroscopio()
         {
-            PitchAngle = (double)socket.getAngY();
-            RollAngle = (double)socket.getAngX() * Math.PI / 180;
+            PitchAngle = (double)socket.angY;
+            RollAngle = (double)socket.angX * Math.PI / 180;
             Invalidate();
         }
 
