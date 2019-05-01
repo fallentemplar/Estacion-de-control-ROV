@@ -10,10 +10,9 @@ namespace EstacionControl.Ventanas
     public partial class MisionCanon : Form
     {
         private double proporcion;
-
+        private const int NUMERODECIMALES = 3;
         private Image imagenProcesamiento;
         private double distancia;
-
         double[] longitudes;
 
         public MisionCanon()
@@ -69,6 +68,7 @@ namespace EstacionControl.Ventanas
             else if (nClick == 2)
             {
                 punto2 = e.Location;
+                punto2.Y = punto1.Y;
                 Bitmap fondo = AForge.Imaging.Image.Clone((Bitmap)imagen_procesamiento.Image, PixelFormat.Format32bppArgb);
                 Graphics grafico = Graphics.FromImage(fondo);
 
@@ -87,7 +87,7 @@ namespace EstacionControl.Ventanas
         private double DistanciaEuclidiana()
         {
             double pixeles = Math.Round(Math.Sqrt(Math.Pow(punto2.X - punto1.X, 2) + Math.Pow(punto2.Y - punto1.Y, 2)), 2);
-            MessageBox.Show("Pixeles: " + pixeles);
+            //MessageBox.Show("Pixeles: " + pixeles);
             return pixeles;
         }
 
@@ -141,34 +141,34 @@ namespace EstacionControl.Ventanas
 
         private void boton_D1_Click(object sender, EventArgs e)
         {
-            longitudes[0] = double.Parse(campo_longitud.Text)/2;
+            longitudes[0] = Math.Round(double.Parse(campo_longitud.Text)/2,NUMERODECIMALES);
         }
 
         private void boton_D2_Click(object sender, EventArgs e)
         {
-            longitudes[1] = double.Parse(campo_longitud.Text)/2;
+            longitudes[1] = Math.Round(double.Parse(campo_longitud.Text)/2, NUMERODECIMALES);
         }
 
         private void boton_D3_Click(object sender, EventArgs e)
         {
-            longitudes[2] = double.Parse(campo_longitud.Text)/2;
+            longitudes[2] = Math.Round(double.Parse(campo_longitud.Text)/2, NUMERODECIMALES);
         }
 
         private void boton_L1_Click(object sender, EventArgs e)
         {
-            longitudes[3] = double.Parse(campo_longitud.Text);
+            longitudes[3] = Math.Round(double.Parse(campo_longitud.Text),2);
         }
 
         private void boton_longitudes_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Diametro Mayor: " + longitudes[0] + "cm\nDiámetro menor: " + longitudes[1] + "cm\nDiámetro interno: " + longitudes[2] + "cm\nLongitud:    " + longitudes[3]+"cm");
+            MessageBox.Show("Radio mayor: " + longitudes[0] + "cm\nRadio menor: " + longitudes[1] + "cm\nRadio interno: " + longitudes[2] + "cm\nLongitud:    " + longitudes[3]+"cm");
         }
 
         private void boton_calcular_volumen_Click(object sender, EventArgs e)
         {
             double volumen = (1 / (double)3) * longitudes[3] * Math.PI * (Math.Pow(longitudes[0], 2) + Math.Pow(longitudes[1], 2)+longitudes[0]*longitudes[1]);
             volumen -= Math.PI * Math.Pow(longitudes[2],2)*longitudes[3];
-            MessageBox.Show("Vol: " + volumen);
+            MessageBox.Show("Vol: " + Math.Round(volumen,NUMERODECIMALES)+ "cm^3");
         }
     }
 }

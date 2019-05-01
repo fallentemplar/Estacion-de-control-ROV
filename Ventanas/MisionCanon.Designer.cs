@@ -31,13 +31,13 @@
             this.imagen_procesamiento = new System.Windows.Forms.PictureBox();
             this.boton_Capturar = new System.Windows.Forms.Button();
             this.grupo_controles = new System.Windows.Forms.GroupBox();
+            this.boton_longitudes = new System.Windows.Forms.Button();
+            this.boton_calcular_volumen = new System.Windows.Forms.Button();
             this.campo_longitud = new System.Windows.Forms.TextBox();
             this.boton_L1 = new System.Windows.Forms.Button();
             this.boton_D3 = new System.Windows.Forms.Button();
             this.boton_D2 = new System.Windows.Forms.Button();
             this.boton_D1 = new System.Windows.Forms.Button();
-            this.boton_calcular_volumen = new System.Windows.Forms.Button();
-            this.boton_longitudes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imagen_procesamiento)).BeginInit();
             this.grupo_controles.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +48,7 @@
             this.imagen_procesamiento.Location = new System.Drawing.Point(0, 0);
             this.imagen_procesamiento.Margin = new System.Windows.Forms.Padding(0);
             this.imagen_procesamiento.Name = "imagen_procesamiento";
-            this.imagen_procesamiento.Size = new System.Drawing.Size(384, 361);
+            this.imagen_procesamiento.Size = new System.Drawing.Size(464, 361);
             this.imagen_procesamiento.TabIndex = 0;
             this.imagen_procesamiento.TabStop = false;
             this.imagen_procesamiento.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ObtenerCoordenadasMouse);
@@ -75,10 +75,30 @@
             this.grupo_controles.Controls.Add(this.boton_Capturar);
             this.grupo_controles.Location = new System.Drawing.Point(12, 249);
             this.grupo_controles.Name = "grupo_controles";
-            this.grupo_controles.Size = new System.Drawing.Size(372, 100);
+            this.grupo_controles.Size = new System.Drawing.Size(440, 100);
             this.grupo_controles.TabIndex = 2;
             this.grupo_controles.TabStop = false;
             this.grupo_controles.Text = "Opciones";
+            // 
+            // boton_longitudes
+            // 
+            this.boton_longitudes.Location = new System.Drawing.Point(293, 21);
+            this.boton_longitudes.Name = "boton_longitudes";
+            this.boton_longitudes.Size = new System.Drawing.Size(73, 23);
+            this.boton_longitudes.TabIndex = 8;
+            this.boton_longitudes.Text = "Longitudes";
+            this.boton_longitudes.UseVisualStyleBackColor = true;
+            this.boton_longitudes.Click += new System.EventHandler(this.boton_longitudes_Click);
+            // 
+            // boton_calcular_volumen
+            // 
+            this.boton_calcular_volumen.Location = new System.Drawing.Point(292, 49);
+            this.boton_calcular_volumen.Name = "boton_calcular_volumen";
+            this.boton_calcular_volumen.Size = new System.Drawing.Size(74, 51);
+            this.boton_calcular_volumen.TabIndex = 7;
+            this.boton_calcular_volumen.Text = "Calcular volúmen";
+            this.boton_calcular_volumen.UseVisualStyleBackColor = true;
+            this.boton_calcular_volumen.Click += new System.EventHandler(this.boton_calcular_volumen_Click);
             // 
             // campo_longitud
             // 
@@ -128,32 +148,12 @@
             this.boton_D1.UseVisualStyleBackColor = true;
             this.boton_D1.Click += new System.EventHandler(this.boton_D1_Click);
             // 
-            // boton_calcular_volumen
-            // 
-            this.boton_calcular_volumen.Location = new System.Drawing.Point(292, 49);
-            this.boton_calcular_volumen.Name = "boton_calcular_volumen";
-            this.boton_calcular_volumen.Size = new System.Drawing.Size(74, 51);
-            this.boton_calcular_volumen.TabIndex = 7;
-            this.boton_calcular_volumen.Text = "Calcular volúmen";
-            this.boton_calcular_volumen.UseVisualStyleBackColor = true;
-            this.boton_calcular_volumen.Click += new System.EventHandler(this.boton_calcular_volumen_Click);
-            // 
-            // boton_longitudes
-            // 
-            this.boton_longitudes.Location = new System.Drawing.Point(293, 21);
-            this.boton_longitudes.Name = "boton_longitudes";
-            this.boton_longitudes.Size = new System.Drawing.Size(73, 23);
-            this.boton_longitudes.TabIndex = 8;
-            this.boton_longitudes.Text = "Longitudes";
-            this.boton_longitudes.UseVisualStyleBackColor = true;
-            this.boton_longitudes.Click += new System.EventHandler(this.boton_longitudes_Click);
-            // 
             // MisionCanon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(384, 361);
+            this.ClientSize = new System.Drawing.Size(464, 361);
             this.ControlBox = false;
             this.Controls.Add(this.grupo_controles);
             this.Controls.Add(this.imagen_procesamiento);
