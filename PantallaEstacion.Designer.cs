@@ -70,6 +70,7 @@
             this.misionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.canonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calcularVolumenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.diafragmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualTécnicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -93,7 +94,6 @@
             this.indicador_mini_desplegado = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.titulo = new System.Windows.Forms.Label();
-            this.diafragmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.camera_groupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.raspberry_logo)).BeginInit();
@@ -512,6 +512,13 @@
             this.calcularVolumenToolStripMenuItem.Text = "Calcular Volúmen";
             this.calcularVolumenToolStripMenuItem.Click += new System.EventHandler(this.calcularVolumenToolStripMenuItem_Click);
             // 
+            // diafragmaToolStripMenuItem
+            // 
+            this.diafragmaToolStripMenuItem.Name = "diafragmaToolStripMenuItem";
+            this.diafragmaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.diafragmaToolStripMenuItem.Text = "Abrir diafragma";
+            this.diafragmaToolStripMenuItem.Click += new System.EventHandler(this.diafragmaToolStripMenuItem_Click);
+            // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -738,13 +745,6 @@
             this.titulo.Size = new System.Drawing.Size(64, 9);
             this.titulo.TabIndex = 70;
             this.titulo.Text = "By Alexis Aguirre";
-            // 
-            // diafragmaToolStripMenuItem
-            // 
-            this.diafragmaToolStripMenuItem.Name = "diafragmaToolStripMenuItem";
-            this.diafragmaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.diafragmaToolStripMenuItem.Text = "Diafragma";
-            this.diafragmaToolStripMenuItem.Click += new System.EventHandler(this.diafragmaToolStripMenuItem_Click);
             // 
             // PantallaEstacion
             // 

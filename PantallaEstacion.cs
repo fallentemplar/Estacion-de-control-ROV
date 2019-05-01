@@ -645,10 +645,17 @@ namespace EstacionControl
 
         private void diafragmaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!diafragmaAbierto)
+            if (!diafragmaAbierto){
                 socketConector.EnviarDatos((Byte)BotonesXBOX.Comando, (float)1);
-            else
+                MessageBox.Show("Abriendo diafragma...");
+                diafragmaAbierto = true;
+                diafragmaToolStripMenuItem.Text = "Cerrar diafragma";
+            }else{
                 socketConector.EnviarDatos((Byte)BotonesXBOX.Comando, (float)0);
+                MessageBox.Show("Cerrando diafragma...");
+                diafragmaAbierto = false;
+                diafragmaToolStripMenuItem.Text = "Abrir diafragma";
+            }
         }
     }
 }
