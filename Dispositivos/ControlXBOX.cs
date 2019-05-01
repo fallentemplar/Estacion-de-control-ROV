@@ -13,91 +13,54 @@ namespace EstacionControl
         ConectividadRemota conector;
         PantallaEstacion estacion;
 
+        //Valores de controles
+        ValoresControles valoresControl1;
+        ValoresControles valoresControl2;
+
         struct ValoresControles
         {
+            #region Sticks
             //Stick izquierdo
             public float vStickIzq_X;
             public float vStickIzq_Y;
             public float vS1x_anterior;
             public float vS1y_anterior;
+            public int vBotonStickIzq;
 
             //Stick derecho
             public float vStickDer_X;
             public float vStickDer_Y;
             public float vS2x_anterior;
             public float vS2y_anterior;
+            public int vBotonStickDer;
+            #endregion
+            #region Gatillos
             //Gatillos
             public float vGatilloIzq;
             public float vGatilloIzq_Anterior;
             public float vGatilloDer;
             public float vGatilloDer_Anterior;
-
+            public int vBotonHombroIzq;
+            public int vBotonHombroDer;
+            #endregion
+            #region BotonesOrdenes
             //Botones derecha
             public int vBotonA;
             public int vBotonB;
             public int vBotonX;
             public int vBotonY;
-
+            #endregion
+            #region DPad
             //Botones D-Pad
-            public int vPadSup;
-            public int vPadInf;
             public int vPadVertical;
             public int vPadIzq;
             public int vPadDer;
-
-            //Gatillos 
-            public int vBotonHombroIzq;
-            public int vBotonHombroDer;
-
+            #endregion
+            #region BotonesControl
             public int vBotonSelect;
             public int vBotonStart;
-            public int vBotonStickIzq;
-            public int vBotonStickDer;
+            #endregion
         }
-
-        ValoresControles valoresControl1;// = new ValoresControles();
-        ValoresControles valoresControl2;// = new ValoresControles();
-
-
-        /*
-        //Stick izquierdo
-        float vStickIzq_X = 0;
-        float vStickIzq_Y = 0;
-        float vS1x_anterior = 0;
-        float vS1y_anterior = 0;
-
-        //Stick derecho
-        float vStickDer_X = 0;
-        float vStickDer_Y = 0;
-        float vS2x_anterior = 0;
-        float vS2y_anterior = 0;
-        //Gatillos
-        float vGatilloIzq = 0;
-        float vGatilloIzq_Anterior = 0;
-        float vGatilloDer = 0;
-        float vGatilloDer_Anterior = 0;
-
-        //Botones derecha
-        int vBotonA = 0;
-        int vBotonB = 0;
-        int vBotonX = 0;
-        int vBotonY = 0;
-
-        //Botones D-Pad
-        int vPadSup = 0;
-        int vPadInf = 0;
-        int vPadVertical = 0;
-        int vPadIzq = 0;
-        int vPadDer = 0;
-
-        //Gatillos 
-        int vBotonHombroIzq = 0;
-        int vBotonHombroDer = 0;
-
-        int vBotonSelect = 0;
-        int vBotonStart = 0;
-        int vBotonStickIzq = 0;
-        int vBotonStickDer = 0;*/
 
         public ControlXBOX(ConectividadRemota socketConector,PantallaEstacion estacion)
         {

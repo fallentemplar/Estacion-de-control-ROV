@@ -49,6 +49,8 @@ namespace EstacionControl
         Thread capturarVideo;
         Thread conexionConRaspberry;
 
+        bool diafragmaAbierto;
+
         public PantallaEstacion()
         {
             log.Info("---------------------Iniciando ejecución-----------------------\n-------------------------------------------------------------------------------------------------------------");
@@ -637,9 +639,16 @@ namespace EstacionControl
 
         private void calcularVolumenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //double distancia = double.Parse(Interaction.InputBox("¿Distancia al objeto?", "Distancia", "13.5"));
             MisionCanon misionCanon = new MisionCanon();
             misionCanon.ShowDialog();
+        }
+
+        private void diafragmaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!diafragmaAbierto)
+                socketConector.EnviarDatos((Byte)BotonesXBOX.Comando, (float)1);
+            else
+                socketConector.EnviarDatos((Byte)BotonesXBOX.Comando, (float)0);
         }
     }
 }

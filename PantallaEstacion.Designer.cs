@@ -50,6 +50,7 @@
             this.indicador_arduino = new System.Windows.Forms.TextBox();
             this.indicador_raspberry = new System.Windows.Forms.TextBox();
             this.herramientasSensores = new System.Windows.Forms.GroupBox();
+            this.indicador_linternas = new System.Windows.Forms.ProgressBar();
             this.indicador_inductivo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.indicador_ph = new System.Windows.Forms.TextBox();
@@ -92,7 +93,7 @@
             this.indicador_mini_desplegado = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.titulo = new System.Windows.Forms.Label();
-            this.indicador_linternas = new System.Windows.Forms.ProgressBar();
+            this.diafragmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.camera_groupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.raspberry_logo)).BeginInit();
@@ -325,6 +326,14 @@
             this.herramientasSensores.TabStop = false;
             this.herramientasSensores.Text = "Herramientas y sensores";
             // 
+            // indicador_linternas
+            // 
+            this.indicador_linternas.Location = new System.Drawing.Point(392, 46);
+            this.indicador_linternas.Name = "indicador_linternas";
+            this.indicador_linternas.Size = new System.Drawing.Size(100, 20);
+            this.indicador_linternas.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.indicador_linternas.TabIndex = 10;
+            // 
             // indicador_inductivo
             // 
             this.indicador_inductivo.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -482,7 +491,8 @@
             // misionesToolStripMenuItem
             // 
             this.misionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.canonToolStripMenuItem});
+            this.canonToolStripMenuItem,
+            this.diafragmaToolStripMenuItem});
             this.misionesToolStripMenuItem.Name = "misionesToolStripMenuItem";
             this.misionesToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.misionesToolStripMenuItem.Text = "Misiones";
@@ -492,7 +502,7 @@
             this.canonToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.calcularVolumenToolStripMenuItem});
             this.canonToolStripMenuItem.Name = "canonToolStripMenuItem";
-            this.canonToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.canonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.canonToolStripMenuItem.Text = "Cañón";
             // 
             // calcularVolumenToolStripMenuItem
@@ -729,13 +739,12 @@
             this.titulo.TabIndex = 70;
             this.titulo.Text = "By Alexis Aguirre";
             // 
-            // indicador_linternas
+            // diafragmaToolStripMenuItem
             // 
-            this.indicador_linternas.Location = new System.Drawing.Point(392, 46);
-            this.indicador_linternas.Name = "indicador_linternas";
-            this.indicador_linternas.Size = new System.Drawing.Size(100, 20);
-            this.indicador_linternas.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.indicador_linternas.TabIndex = 10;
+            this.diafragmaToolStripMenuItem.Name = "diafragmaToolStripMenuItem";
+            this.diafragmaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.diafragmaToolStripMenuItem.Text = "Diafragma";
+            this.diafragmaToolStripMenuItem.Click += new System.EventHandler(this.diafragmaToolStripMenuItem_Click);
             // 
             // PantallaEstacion
             // 
@@ -843,6 +852,7 @@
         private System.Windows.Forms.ToolStripMenuItem canonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calcularVolumenToolStripMenuItem;
         private System.Windows.Forms.ProgressBar indicador_linternas;
+        private System.Windows.Forms.ToolStripMenuItem diafragmaToolStripMenuItem;
     }
 }
 
