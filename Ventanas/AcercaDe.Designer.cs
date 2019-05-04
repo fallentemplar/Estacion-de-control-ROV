@@ -33,12 +33,12 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fotoNosotros)).BeginInit();
             this.SuspendLayout();
             // 
             // fotoNosotros
             // 
-            //this.fotoNosotros.Image = global::EstacionControl.Properties.Resources.TMM_premio01;
             this.fotoNosotros.Location = new System.Drawing.Point(13, 13);
             this.fotoNosotros.Name = "fotoNosotros";
             this.fotoNosotros.Size = new System.Drawing.Size(252, 234);
@@ -87,11 +87,21 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Contacto:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(286, 255);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(196, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Software desarrollado por Alexis Aguirre.";
+            // 
             // AcercaDe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(494, 277);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.linkLabel1);
@@ -115,5 +125,6 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

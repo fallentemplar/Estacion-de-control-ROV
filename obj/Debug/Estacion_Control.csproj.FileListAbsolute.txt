@@ -260,3 +260,7 @@ E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\Estacion_Control.csproj.CopyComplete
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\EstacionControl.exe
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\EstacionControl.pdb
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\EstacionControl.exe.manifest
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\EstacionControl.application
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\EstacionControl.exe.manifest
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\EstacionControl.application

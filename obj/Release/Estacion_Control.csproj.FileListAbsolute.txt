@@ -66,3 +66,39 @@ E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control ROV\estaci
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control ROV\estacion-de-control-rov\estacion-control\obj\Release\Estacion_Control.csproj.CopyComplete
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control ROV\estacion-de-control-rov\estacion-control\obj\Release\EstacionControl.exe
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control ROV\estacion-de-control-rov\estacion-control\obj\Release\EstacionControl.pdb
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\Estacion_Control.csprojAssemblyReference.cache
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\EstacionControl.AcercaDe.resources
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\EstacionControl.CodigoQR.resources
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\EstacionControl.Dispositivos.Sensores.Giroscopio.resources
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\EstacionControl.PantallaEstacion.resources
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\EstacionControl.ProcesamientoImagenes.EspeciesReconocidas.resources
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\EstacionControl.Properties.Resources.resources
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\EstacionControl.Ventanas.CamaraPanel.resources
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\EstacionControl.Ventanas.MisionCanon.resources
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\EstacionControl.Ventanas.VisorCamara.resources
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\Estacion_Control.csproj.GenerateResource.cache
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\Estacion_Control.csproj.CoreCompileInputs.cache
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\EstacionControl.exe
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\EstacionControl.pdb
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\log4net.config
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\EstacionControl.exe.config
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\EstacionControl.exe
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\EstacionControl.pdb
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\AForge.dll
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\AForge.Imaging.dll
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\AForge.Math.dll
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\AForge.Video.dll
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\AForge.Video.FFMPEG.dll
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\AForge.Video.VFW.dll
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\AForge.Video.Ximea.dll
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\AForge.Video.xml
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\AForge.Video.FFMPEG.xml
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\AForge.Video.VFW.xml
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\AForge.Video.Ximea.xml
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\log4net.xml
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\WebEye.Controls.WinForms.StreamPlayerControl.pdb
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\Estacion_Control.csproj.CopyComplete
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\EstacionControl.exe.manifest
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Release\EstacionControl.application
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\EstacionControl.exe.manifest
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Release\EstacionControl.application

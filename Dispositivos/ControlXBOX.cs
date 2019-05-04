@@ -53,6 +53,8 @@ namespace EstacionControl
             #region DPad
             //Botones D-Pad
             public int vPadVertical;
+            public int vPadSup;
+            public int vPadInf;
             public int vPadIzq;
             public int vPadDer;
             #endregion
@@ -77,8 +79,7 @@ namespace EstacionControl
 
         public void ActualizarEstadoOrdenes()
         {
-            try
-            {
+            try{
                 while (true)
                 {
                     GamePadState control1 = GamePad.GetState(PlayerIndex.One);
@@ -109,9 +110,7 @@ namespace EstacionControl
                     ////////////////FIN BOTONES DE ACCIÓN////////////
                     Thread.Sleep(20);
                 }
-            }
-            catch (Exception)
-            {
+            }catch (Exception){
                 log.Warn("No fue posible enviar la órden del control");
             }
         }
@@ -124,13 +123,13 @@ namespace EstacionControl
             if (valoresControl1.vGatilloIzq_Anterior != valoresControl1.vGatilloIzq){
                 valoresControl1.vGatilloIzq_Anterior = valoresControl1.vGatilloIzq;
                 conector.EnviarDatos((Byte)BotonesXBOX.LT_1, valoresControl1.vGatilloIzq);
-                Console.WriteLine("Gatillo izquierdo: "+ valoresControl1.vGatilloIzq);
+                Console.WriteLine("Gatillo izquierdo C1: "+ valoresControl1.vGatilloIzq);
             }
             valoresControl1.vGatilloDer = control1.Triggers.Right;
             if (valoresControl1.vGatilloDer_Anterior != valoresControl1.vGatilloDer){
                 valoresControl1.vGatilloDer_Anterior = valoresControl1.vGatilloDer;
                 conector.EnviarDatos((Byte)BotonesXBOX.RT_1, valoresControl1.vGatilloDer);
-                Console.WriteLine("Gatillo derecho: " + valoresControl1.vGatilloDer);
+                Console.WriteLine("Gatillo derecho C1: " + valoresControl1.vGatilloDer);
             }
             #endregion
             #region Control2
@@ -138,13 +137,13 @@ namespace EstacionControl
             if (valoresControl2.vGatilloIzq_Anterior != valoresControl2.vGatilloIzq){
                 valoresControl2.vGatilloIzq_Anterior = valoresControl2.vGatilloIzq;
                 conector.EnviarDatos((Byte)BotonesXBOX.LT_2, valoresControl2.vGatilloIzq);
-                Console.WriteLine("Gatillo izquierdo: " + valoresControl2.vGatilloIzq);
+                Console.WriteLine("Gatillo izquierdo C2: " + valoresControl2.vGatilloIzq);
             }
             valoresControl2.vGatilloDer = control2.Triggers.Right;
             if (valoresControl2.vGatilloDer_Anterior != valoresControl2.vGatilloDer){
                 valoresControl2.vGatilloDer_Anterior = valoresControl2.vGatilloDer;
                 conector.EnviarDatos((Byte)BotonesXBOX.RT_2, valoresControl2.vGatilloDer);
-                Console.WriteLine("Gatillo derecho: " + valoresControl2.vGatilloDer);
+                Console.WriteLine("Gatillo derecho C2: " + valoresControl2.vGatilloDer);
             }
             #endregion
         }
@@ -350,17 +349,14 @@ namespace EstacionControl
             #region Control2
             //---------------------Control 2-----------------//
             if (control2.DPad.Up.ToString().Equals("Pressed") && valoresControl2.vPadVertical < 100){
-                valoresControl2.vPadVertical += 20;
-                estacion.ActualizarIndicadores("linternas", true);
-                conector.EnviarDatos((Byte)BotonesXBOX.DU_2, (float)valoresControl2.vPadVertical);
-                Console.WriteLine("DPAD-UP: Nivel de linternas: " + valoresControl2.vPadVertical);
+                valoresControl2.vPadSup = 1;
+                conector.EnviarDatos((Byte)BotonesXBOX.DU_2, (float)valoresControl2.vPadSup);
             }
 
             if (control2.DPad.Down.ToString().Equals("Pressed") && valoresControl2.vPadVertical > 0){
-                valoresControl2.vPadVertical -= 20;
+                valoresControl2.vPadInf = 1;
                 estacion.ActualizarIndicadores("linternas", false);
-                conector.EnviarDatos((Byte)BotonesXBOX.DD_2, (float)valoresControl2.vPadVertical);
-                Console.WriteLine("DPAD-DOWN: Nivel de linternas: " + valoresControl2.vPadVertical);
+                conector.EnviarDatos((Byte)BotonesXBOX.DD_2, (float)valoresControl2.vPadInf);
             }
 
             if (control2.DPad.Left.ToString().Equals("Pressed")){

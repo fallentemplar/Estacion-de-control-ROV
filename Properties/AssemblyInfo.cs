@@ -10,7 +10,6 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Estación de control para ROV")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Alexis Arturo Aguirre Roldán")]
-//[assembly: AssemblyProduct("IMAT_Control")]
 [assembly: AssemblyProduct("Estación de Control")]
 [assembly: AssemblyCopyright("Derechos Reservados 2018")]
 [assembly: AssemblyTrademark("")]

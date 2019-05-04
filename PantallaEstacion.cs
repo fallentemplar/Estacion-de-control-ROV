@@ -16,17 +16,20 @@ namespace EstacionControl
 {
     public partial class PantallaEstacion : Form
     {
+        #region Constantes
         private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly string rutaCapturas = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\EstacionControl\\Capturas\\";
+        #endregion
         Giroscopio giroscopio;
-
-
-        static readonly string rutaCapturas = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\EstacionControl\\Capturas\\";
-
+        Color colorCampos;
+        #region Objetos conectividad
         //Objetos para log y conectividad
         ConectividadRemota socketConector;
         ConectividadRemota socketReceptor;
         ControlXBOX controles;
+        #endregion
 
+        #region Variables comprobar conectividad
         //Variables para comprobar conectividad
         bool control1_conectado;
         bool control2_conectado;
@@ -37,23 +40,26 @@ namespace EstacionControl
         public static bool recibiendo_video1;
         public static bool recibiendo_video2;
         public static bool recibiendo_video3;
+        #endregion
 
-        Color colorCampos;
+        #region Booleanos
         bool grabandoVideo1;
         bool grabandoVideo2;
-        //bool grabandoVideo3;
+        bool diafragmaAbierto;
+        #endregion
 
+        #region Threads Principales
         //Threads principales
         Thread actualizarControles;
         Thread dispositivosRemotos;
         Thread capturarVideo;
         Thread conexionConRaspberry;
+        #endregion
 
-        bool diafragmaAbierto;
 
         public PantallaEstacion()
         {
-            log.Info("---------------------Iniciando ejecución-----------------------\n-------------------------------------------------------------------------------------------------------------");
+            log.Info("----Iniciando ejecución----");
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
             this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
@@ -66,7 +72,7 @@ namespace EstacionControl
         //Se inician múltiples hilos del programa y se ejecutan en segundo plano
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.Icon = EstacionControl.Properties.Resources.icono_tmmx_nuevo;
+            Icon = EstacionControl.Properties.Resources.icono_tmmx_nuevo;
             colorCampos = indicador_temperatura.BackColor;
 
             socketConector = new ConectividadRemota(direccion_ip_texto.Text);
@@ -167,7 +173,6 @@ namespace EstacionControl
             {
                 while (true)
                 {
-                    log.Debug("Estoy verificando");
                     //raspberry_conectado = !((socketReceptor.cliente.Poll(1000, SelectMode.SelectRead) && (socketReceptor.cliente.Available == 0)) || !socketReceptor.cliente.Connected);
                     //socketReceptor.servidor.Connected;//socketReceptor.OperadorAND("servidor", (byte)socketReceptor.GetEstado());
                     indicador_raspberry.Invoke(new delegado_raspberry(Raspberry_conexion), raspberry_conectado);
@@ -355,10 +360,6 @@ namespace EstacionControl
         {
             visorCamara2.StartPlay(new Uri(URL_video)); //TODO: configurar TCP o UDP
         }
-        private void MostrarVideo3(string URL_video)
-        {
-            //visorCamara3.StartPlay(new Uri(URL_video)); //TODO: configurar TCP o UDP
-        }
 
         private void PintarElementos()
         {
@@ -404,7 +405,6 @@ namespace EstacionControl
                 {
                     while (true)
                     {
-                        log.Debug("Test raspbery");
                         raspberry_conectado = socketConector.Ping(direccion_ip_texto.Text);
                         Thread.Sleep(200);
                     }
@@ -458,27 +458,24 @@ namespace EstacionControl
                 {
                     boton_Conectar.Text = "¡Conectar!";
                     Desconectar();
-                    
                 }
             }
-            
         }
 
         private void DetenerRecepcionVideo()
         {
-            if(visorCamara1.IsPlaying)
-            {
+            if(visorCamara1.IsPlaying){
                 visorCamara1.Stop();
-                grabandoVideo1 = false;
+                //grabandoVideo1 = false;
+                recibiendo_video1 = false;
                 boton_video1.Image = EstacionControl.Properties.Resources.video_1_micro;
             }
-            if (visorCamara2.IsPlaying)
-            {
+            if (visorCamara2.IsPlaying){
                 visorCamara2.Stop();
-                grabandoVideo2 = false;
+                //grabandoVideo2 = false;
+                recibiendo_video2 = false;
                 boton_video2.Image = EstacionControl.Properties.Resources.video_1_micro;
             }
-                
         }
 
         private void Desconectar()
@@ -549,18 +546,15 @@ namespace EstacionControl
 
         public static int[] cantidadFiguras = new int[] { 0, 0, 0, 0};//circulo,cuadrado,rectangulo,triangulo
 
-        private void boton_video_Click(object sender, EventArgs e)
+        private void boton_video_Click(object sender, EventArgs e) //Grabación de video recibido en Visor #1
         {
-            log.Info("Capturando video");
+            log.Info("Grabando video");
             capturarVideo = new Thread(new ThreadStart(GrabarVideo)) { IsBackground = true };
-            if (!grabandoVideo1)
-            {
+            if (!grabandoVideo1){
                 boton_video1.Image = EstacionControl.Properties.Resources.stop_micro;
                 grabandoVideo1 = true;
                 capturarVideo.Start();
-            }
-            else
-            {
+            }else{
                 boton_video1.Image = EstacionControl.Properties.Resources.video_1_micro;
                 grabandoVideo1 = false;
                 capturarVideo.Abort();
@@ -645,17 +639,16 @@ namespace EstacionControl
 
         private void diafragmaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!diafragmaAbierto){
-                socketConector.EnviarDatos((Byte)BotonesXBOX.Comando, (float)1);
+            if (!diafragmaAbierto){    
                 MessageBox.Show("Abriendo diafragma...");
                 diafragmaAbierto = true;
                 diafragmaToolStripMenuItem.Text = "Cerrar diafragma";
             }else{
-                socketConector.EnviarDatos((Byte)BotonesXBOX.Comando, (float)0);
                 MessageBox.Show("Cerrando diafragma...");
                 diafragmaAbierto = false;
                 diafragmaToolStripMenuItem.Text = "Abrir diafragma";
             }
+            socketConector.EnviarDatos((Byte)BotonesXBOX.Comando, (float)4);
         }
     }
 }
