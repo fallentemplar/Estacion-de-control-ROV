@@ -107,6 +107,7 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.fotoNosotros);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AcercaDe";

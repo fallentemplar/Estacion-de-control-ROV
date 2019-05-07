@@ -470,21 +470,23 @@
             // giroscopioToolStripMenuItem
             // 
             this.giroscopioToolStripMenuItem.Name = "giroscopioToolStripMenuItem";
-            this.giroscopioToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.giroscopioToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.G)));
+            this.giroscopioToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.giroscopioToolStripMenuItem.Text = "Giroscopio";
             this.giroscopioToolStripMenuItem.Click += new System.EventHandler(this.giroscopioToolStripMenuItem_Click);
             // 
             // configuraciónDeCámarasToolStripMenuItem
             // 
             this.configuraciónDeCámarasToolStripMenuItem.Name = "configuraciónDeCámarasToolStripMenuItem";
-            this.configuraciónDeCámarasToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.configuraciónDeCámarasToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.configuraciónDeCámarasToolStripMenuItem.Text = "Configuración de cámaras";
             this.configuraciónDeCámarasToolStripMenuItem.Click += new System.EventHandler(this.configuraciónDeCámarasToolStripMenuItem_Click);
             // 
             // visorDeCámaraToolStripMenuItem
             // 
             this.visorDeCámaraToolStripMenuItem.Name = "visorDeCámaraToolStripMenuItem";
-            this.visorDeCámaraToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.visorDeCámaraToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.visorDeCámaraToolStripMenuItem.Text = "Visor de cámara";
             this.visorDeCámaraToolStripMenuItem.Click += new System.EventHandler(this.visorDeCámaraToolStripMenuItem_Click);
             // 
@@ -502,7 +504,7 @@
             this.canonToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.calcularVolumenToolStripMenuItem});
             this.canonToolStripMenuItem.Name = "canonToolStripMenuItem";
-            this.canonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.canonToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.canonToolStripMenuItem.Text = "Cañón";
             // 
             // calcularVolumenToolStripMenuItem
@@ -515,7 +517,9 @@
             // diafragmaToolStripMenuItem
             // 
             this.diafragmaToolStripMenuItem.Name = "diafragmaToolStripMenuItem";
-            this.diafragmaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.diafragmaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.L)));
+            this.diafragmaToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.diafragmaToolStripMenuItem.Text = "Abrir diafragma";
             this.diafragmaToolStripMenuItem.Click += new System.EventHandler(this.diafragmaToolStripMenuItem_Click);
             // 
@@ -531,14 +535,14 @@
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.AcercaDeToolStripMenuItem_Click);
             // 
             // manualTécnicoToolStripMenuItem
             // 
             this.manualTécnicoToolStripMenuItem.Name = "manualTécnicoToolStripMenuItem";
-            this.manualTécnicoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.manualTécnicoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.manualTécnicoToolStripMenuItem.Text = "Manual Técnico";
             // 
             // grupoCamaraSecundaria

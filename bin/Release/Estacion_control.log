@@ -27,3 +27,571 @@
 2019-05-04 15:10:35,788 [3] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
 2019-05-04 15:10:37,095 [3] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
 2019-05-04 15:10:37,267 [3] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 15:41:26,892 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-04 15:47:11,425 [4] WARN EstacionControl.ControlXBOX - No fue posible enviar la órden del control
+2019-05-04 15:47:34,645 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-04 15:47:47,843 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 15:47:47,844 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 15:47:47,844 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-04 15:47:47,845 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-05-04 15:47:47,855 [8] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-04 15:48:12,174 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-04 15:48:15,569 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 15:48:15,571 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 15:48:15,571 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-04 15:48:15,571 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-05-04 15:48:15,581 [8] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-04 15:48:41,412 [4] WARN EstacionControl.ControlXBOX - No fue posible enviar la órden del control
+2019-05-04 15:49:01,496 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-04 15:49:03,176 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 15:49:03,176 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 15:49:03,176 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-04 15:49:03,176 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-05-04 15:49:03,192 [8] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-04 15:56:56,378 [4] WARN EstacionControl.ControlXBOX - No fue posible enviar la órden del control
+2019-05-04 15:57:05,871 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-04 15:57:10,787 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 15:57:10,787 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 15:57:10,787 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-04 15:57:10,787 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-05-04 15:57:10,802 [8] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-04 16:05:34,563 [4] WARN EstacionControl.ControlXBOX - No fue posible enviar la órden del control
+2019-05-04 16:06:49,295 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-04 16:08:05,067 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 16:08:05,070 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 16:08:05,070 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-04 16:08:05,071 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-05-04 16:08:05,080 [3] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-04 16:08:23,139 [4] WARN EstacionControl.ControlXBOX - No fue posible enviar la órden del control
+2019-05-04 16:08:29,225 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-04 16:08:35,930 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 16:08:35,933 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 16:08:35,933 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-04 16:08:35,933 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-05-04 16:08:35,943 [8] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-04 16:12:51,682 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,106 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,464 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,484 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,505 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,526 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,547 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,799 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,820 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,841 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,862 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,862 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,883 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,883 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,904 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,904 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,925 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,967 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,988 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:52,988 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,009 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,009 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,030 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,030 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,051 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,072 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,093 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,114 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,135 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,198 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,219 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,241 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,241 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,262 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,283 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,304 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,325 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,346 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,388 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,409 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,430 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,430 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,451 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,451 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,472 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,472 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,494 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,514 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,577 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,577 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,598 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,598 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,619 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,619 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,640 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,640 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,661 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,682 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,682 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,703 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,704 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,725 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,725 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,746 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,746 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,767 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,788 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,809 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,809 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,830 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,830 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,851 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,851 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,872 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,872 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,893 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,935 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,956 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,956 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,977 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,977 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,999 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:53,999 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,020 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,020 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,041 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,062 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,104 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,104 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,125 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,125 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,146 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,146 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,168 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,168 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,189 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,231 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,252 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,252 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,273 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,273 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,294 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,294 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,315 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,315 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,336 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,357 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,357 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,378 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,378 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,399 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,399 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,420 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,420 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,442 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,483 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,504 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,505 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,526 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,526 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,547 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,547 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,568 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,568 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,589 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,610 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,652 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,652 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,673 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,673 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,694 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,694 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,715 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,715 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,736 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,738 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,759 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,801 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,801 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,822 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,822 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,843 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,843 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,864 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,906 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,927 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,927 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,948 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,948 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,969 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,969 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,990 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:54,990 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,011 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,011 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,032 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,032 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,053 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,053 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,074 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,095 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,116 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,137 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,158 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,158 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,179 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,200 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,221 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,242 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,242 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,263 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,263 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,284 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,284 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,305 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,326 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,326 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,347 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,347 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,369 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,370 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,391 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,391 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,412 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,412 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,434 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,434 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,456 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,456 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,477 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,477 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,498 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,498 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,519 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,561 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,561 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,582 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,582 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,603 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,603 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,624 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,666 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,666 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,687 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,687 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,708 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,708 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,729 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,729 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,750 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,750 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,771 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,771 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,792 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,792 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,813 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,834 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,834 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,855 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,855 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,876 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,876 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,897 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,897 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,918 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,918 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,939 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,939 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,960 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,960 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:55,981 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,002 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,023 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,065 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,065 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,086 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,086 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,107 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,107 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,128 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,128 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,149 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,170 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,171 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,192 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,192 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,213 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,213 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,234 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,234 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,255 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,255 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,276 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,276 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,297 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,360 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,360 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,381 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,383 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,404 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,404 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,425 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,425 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,447 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,468 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,468 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,490 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,490 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,511 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,511 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,532 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,533 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,553 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,575 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,617 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,638 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,638 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,659 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,659 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,680 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,680 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,701 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,764 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,785 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,806 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,806 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,827 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,827 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,848 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,848 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,869 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,869 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,890 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,890 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,911 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,911 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,932 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,953 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,953 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,974 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,974 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,995 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:56,995 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,016 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,016 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,037 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,058 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,079 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,079 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,100 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,100 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,121 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,121 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,142 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,142 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,163 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,163 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,185 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,185 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,206 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,206 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,248 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,248 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,269 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,269 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,290 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,290 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,311 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,311 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,332 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,416 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,437 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,458 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,479 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,479 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,500 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,501 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,522 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,522 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,543 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,543 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,564 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,564 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,585 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,586 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,607 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,628 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,628 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,649 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,670 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,691 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,712 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,733 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,755 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,776 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,797 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,818 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,818 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,839 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,839 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,860 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,860 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,881 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,902 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,923 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,944 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,944 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,965 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,965 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,986 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:57,986 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,007 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,007 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,029 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,029 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,050 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,071 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,092 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,113 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,176 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,197 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,197 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,218 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,218 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,239 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,239 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,260 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,260 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,281 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,281 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,302 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,323 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,344 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,344 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,365 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,365 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,386 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,407 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,428 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,449 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,470 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,470 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,491 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,512 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,512 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,533 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,534 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,554 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,555 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,576 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,576 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,597 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:58,996 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,017 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,038 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,059 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,080 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,101 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,122 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,311 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,332 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,353 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,374 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,500 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,521 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,542 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,563 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,584 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,605 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,626 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,647 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,794 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,815 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,836 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,857 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,920 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,941 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,941 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,963 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,963 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,984 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:12:59,984 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,005 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,005 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,026 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,026 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,047 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,068 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,068 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,089 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,089 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,110 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,110 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,131 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,131 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,152 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,152 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,173 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,215 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,236 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,257 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,278 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,299 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,299 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,320 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,320 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,341 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,341 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,362 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,362 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,383 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,383 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,405 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,405 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,426 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,426 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,448 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,448 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,470 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,470 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,491 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,512 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,615 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,636 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,657 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,678 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,720 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,741 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,762 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:00,783 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:08,275 [4] WARN EstacionControl.ControlXBOX - No fue posible enviar la órden del control
+2019-05-04 16:13:13,641 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-04 16:13:15,985 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 16:13:15,988 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 16:13:15,988 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-04 16:13:15,989 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-05-04 16:13:15,998 [8] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-04 16:13:32,304 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:32,325 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:32,388 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:32,514 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:32,535 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:32,577 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:32,598 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:32,724 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:32,745 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
+2019-05-04 16:13:37,165 [4] WARN EstacionControl.ControlXBOX - No fue posible enviar la órden del control
+2019-05-04 16:14:00,860 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-04 16:14:02,949 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 16:14:02,953 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 16:14:02,953 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-04 16:14:02,953 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-05-04 16:14:02,965 [8] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-04 16:21:48,556 [4] WARN EstacionControl.ControlXBOX - No fue posible enviar la órden del control
+2019-05-04 16:21:53,334 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-04 16:21:55,854 [1] ERROR EstacionControl.ConectividadRemota - No se pudo establecer la conexión
+2019-05-04 16:24:16,342 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 16:24:16,345 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-04 16:24:16,345 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-04 16:24:16,345 [1] DEBUG EstacionControl.PantallaEstacion - Llamada a método [solicitarDatos]
+2019-05-04 16:24:16,355 [3] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-04 18:21:22,030 [4] WARN EstacionControl.ControlXBOX - No fue posible enviar la órden del control
+2019-05-05 11:14:29,529 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-05 11:14:54,292 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-07 08:38:14,839 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-07 12:30:13,401 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----

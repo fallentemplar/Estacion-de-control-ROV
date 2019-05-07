@@ -82,7 +82,7 @@ namespace EstacionControl
 
             //Hilo para manejar el control de XBOX ONE
             actualizarControles = new Thread(new ThreadStart(controles.ActualizarEstadoOrdenes)) { IsBackground = true };
-            actualizarControles.Start();
+//            actualizarControles.Start();
 
             //Hilo de verificación de comunicación de dispositivos periféricos remotos
             dispositivosRemotos = new Thread(new ThreadStart(ComprobarDispositivosRemotos)) { IsBackground = true };
@@ -640,11 +640,11 @@ namespace EstacionControl
         private void diafragmaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (!diafragmaAbierto){    
-                MessageBox.Show("Abriendo diafragma...");
+                MessageBox.Show("Abriendo diafragma...","Diafragma");
                 diafragmaAbierto = true;
                 diafragmaToolStripMenuItem.Text = "Cerrar diafragma";
             }else{
-                MessageBox.Show("Cerrando diafragma...");
+                MessageBox.Show("Cerrando diafragma...", "Diafragma");
                 diafragmaAbierto = false;
                 diafragmaToolStripMenuItem.Text = "Abrir diafragma";
             }

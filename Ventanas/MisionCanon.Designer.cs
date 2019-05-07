@@ -38,6 +38,7 @@
             this.boton_D3 = new System.Windows.Forms.Button();
             this.boton_D2 = new System.Windows.Forms.Button();
             this.boton_D1 = new System.Windows.Forms.Button();
+            this.fundidoras = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.imagen_procesamiento)).BeginInit();
             this.grupo_controles.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +66,7 @@
             // 
             // grupo_controles
             // 
+            this.grupo_controles.Controls.Add(this.fundidoras);
             this.grupo_controles.Controls.Add(this.boton_longitudes);
             this.grupo_controles.Controls.Add(this.boton_calcular_volumen);
             this.grupo_controles.Controls.Add(this.campo_longitud);
@@ -148,6 +150,14 @@
             this.boton_D1.UseVisualStyleBackColor = true;
             this.boton_D1.Click += new System.EventHandler(this.boton_D1_Click);
             // 
+            // fundidoras
+            // 
+            this.fundidoras.FormattingEnabled = true;
+            this.fundidoras.Location = new System.Drawing.Point(373, 49);
+            this.fundidoras.Name = "fundidoras";
+            this.fundidoras.Size = new System.Drawing.Size(121, 21);
+            this.fundidoras.TabIndex = 9;
+            // 
             // MisionCanon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,5 +191,6 @@
         private System.Windows.Forms.TextBox campo_longitud;
         private System.Windows.Forms.Button boton_calcular_volumen;
         private System.Windows.Forms.Button boton_longitudes;
+        private System.Windows.Forms.ComboBox fundidoras;
     }
 }

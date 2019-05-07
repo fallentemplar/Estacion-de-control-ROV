@@ -24,6 +24,11 @@ namespace EstacionControl.Ventanas
 
         private void MisionCanon_Load(object sender, EventArgs e)
         {
+            fundidoras.Items.Add("");
+            fundidoras.Items.Add("AF - Augusta Foundry");
+            fundidoras.Items.Add("BF - Bellona Foundry");
+            fundidoras.Items.Add("FPF - Fort Pitt Foundry");
+            fundidoras.Items.Add("TF JRA - Tredegar Foundry");
             imagenProcesamiento = AbrirImagen();
             FiltrarImagen();
         }
