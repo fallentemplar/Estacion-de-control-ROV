@@ -26,6 +26,7 @@ namespace EstacionControl
         //Objetos para log y conectividad
         ConectividadRemota socketConector;
         ConectividadRemota socketReceptor;
+        ConectividadRemota socketMiniROV;
         ControlXBOX controles;
         #endregion
 
@@ -46,6 +47,7 @@ namespace EstacionControl
         bool grabandoVideo1;
         bool grabandoVideo2;
         bool diafragmaAbierto;
+        bool miniROVDesplegado;
         #endregion
 
         #region Threads Principales
@@ -483,7 +485,7 @@ namespace EstacionControl
             socketConector.CerrarConexion();
             socketReceptor.CerrarConexion();
             giroscopioToolStripMenuItem.Enabled = true;
-            camara1_conectar.Enabled = false; //Habilita la posibilidad de iniciar recepción de video.
+            camara1_conectar.Enabled = false;
             direccion_ip_texto.Enabled = true;
             puerto_texto.Enabled = true;
 
@@ -649,6 +651,47 @@ namespace EstacionControl
                 diafragmaToolStripMenuItem.Text = "Abrir diafragma";
             }
             socketConector.EnviarDatos((Byte)BotonesXBOX.Comando, (float)4);
+        }
+
+        private void boton_Desplegar_MiniROV_Click(object sender, EventArgs e)
+        {
+            DialogResult confirmacion;
+            if(!miniROVDesplegado)
+                confirmacion = MessageBox.Show("¿Desplegar MiniROV?", "Confirmación", MessageBoxButtons.YesNo);
+            else
+                confirmacion = MessageBox.Show("¿Desactivar MiniROV?", "Confirmación", MessageBoxButtons.YesNo);
+            if(confirmacion==DialogResult.Yes)
+            {
+                if (!miniROVDesplegado)
+                {
+                    socketMiniROV = new ConectividadRemota(campo_ip_MiniROV.Text);
+                    try
+                    {
+                        /*socketMiniROV.Conectar(campo_ip_MiniROV.Text);
+                        controles.miniROVDesplegado = true;
+                        controles.conector = socketMiniROV;*/
+                        //MessageBox.Show("El Mini ROV ha sido desplegado");
+                        indicador_mini_desplegado.Text = "Desplegado";
+                        indicador_mini_desplegado.ForeColor = Color.Yellow;
+                        miniROVDesplegado = true;
+                    }
+                    catch (Exception)
+                    {
+                        controles.miniROVDesplegado = false;
+                        miniROVDesplegado = false;
+                        MessageBox.Show("No se pudo establecer la conexión con la IP destino");
+                    }
+                }
+                else
+                {
+                    /*socketMiniROV.CerrarConexion();
+                    controles.conector = socketConector;*/
+                    //MessageBox.Show("El Mini ROV ha sido recuperado");
+                    indicador_mini_desplegado.Text = "No Desplegado";
+                    indicador_mini_desplegado.ForeColor = Color.Red;
+                    miniROVDesplegado = false;
+                }
+            }
         }
     }
 }

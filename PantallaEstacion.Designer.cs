@@ -89,10 +89,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.camera_ip_label = new System.Windows.Forms.Label();
             this.burbuja_informacion = new System.Windows.Forms.ToolTip(this.components);
+            this.campo_puerto_MiniROV = new System.Windows.Forms.TextBox();
+            this.campo_ip_MiniROV = new System.Windows.Forms.TextBox();
             this.grupo_minirov = new System.Windows.Forms.GroupBox();
+            this.etiqueta_indicador_linternas_mini = new System.Windows.Forms.Label();
+            this.indicador_mini_desplegado = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.indicador_mini_luces = new System.Windows.Forms.ProgressBar();
-            this.indicador_mini_desplegado = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.boton_Desplegar_MiniROV = new System.Windows.Forms.Button();
             this.titulo = new System.Windows.Forms.Label();
             this.camera_groupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -535,14 +540,14 @@
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.AcercaDeToolStripMenuItem_Click);
             // 
             // manualTécnicoToolStripMenuItem
             // 
             this.manualTécnicoToolStripMenuItem.Name = "manualTécnicoToolStripMenuItem";
-            this.manualTécnicoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.manualTécnicoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.manualTécnicoToolStripMenuItem.Text = "Manual Técnico";
             // 
             // grupoCamaraSecundaria
@@ -676,6 +681,7 @@
             this.direccion_ip_texto.Size = new System.Drawing.Size(70, 20);
             this.direccion_ip_texto.TabIndex = 31;
             this.direccion_ip_texto.Text = "192.168.0.7";
+            this.direccion_ip_texto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.burbuja_informacion.SetToolTip(this.direccion_ip_texto, "Dirección IP del servidor");
             // 
             // label1
@@ -698,11 +704,38 @@
             this.camera_ip_label.TabIndex = 30;
             this.camera_ip_label.Text = "Dirección IP";
             // 
+            // campo_puerto_MiniROV
+            // 
+            this.campo_puerto_MiniROV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.campo_puerto_MiniROV.Location = new System.Drawing.Point(6, 188);
+            this.campo_puerto_MiniROV.Name = "campo_puerto_MiniROV";
+            this.campo_puerto_MiniROV.Size = new System.Drawing.Size(103, 20);
+            this.campo_puerto_MiniROV.TabIndex = 36;
+            this.campo_puerto_MiniROV.Text = "7000";
+            this.campo_puerto_MiniROV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.burbuja_informacion.SetToolTip(this.campo_puerto_MiniROV, "Puerto de escucha del servidor");
+            // 
+            // campo_ip_MiniROV
+            // 
+            this.campo_ip_MiniROV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.campo_ip_MiniROV.Location = new System.Drawing.Point(6, 148);
+            this.campo_ip_MiniROV.Name = "campo_ip_MiniROV";
+            this.campo_ip_MiniROV.Size = new System.Drawing.Size(103, 20);
+            this.campo_ip_MiniROV.TabIndex = 35;
+            this.campo_ip_MiniROV.Text = "192.168.0.8";
+            this.campo_ip_MiniROV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.burbuja_informacion.SetToolTip(this.campo_ip_MiniROV, "Dirección IP del servidor");
+            // 
             // grupo_minirov
             // 
-            this.grupo_minirov.Controls.Add(this.indicador_mini_luces);
+            this.grupo_minirov.Controls.Add(this.etiqueta_indicador_linternas_mini);
             this.grupo_minirov.Controls.Add(this.indicador_mini_desplegado);
-            this.grupo_minirov.Controls.Add(this.button1);
+            this.grupo_minirov.Controls.Add(this.campo_puerto_MiniROV);
+            this.grupo_minirov.Controls.Add(this.label7);
+            this.grupo_minirov.Controls.Add(this.indicador_mini_luces);
+            this.grupo_minirov.Controls.Add(this.campo_ip_MiniROV);
+            this.grupo_minirov.Controls.Add(this.label8);
+            this.grupo_minirov.Controls.Add(this.boton_Desplegar_MiniROV);
             this.grupo_minirov.Location = new System.Drawing.Point(1231, 27);
             this.grupo_minirov.Name = "grupo_minirov";
             this.grupo_minirov.Size = new System.Drawing.Size(115, 644);
@@ -710,35 +743,66 @@
             this.grupo_minirov.TabStop = false;
             this.grupo_minirov.Text = "Mini ROV";
             // 
-            // indicador_mini_luces
+            // etiqueta_indicador_linternas_mini
             // 
-            this.indicador_mini_luces.Location = new System.Drawing.Point(6, 189);
-            this.indicador_mini_luces.Name = "indicador_mini_luces";
-            this.indicador_mini_luces.Size = new System.Drawing.Size(103, 23);
-            this.indicador_mini_luces.TabIndex = 3;
-            this.indicador_mini_luces.Value = 27;
+            this.etiqueta_indicador_linternas_mini.AutoSize = true;
+            this.etiqueta_indicador_linternas_mini.Location = new System.Drawing.Point(6, 211);
+            this.etiqueta_indicador_linternas_mini.Name = "etiqueta_indicador_linternas_mini";
+            this.etiqueta_indicador_linternas_mini.Size = new System.Drawing.Size(50, 13);
+            this.etiqueta_indicador_linternas_mini.TabIndex = 37;
+            this.etiqueta_indicador_linternas_mini.Text = "Linternas";
             // 
             // indicador_mini_desplegado
             // 
             this.indicador_mini_desplegado.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.indicador_mini_desplegado.Enabled = false;
-            this.indicador_mini_desplegado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indicador_mini_desplegado.Location = new System.Drawing.Point(6, 139);
+            this.indicador_mini_desplegado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.indicador_mini_desplegado.ForeColor = System.Drawing.Color.Yellow;
+            this.indicador_mini_desplegado.Location = new System.Drawing.Point(6, 109);
             this.indicador_mini_desplegado.Name = "indicador_mini_desplegado";
-            this.indicador_mini_desplegado.Size = new System.Drawing.Size(103, 23);
-            this.indicador_mini_desplegado.TabIndex = 2;
-            this.indicador_mini_desplegado.Text = "No desplegado";
-            this.indicador_mini_desplegado.UseVisualStyleBackColor = false;
+            this.indicador_mini_desplegado.ReadOnly = true;
+            this.indicador_mini_desplegado.Size = new System.Drawing.Size(103, 20);
+            this.indicador_mini_desplegado.TabIndex = 11;
+            this.indicador_mini_desplegado.Text = "No Desplegado";
             // 
-            // button1
+            // label7
             // 
-            this.button1.BackgroundImage = global::EstacionControl.Properties.Resources.minirov;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(6, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 88);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 172);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 13);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "Puerto";
+            // 
+            // indicador_mini_luces
+            // 
+            this.indicador_mini_luces.Location = new System.Drawing.Point(6, 227);
+            this.indicador_mini_luces.Name = "indicador_mini_luces";
+            this.indicador_mini_luces.Size = new System.Drawing.Size(103, 23);
+            this.indicador_mini_luces.TabIndex = 3;
+            this.indicador_mini_luces.Value = 27;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 132);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 13);
+            this.label8.TabIndex = 35;
+            this.label8.Text = "Dirección IP";
+            // 
+            // boton_Desplegar_MiniROV
+            // 
+            this.boton_Desplegar_MiniROV.BackgroundImage = global::EstacionControl.Properties.Resources.minirov;
+            this.boton_Desplegar_MiniROV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.boton_Desplegar_MiniROV.Location = new System.Drawing.Point(6, 15);
+            this.boton_Desplegar_MiniROV.Name = "boton_Desplegar_MiniROV";
+            this.boton_Desplegar_MiniROV.Size = new System.Drawing.Size(103, 88);
+            this.boton_Desplegar_MiniROV.TabIndex = 0;
+            this.boton_Desplegar_MiniROV.UseVisualStyleBackColor = true;
+            this.boton_Desplegar_MiniROV.Click += new System.EventHandler(this.boton_Desplegar_MiniROV_Click);
             // 
             // titulo
             // 
@@ -786,6 +850,7 @@
             this.grupo_raspberry.ResumeLayout(false);
             this.grupo_raspberry.PerformLayout();
             this.grupo_minirov.ResumeLayout(false);
+            this.grupo_minirov.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -848,8 +913,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ToolStripMenuItem visorDeCámaraToolStripMenuItem;
         private System.Windows.Forms.GroupBox grupo_minirov;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button indicador_mini_desplegado;
+        private System.Windows.Forms.Button boton_Desplegar_MiniROV;
         private System.Windows.Forms.ProgressBar indicador_mini_luces;
         private System.Windows.Forms.Label titulo;
         private System.Windows.Forms.ToolStripMenuItem misionesToolStripMenuItem;
@@ -857,6 +921,12 @@
         private System.Windows.Forms.ToolStripMenuItem calcularVolumenToolStripMenuItem;
         private System.Windows.Forms.ProgressBar indicador_linternas;
         private System.Windows.Forms.ToolStripMenuItem diafragmaToolStripMenuItem;
+        private System.Windows.Forms.TextBox campo_puerto_MiniROV;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox campo_ip_MiniROV;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox indicador_mini_desplegado;
+        private System.Windows.Forms.Label etiqueta_indicador_linternas_mini;
     }
 }
 

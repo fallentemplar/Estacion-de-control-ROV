@@ -15,10 +15,7 @@ namespace EstacionControl.Ventanas
         private const int NUMERODECIMALES = 2;
         private const double GRAVEDAD = 9.81;
 
-        double masa;
-        double densidad;
         double volumen;
-        double pesoEnVacio;
 
         private double proporcion;
         
