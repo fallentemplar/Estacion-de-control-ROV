@@ -9,8 +9,19 @@ namespace EstacionControl.Ventanas
 {
     public partial class MisionCanon : Form
     {
+        private const double BRONCE = 8.03;
+        private const double HIERRO = 7.87;
+        private const int DENSIDADEAGUA = 997;
+        private const int NUMERODECIMALES = 2;
+        private const double GRAVEDAD = 9.81;
+
+        double masa;
+        double densidad;
+        double volumen;
+        double pesoEnVacio;
+
         private double proporcion;
-        private const int NUMERODECIMALES = 3;
+        
         private Image imagenProcesamiento;
         private double distancia;
         double[] longitudes;
@@ -171,9 +182,60 @@ namespace EstacionControl.Ventanas
 
         private void boton_calcular_volumen_Click(object sender, EventArgs e)
         {
-            double volumen = (1 / (double)3) * longitudes[3] * Math.PI * (Math.Pow(longitudes[0], 2) + Math.Pow(longitudes[1], 2)+longitudes[0]*longitudes[1]);
-            volumen -= Math.PI * Math.Pow(longitudes[2],2)*longitudes[3];
-            MessageBox.Show("Vol: " + Math.Round(volumen,NUMERODECIMALES)+ "cm^3");
+            double densidadCalculada = ObtenerDensidad();
+            if(densidadCalculada!=0)
+            {
+                volumen = (1 / (double)3) * longitudes[3] * Math.PI * (Math.Pow(longitudes[0], 2) + Math.Pow(longitudes[1], 2) + longitudes[0] * longitudes[1]);
+                volumen -= Math.PI * Math.Pow(longitudes[2], 2) * longitudes[3];
+                MessageBox.Show("Vol: " + Math.Round(volumen, NUMERODECIMALES) + "cm^3");
+                string composicion = densidadCalculada == HIERRO ? "Hierro (Iron)" : "Bronce (Bronze)";
+                MessageBox.Show("El cañón está compuesto de " + composicion + ".");
+                ObtenerPesoBajoAgua();
+            }else
+                MessageBox.Show("Debe seleccionar primero una Fundidora en el menú desplegable");
         }
+
+        private void ObtenerPesoBajoAgua()
+        {
+            /*
+             *Peso del líquido desalojado=masa de líquido desalojado por la gravedad= PL=mL·g
+             *Masa de líquido desalojado=volumen de líquido desalojado por la densidad del líquido=mL=VL·dL
+             *El volumen de líquido desalojado es igual al volumen del cuerpo sumergido.   
+             */
+            double masaLiquido = (volumen/1000000) * DENSIDADEAGUA;
+            double pesoBajoAgua = masaLiquido * GRAVEDAD;
+            MessageBox.Show("Peso bajo agua: " + Math.Round(pesoBajoAgua,2) + " Newtons");
+        }
+
+        private double ObtenerDensidad()
+        {
+            if (fundidoras.SelectedIndex == 0)
+                return 0;
+            else if (fundidoras.SelectedIndex == 1)
+                return BRONCE;
+            else if (fundidoras.SelectedIndex > 1)
+                return HIERRO;
+            return 0;
+        }
+
+        /*private void CalcularMasa()
+        {
+            masa = volumen * densidad;
+        }
+
+        private void CalcularPeso()
+        {
+            pesoEnVacio = masa * GRAVEDAD;
+        }
+
+        private double CalcularMasaLiquido()
+        {
+            return volumen * DENSIDADEAGUA;
+        }
+
+        private double CalcularPesoBajoAgua()
+        {
+            return CalcularMasaLiquido() * GRAVEDAD;
+        }*/
     }
 }

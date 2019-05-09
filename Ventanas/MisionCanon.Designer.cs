@@ -31,6 +31,7 @@
             this.imagen_procesamiento = new System.Windows.Forms.PictureBox();
             this.boton_Capturar = new System.Windows.Forms.Button();
             this.grupo_controles = new System.Windows.Forms.GroupBox();
+            this.fundidoras = new System.Windows.Forms.ComboBox();
             this.boton_longitudes = new System.Windows.Forms.Button();
             this.boton_calcular_volumen = new System.Windows.Forms.Button();
             this.campo_longitud = new System.Windows.Forms.TextBox();
@@ -38,7 +39,6 @@
             this.boton_D3 = new System.Windows.Forms.Button();
             this.boton_D2 = new System.Windows.Forms.Button();
             this.boton_D1 = new System.Windows.Forms.Button();
-            this.fundidoras = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.imagen_procesamiento)).BeginInit();
             this.grupo_controles.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +49,7 @@
             this.imagen_procesamiento.Location = new System.Drawing.Point(0, 0);
             this.imagen_procesamiento.Margin = new System.Windows.Forms.Padding(0);
             this.imagen_procesamiento.Name = "imagen_procesamiento";
-            this.imagen_procesamiento.Size = new System.Drawing.Size(464, 361);
+            this.imagen_procesamiento.Size = new System.Drawing.Size(524, 361);
             this.imagen_procesamiento.TabIndex = 0;
             this.imagen_procesamiento.TabStop = false;
             this.imagen_procesamiento.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ObtenerCoordenadasMouse);
@@ -66,6 +66,9 @@
             // 
             // grupo_controles
             // 
+            this.grupo_controles.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grupo_controles.Controls.Add(this.fundidoras);
             this.grupo_controles.Controls.Add(this.boton_longitudes);
             this.grupo_controles.Controls.Add(this.boton_calcular_volumen);
@@ -77,10 +80,18 @@
             this.grupo_controles.Controls.Add(this.boton_Capturar);
             this.grupo_controles.Location = new System.Drawing.Point(12, 249);
             this.grupo_controles.Name = "grupo_controles";
-            this.grupo_controles.Size = new System.Drawing.Size(440, 100);
+            this.grupo_controles.Size = new System.Drawing.Size(500, 100);
             this.grupo_controles.TabIndex = 2;
             this.grupo_controles.TabStop = false;
             this.grupo_controles.Text = "Opciones";
+            // 
+            // fundidoras
+            // 
+            this.fundidoras.FormattingEnabled = true;
+            this.fundidoras.Location = new System.Drawing.Point(372, 51);
+            this.fundidoras.Name = "fundidoras";
+            this.fundidoras.Size = new System.Drawing.Size(121, 21);
+            this.fundidoras.TabIndex = 9;
             // 
             // boton_longitudes
             // 
@@ -150,20 +161,12 @@
             this.boton_D1.UseVisualStyleBackColor = true;
             this.boton_D1.Click += new System.EventHandler(this.boton_D1_Click);
             // 
-            // fundidoras
-            // 
-            this.fundidoras.FormattingEnabled = true;
-            this.fundidoras.Location = new System.Drawing.Point(373, 49);
-            this.fundidoras.Name = "fundidoras";
-            this.fundidoras.Size = new System.Drawing.Size(121, 21);
-            this.fundidoras.TabIndex = 9;
-            // 
             // MisionCanon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(464, 361);
+            this.ClientSize = new System.Drawing.Size(524, 361);
             this.ControlBox = false;
             this.Controls.Add(this.grupo_controles);
             this.Controls.Add(this.imagen_procesamiento);
