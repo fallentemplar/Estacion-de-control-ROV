@@ -84,7 +84,7 @@ namespace EstacionControl
 
             //Hilo para manejar el control de XBOX ONE
             actualizarControles = new Thread(new ThreadStart(controles.ActualizarEstadoOrdenes)) { IsBackground = true };
-//            actualizarControles.Start();
+            //actualizarControles.Start();
 
             //Hilo de verificación de comunicación de dispositivos periféricos remotos
             dispositivosRemotos = new Thread(new ThreadStart(ComprobarDispositivosRemotos)) { IsBackground = true };

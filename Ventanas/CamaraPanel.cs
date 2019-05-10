@@ -47,12 +47,10 @@ namespace EstacionControl.Ventanas
                 }
                 if (camarasCorrectas != 3)
                     MessageBox.Show("Las cámaras configuradas están repetidas");
-                else
-                {
+                else{
                     MessageBox.Show("Los cambios han sido guardados con éxito");
                     this.Close();
                 }
-                    
             }
             else
                 MessageBox.Show("No se pueden omdificar las direcciones de las cámaras.\nmientras se recibe video");
@@ -62,13 +60,36 @@ namespace EstacionControl.Ventanas
         {
             if (EsIPValida(ip) && !Camaras.listaCamaras.ContainsValue(ip))
                 return true;
+            else if (!EsIPValida(ip)){
+                MessageBox.Show("Introduzca una IP válida en el cuadro de texto");
+                return false;
+            }
             return false;
         }
-
+        /// <summary>
+        /// EsIPValida: Comprueba mediante una RegExp si lo introducido en el cuadro de texto es una IP válida
+        ///
+        /// </summary>
+        /// <param name="ip">Dirección IP a verificar</param>
+        /// <returns></returns>
         private bool EsIPValida(string ip)
         {
-
-            return true;
+            string[] octetos = ip.Split('.');
+            if (octetos.Length == 4)
+            {
+                bool esValida = false;
+                foreach (string octeto in octetos)
+                {
+                    UInt16.TryParse(octeto, out UInt16 minimo);
+                    UInt16.TryParse(octeto, out UInt16 maximo);
+                    if (minimo > 0 && maximo <= 255)
+                        esValida = true;
+                    else
+                        return false;
+                }
+                return esValida;
+            }
+            return false;
         }
     }
 }

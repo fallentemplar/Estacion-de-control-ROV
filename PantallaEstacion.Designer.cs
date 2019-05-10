@@ -137,7 +137,7 @@
             this.camera_groupBox.Size = new System.Drawing.Size(701, 644);
             this.camera_groupBox.TabIndex = 60;
             this.camera_groupBox.TabStop = false;
-            this.camera_groupBox.Text = "Cámara principal";
+            this.camera_groupBox.Text = "Cámara 1";
             // 
             // label6
             // 
@@ -163,6 +163,7 @@
             this.botonReconociento.Size = new System.Drawing.Size(68, 68);
             this.botonReconociento.TabIndex = 33;
             this.botonReconociento.Text = "Identificar Especies";
+            this.burbuja_informacion.SetToolTip(this.botonReconociento, "Objeto de misión: Identificación de especies bentónicas");
             this.botonReconociento.UseVisualStyleBackColor = true;
             this.botonReconociento.Click += new System.EventHandler(this.botonReconociento_Click);
             // 
@@ -185,6 +186,7 @@
             this.boton_generarQR.Size = new System.Drawing.Size(68, 68);
             this.boton_generarQR.TabIndex = 31;
             this.boton_generarQR.Text = "Generar QR";
+            this.burbuja_informacion.SetToolTip(this.boton_generarQR, "Generar QR para obtener enlace de streaming para Cámara 1");
             this.boton_generarQR.UseVisualStyleBackColor = true;
             this.boton_generarQR.Click += new System.EventHandler(this.Boton_generarQR_Click);
             // 
@@ -196,6 +198,7 @@
             this.boton_video1.Name = "boton_video1";
             this.boton_video1.Size = new System.Drawing.Size(48, 47);
             this.boton_video1.TabIndex = 30;
+            this.burbuja_informacion.SetToolTip(this.boton_video1, "Grabar video con Cámara 1");
             this.boton_video1.UseVisualStyleBackColor = true;
             this.boton_video1.Click += new System.EventHandler(this.boton_video_Click);
             // 
@@ -207,6 +210,7 @@
             this.boton_fotografia1.Name = "boton_fotografia1";
             this.boton_fotografia1.Size = new System.Drawing.Size(55, 47);
             this.boton_fotografia1.TabIndex = 29;
+            this.burbuja_informacion.SetToolTip(this.boton_fotografia1, "Tomar fotografía con Cámara 1");
             this.boton_fotografia1.UseVisualStyleBackColor = true;
             this.boton_fotografia1.Click += new System.EventHandler(this.Boton_fotografia_Click);
             // 
@@ -218,6 +222,7 @@
             this.camara1_desconectar.Name = "camara1_desconectar";
             this.camara1_desconectar.Size = new System.Drawing.Size(70, 47);
             this.camara1_desconectar.TabIndex = 24;
+            this.burbuja_informacion.SetToolTip(this.camara1_desconectar, "Detener transmisión de video de cámara 1");
             this.camara1_desconectar.UseVisualStyleBackColor = true;
             this.camara1_desconectar.Click += new System.EventHandler(this.Camara_desconectar_Clic);
             // 
@@ -229,6 +234,7 @@
             this.camara1_conectar.Name = "camara1_conectar";
             this.camara1_conectar.Size = new System.Drawing.Size(62, 47);
             this.camara1_conectar.TabIndex = 23;
+            this.burbuja_informacion.SetToolTip(this.camara1_conectar, "Iniciar transmisión de video con Cámara 1");
             this.camara1_conectar.UseVisualStyleBackColor = true;
             this.camara1_conectar.Click += new System.EventHandler(this.Camara_conectar_Clic);
             // 
@@ -257,6 +263,7 @@
             this.raspberry_logo.Size = new System.Drawing.Size(40, 40);
             this.raspberry_logo.TabIndex = 10;
             this.raspberry_logo.TabStop = false;
+            this.burbuja_informacion.SetToolTip(this.raspberry_logo, "Raspberry ROV Principal");
             // 
             // arduino_logo
             // 
@@ -266,6 +273,7 @@
             this.arduino_logo.Size = new System.Drawing.Size(39, 40);
             this.arduino_logo.TabIndex = 9;
             this.arduino_logo.TabStop = false;
+            this.burbuja_informacion.SetToolTip(this.arduino_logo, "Arduino ROV Principal");
             // 
             // control2_logo
             // 
@@ -275,6 +283,7 @@
             this.control2_logo.Size = new System.Drawing.Size(39, 40);
             this.control2_logo.TabIndex = 8;
             this.control2_logo.TabStop = false;
+            this.burbuja_informacion.SetToolTip(this.control2_logo, "Control 2");
             // 
             // control1_logo
             // 
@@ -284,6 +293,7 @@
             this.control1_logo.Size = new System.Drawing.Size(39, 40);
             this.control1_logo.TabIndex = 7;
             this.control1_logo.TabStop = false;
+            this.burbuja_informacion.SetToolTip(this.control1_logo, "Control 1");
             // 
             // indicador_control2
             // 
@@ -564,7 +574,7 @@
             this.grupoCamaraSecundaria.Size = new System.Drawing.Size(506, 438);
             this.grupoCamaraSecundaria.TabIndex = 69;
             this.grupoCamaraSecundaria.TabStop = false;
-            this.grupoCamaraSecundaria.Text = "Cámara secundaria";
+            this.grupoCamaraSecundaria.Text = "Cámara 2";
             // 
             // label5
             // 
@@ -659,6 +669,7 @@
             this.boton_Conectar.Size = new System.Drawing.Size(145, 28);
             this.boton_Conectar.TabIndex = 34;
             this.boton_Conectar.Text = "¡Conectar!";
+            this.burbuja_informacion.SetToolTip(this.boton_Conectar, "Conectar a ROV Principal");
             this.boton_Conectar.UseVisualStyleBackColor = true;
             this.boton_Conectar.Click += new System.EventHandler(this.Boton_Conectar_Click);
             // 
@@ -801,6 +812,7 @@
             this.boton_Desplegar_MiniROV.Name = "boton_Desplegar_MiniROV";
             this.boton_Desplegar_MiniROV.Size = new System.Drawing.Size(103, 88);
             this.boton_Desplegar_MiniROV.TabIndex = 0;
+            this.burbuja_informacion.SetToolTip(this.boton_Desplegar_MiniROV, "Desplegar o desactivar Mini ROV");
             this.boton_Desplegar_MiniROV.UseVisualStyleBackColor = true;
             this.boton_Desplegar_MiniROV.Click += new System.EventHandler(this.boton_Desplegar_MiniROV_Click);
             // 
