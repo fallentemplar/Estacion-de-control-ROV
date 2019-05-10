@@ -127,14 +127,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EstacionControl.exe" size="5582776">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EstacionControl.exe" size="5587384">
       <assemblyIdentity name="EstacionControl" version="4.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>r+AUe4RUCZeGkddYnsAxx/0bGRUwIAKQxlSTME5LQcA=</dsig:DigestValue>
+        <dsig:DigestValue>VdxkZO6GWItcg4CmIuR5RRI3MPzZVbtL7N2fPGznXAs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

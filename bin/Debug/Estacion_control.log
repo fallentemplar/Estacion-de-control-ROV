@@ -4040,3 +4040,6 @@
 2019-05-04 15:34:12,062 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
 2019-05-04 15:34:12,239 [4] WARN EstacionControl.ConectividadRemota - No fue posible enviar datos
 2019-05-04 15:37:24,767 [4] WARN EstacionControl.ControlXBOX - No fue posible enviar la órden del control
+2019-05-10 15:07:14,705 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-10 15:07:45,379 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-10 15:11:43,757 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
