@@ -30,7 +30,7 @@ namespace EstacionControl.Dispositivos
             listaCamaras.Add(3, "192.168.0.9:9000");
         }
 
-        public static void TomarFotografia(Bitmap foto)
+        public static void GuardarFotografia(Bitmap foto)
         {
             DateTime Hoy = DateTime.Now;
             string fecha_actual = Hoy.ToString("dd-MM-yyyy HH-mm-ss");

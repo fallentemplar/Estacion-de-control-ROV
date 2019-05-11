@@ -84,7 +84,7 @@ namespace EstacionControl.Ventanas
         private void boton_fotografia1_Click(object sender, EventArgs e)
         {
             Bitmap foto = Camaras.CapturarImagen(visorCamara1);
-            Camaras.TomarFotografia(foto);
+            Camaras.GuardarFotografia(foto);
         }
     }
 }

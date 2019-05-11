@@ -388,7 +388,7 @@ namespace EstacionControl
         private void Boton_fotografia_Click(object sender, EventArgs e) //Método para tomar fotografía y almacenarla en disco
         {
             Bitmap foto = Camaras.CapturarImagen(visorCamara1);
-            Camaras.TomarFotografia(foto);
+            Camaras.GuardarFotografia(foto);
         }
 
         

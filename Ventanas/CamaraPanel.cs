@@ -42,17 +42,17 @@ namespace EstacionControl.Ventanas
             if (!PantallaEstacion.recibiendo_video1)
             {
                 SortedList<int, string> camarasTemporal = new SortedList<int, string>();
-                int camarasCorrectas = 0;
+                int cantidadCamarasCorrectas = 0;
                 
                 for(int i=0;i<camposCamaras.Length;i++)
                 {
                     if(AgregarRegistro(camposCamaras[i].Text+":"+camposPuertos[i].Text,camarasTemporal))
                     {
                         camarasTemporal.Add((i+1), camposCamaras[i].Text + ":" + camposPuertos[i].Text);
-                        camarasCorrectas++;
+                        cantidadCamarasCorrectas++;
                     }
                 }
-                if (camarasCorrectas != 3)
+                if (cantidadCamarasCorrectas != 3)
                     MessageBox.Show("Las cámaras configuradas están repetidas");
                 else{
                     Camaras.listaCamaras.Clear();
