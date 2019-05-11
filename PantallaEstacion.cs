@@ -90,7 +90,7 @@ namespace EstacionControl
 
             
             //Hilo de verificación de comunicación de dispositivos periféricos remotos
-            CrearThreads(ListaThreads.dispositivosRemotos);
+            //CrearThreads(ListaThreads.dispositivosRemotos);
 
             //Hilo de verificación de comunicación de dispositivos periféricos locales
             CrearThreads(ListaThreads.verifConectividad);
@@ -159,15 +159,23 @@ namespace EstacionControl
 
         void ComprobarDispositivosLocales()
         {
-            while(true)
+            try
             {
-                control1_conectado = controles.Estado_control(PlayerIndex.One);
-                indicador_control1.Invoke(new delegado_control(Control1_conexion), control1_conectado);
+                while (true)
+                {
+                    control1_conectado = controles.Estado_control(PlayerIndex.One);
+                    indicador_control1.Invoke(new delegado_control(Control1_conexion), control1_conectado);
 
-                control2_conectado = controles.Estado_control(PlayerIndex.Two);
-                indicador_control2.Invoke(new delegado_control(Control2_conexion), control2_conectado);
-                Thread.Sleep(500);
+                    control2_conectado = controles.Estado_control(PlayerIndex.Two);
+                    indicador_control2.Invoke(new delegado_control(Control2_conexion), control2_conectado);
+                    Thread.Sleep(500);
+                }
             }
+            catch (ThreadInterruptedException)
+            {
+
+            }
+            
         }
 
         void ComprobarDispositivosRemotos()
@@ -180,13 +188,13 @@ namespace EstacionControl
                     //socketReceptor.servidor.Connected;//socketReceptor.OperadorAND("servidor", (byte)socketReceptor.GetEstado());
                     indicador_raspberry.Invoke(new delegado_raspberry(Raspberry_conexion), raspberry_conectado);
 
-                    arduino_conectado = socketReceptor.OperadorAND("arduino", (byte)socketReceptor.estado);
+                    arduino_conectado = socketReceptor.OperadorAND("arduino", (byte)socketReceptor.EstadoDispositivos);
                     indicador_arduino.Invoke(new delegado_arduino(Arduino_conexion), arduino_conectado);
 
-                    profTemp_conectado = socketReceptor.OperadorAND("sensores", (byte)socketReceptor.estado);
+                    profTemp_conectado = socketReceptor.OperadorAND("sensores", (byte)socketReceptor.EstadoDispositivos);
                     indicador_profundidad.Invoke(new delegado_profTemp(Sensores_conexion), profTemp_conectado);
 
-                    giroscopio_conectado = socketReceptor.OperadorAND("acelerometro", (byte)socketReceptor.estado);
+                    giroscopio_conectado = socketReceptor.OperadorAND("acelerometro", (byte)socketReceptor.EstadoDispositivos);
                     giroscopio.PintarGiroscopio();
                     Thread.Sleep(500);
                 }
@@ -267,8 +275,8 @@ namespace EstacionControl
                 indicador_temperatura.BackColor = colorCampos;
                 indicador_profundidad.BackColor = colorCampos;
                 indicador_temperatura.ForeColor = Color.Yellow;
-                indicador_temperatura.Text = string.Format("{0:0.00}", (double)socketReceptor.temperatura)+ " ºC";
-                indicador_profundidad.Text = string.Format("{0:0.00}", (double)socketReceptor.profundidad)+ " metros";
+                indicador_temperatura.Text = string.Format("{0:0.00}", (double)socketReceptor.Temperatura)+ " ºC";
+                indicador_profundidad.Text = string.Format("{0:0.00}", (double)socketReceptor.Profundidad)+ " metros";
             }
             else
             {
@@ -482,6 +490,7 @@ namespace EstacionControl
                 if (hilo.Value != null && hilo.Value.IsAlive)
                     hilo.Value.Interrupt();
             }
+            coleccionThreads.Clear();
             DetenerRecepcionVideo();
             
             socketConector.conexionRealizada = false;

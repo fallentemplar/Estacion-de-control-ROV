@@ -4081,3 +4081,40 @@
 2019-05-11 05:29:14,335 [6] WARN EstacionControl.ControlXBOX - No fue posible enviar la órden del control
 2019-05-11 05:29:20,567 [1] INFO EstacionControl.PantallaEstacion - Thread creado: actualizarControles
 2019-05-11 05:29:20,574 [3] WARN EstacionControl.ControlXBOX - No fue posible enviar la órden del control
+2019-05-11 15:42:17,014 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-11 15:45:54,211 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-11 15:46:01,446 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-11 15:46:01,449 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-11 15:46:01,449 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-11 15:46:01,458 [7] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-11 15:54:52,316 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-11 15:54:55,016 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-11 15:54:55,018 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-11 15:54:55,018 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-11 15:54:55,027 [7] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-11 15:55:59,342 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-11 15:56:00,872 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-11 15:56:00,873 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-11 15:56:00,874 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-11 15:56:00,894 [6] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-11 15:57:32,160 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-11 15:57:38,653 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-11 15:57:38,655 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-11 15:57:38,655 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-11 15:57:38,664 [6] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-11 15:57:41,443 [8] WARN EstacionControl.ControlXBOX - No fue posible enviar la órden del control
+2019-05-11 15:57:42,787 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-11 15:57:42,788 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-11 15:57:42,788 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-11 15:57:42,797 [10] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-11 15:58:45,378 [1] INFO EstacionControl.PantallaEstacion - ----Iniciando ejecución----
+2019-05-11 15:58:59,931 [1] ERROR EstacionControl.ConectividadRemota - No se pudo establecer la conexión
+2019-05-11 15:59:11,482 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-11 15:59:11,483 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-11 15:59:11,483 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-11 15:59:11,493 [3] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota
+2019-05-11 15:59:22,679 [6] WARN EstacionControl.ControlXBOX - No fue posible enviar la órden del control
+2019-05-11 15:59:24,772 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-11 15:59:24,773 [1] INFO EstacionControl.ConectividadRemota - Conexión establecida
+2019-05-11 15:59:24,773 [1] DEBUG EstacionControl.ConectividadRemota - Socket creado
+2019-05-11 15:59:24,782 [8] DEBUG EstacionControl.ConectividadRemota - Iniciando recepción de datos en clase ConectividadRemota

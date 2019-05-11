@@ -230,6 +230,8 @@ E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control ROV\estaci
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control ROV\estacion-de-control-final\estacion-control\obj\Debug\EstacionControl.pdb
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\log4net.config
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\EstacionControl.exe.config
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\EstacionControl.exe.manifest
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\EstacionControl.application
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\EstacionControl.exe
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\EstacionControl.pdb
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\AForge.dll
@@ -243,8 +245,6 @@ E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\AForge.Video.FFMPEG.xml
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\AForge.Video.VFW.xml
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\AForge.Video.Ximea.xml
-E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\log4net.xml
-E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\WebEye.Controls.WinForms.StreamPlayerControl.pdb
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\Estacion_Control.csprojAssemblyReference.cache
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\EstacionControl.AcercaDe.resources
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\EstacionControl.CodigoQR.resources
@@ -257,10 +257,8 @@ E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\EstacionControl.Ventanas.VisorCamara.resources
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\Estacion_Control.csproj.GenerateResource.cache
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\Estacion_Control.csproj.CoreCompileInputs.cache
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\EstacionControl.exe.manifest
+E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\EstacionControl.application
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\Estacion_Control.csproj.CopyComplete
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\EstacionControl.exe
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\EstacionControl.pdb
-E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\EstacionControl.exe.manifest
-E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\bin\Debug\EstacionControl.application
-E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\EstacionControl.exe.manifest
-E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\obj\Debug\EstacionControl.application

@@ -10,19 +10,18 @@ namespace EstacionControl
     {
         private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        public string IP;
+        public string direccionIP;
         public int puerto;
         public Socket cliente;
         public Socket servidor;
         private byte[] dato;
 
-        int a { get; }
         //Variables de recepción de datos
-        public int estado { get; set; }
-        public float profundidad { get; set; }
-        public float temperatura { get; set; }
-        public float angX { get; set; }
-        public float angY { get; set; }
+        public int EstadoDispositivos { get; set; }
+        public float Profundidad { get; set; }
+        public float Temperatura { get; set; }
+        public float AnguloX { get; set; }
+        public float AnguloY { get; set; }
 
         //Bytes de comparación de dispositivos
         const byte byteServidor = 0b_0000_0001;
@@ -32,17 +31,16 @@ namespace EstacionControl
 
         public bool conexionRealizada;
 
-        public ConectividadRemota(string ipD)
+        public ConectividadRemota(string direccionIPDestino)
         {
-            IP = ipD;
-            puerto = 7000;
-            
+            direccionIP = direccionIPDestino;
+            this.puerto = 7000;
         }
 
-        public ConectividadRemota(string ipD,int port)
+        public ConectividadRemota(string direccionIPDestino,int puertoDestino)
         {
-            IP = ipD;
-            puerto = port;
+            direccionIP = direccionIPDestino;
+            this.puerto = puertoDestino;
         }
 
 
@@ -68,19 +66,20 @@ namespace EstacionControl
             }
         }
 
-
-        /*
-         * Método para conectar a un host remoto
-         * Usar para socket cliente
-         */
+        /// <summary>
+        /// Método para conectar a un host remoto
+        /// Usar para socket cliente
+        /// </summary>
+        /// <param name="ipDestino"></param>
+        /// <returns></returns>
         public bool Conectar(string ipDestino) 
         {
-            IP = ipDestino;
+            direccionIP = ipDestino;
             cliente = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             conexionRealizada = false;
             try
             {
-                cliente.Connect(IP, puerto);
+                cliente.Connect(direccionIP, puerto);
                 if (cliente.Connected)
                 {
                     conexionRealizada = true;
@@ -94,18 +93,22 @@ namespace EstacionControl
             }
             return conexionRealizada;
         }
-        /*
-         * Método para conectar a un host remoto
-         * Usar para socket servidor
-         */
-        public bool Conectar(string ipDestino,int puertoD)
+        
+        /// <summary>
+        /// Método para conectar a un host remoto.
+        /// Usar para socket servidor
+        /// </summary>
+        /// <param name="ipDestino"></param>
+        /// <param name="puertoDestino"></param>
+        /// <returns></returns>
+        public bool Conectar(string ipDestino,int puertoDestino)
         {
-            IP = ipDestino;
+            direccionIP = ipDestino;
             servidor = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             conexionRealizada = false;
             try
             {
-                servidor.Connect(IP, puertoD);
+                servidor.Connect(direccionIP, puertoDestino);
                 if (servidor.Connected)
                 {
                     conexionRealizada = true;
@@ -120,21 +123,24 @@ namespace EstacionControl
             }
             return conexionRealizada;
         }
-        /*
-         * Método para enviar la información de los botones del control de XBOX a Raspberry
-         * Envía cada boton de manera individual cuando es presionado
-         * dato[0] es el identificador del boton presionado
-         * dato[1-4] es el valor del boton pulsado, convertido de un flotante a una cadena de bytes
-         */
-        public void EnviarDatos(byte boton, float cantidad)
+        
+        /// <summary>
+        /// Método para enviar la información de los botones del control de XBOX a Raspberry
+        /// Envía cada boton de manera individual cuando es presionado
+        /// dato[0] es el identificador del boton presionado
+        /// dato[1 - 4] es el valor del boton pulsado, convertido de un flotante a una cadena de bytes
+        /// </summary>
+        /// <param name="boton"></param>
+        /// <param name="valor"></param>
+        public void EnviarDatos(byte boton, float valor)
         {
-            byte[] valor= BitConverter.GetBytes(cantidad);
+            byte[] valorEnBytes= BitConverter.GetBytes(valor);
             dato = new byte[5];
             dato[0] = boton;
-            dato[1] = valor[0];
-            dato[2] = valor[1];
-            dato[3] = valor[2];
-            dato[4] = valor[3];
+            dato[1] = valorEnBytes[0];
+            dato[2] = valorEnBytes[1];
+            dato[3] = valorEnBytes[2];
+            dato[4] = valorEnBytes[3];
             try{
                 cliente.Send(dato);
             }catch{
@@ -180,18 +186,17 @@ namespace EstacionControl
                 {   
                     var info = servidor.Receive(buffer);
                 }
-                estado = (int)buffer[0];
-                profundidad = BitConverter.ToSingle(Fragmentar(buffer, 9), 0);
-                temperatura = BitConverter.ToSingle(Fragmentar(buffer, 13), 0);
-                angX = BitConverter.ToSingle(Fragmentar(buffer, 17), 0);
-                angY = BitConverter.ToSingle(Fragmentar(buffer, 21), 0);
+                EstadoDispositivos = (int)buffer[0];
+                Profundidad = BitConverter.ToSingle(FragmentarArrayBytes(buffer, 9), 0);
+                Temperatura = BitConverter.ToSingle(FragmentarArrayBytes(buffer, 13), 0);
+                AnguloX = BitConverter.ToSingle(FragmentarArrayBytes(buffer, 17), 0);
+                AnguloY = BitConverter.ToSingle(FragmentarArrayBytes(buffer, 21), 0);
 
-                //log.Info("\nProfundidad: " + profundidad + "\nTemperatura: " + temperatura + "\nAnguloX: " + angX + "\nAnguloY: " + angY);
                 Thread.Sleep(500);
             }
         }
 
-        public byte[] Fragmentar(Byte[] array, int indice)
+        public byte[] FragmentarArrayBytes(byte[] array, int indice)
         {
             byte[] nuevo = new byte[4];
             Buffer.BlockCopy(array, indice, nuevo, 0, 4);
