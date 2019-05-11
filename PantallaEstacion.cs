@@ -531,18 +531,18 @@ namespace EstacionControl
 
         private void botonReconociento_Click(object sender, EventArgs e)
         {
-            Stopwatch a = new Stopwatch();
+            Stopwatch cronometroRendimiento = new Stopwatch();
             ClasificacionFiguras clasificador = new ClasificacionFiguras();
             
             Bitmap bitmap = Camaras.CapturarImagen(visorCamara1);
             if(bitmap != null)
             {
-                a.Start();
+                cronometroRendimiento.Start();
                 bitmap = BitMaps.DrawAsNegative(bitmap);
                 EspeciesReconocidas especiesReconocidas = new EspeciesReconocidas(clasificador.ProcesarImagen(bitmap),cantidadFiguras);
-                a.Stop();
+                cronometroRendimiento.Stop();
                 especiesReconocidas.ShowDialog();
-                log.Info("Tiempo de identificación: " + (double)a.ElapsedMilliseconds / 1000);
+                log.Info("Tiempo de identificación: " + (double)cronometroRendimiento.ElapsedMilliseconds / 1000);
             }
         }
 

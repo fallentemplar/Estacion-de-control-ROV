@@ -121,12 +121,11 @@
     <Compile Include="Ventanas\AcercaDe.Designer.cs">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </Compile>
-    <Compile Include="BitMaps.cs" />
     <Compile Include="ClasificacionFiguras.cs" />
-    <Compile Include="CodigoQR.cs">
+    <Compile Include="Ventanas\CodigoQR.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CodigoQR.Designer.cs">
+    <Compile Include="Ventanas\CodigoQR.Designer.cs">
       <DependentUpon>CodigoQR.cs</DependentUpon>
     </Compile>
     <Compile Include="ConectividadRemota.cs" />
@@ -175,7 +174,7 @@
     <EmbeddedResource Include="Ventanas\AcercaDe.resx">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CodigoQR.resx">
+    <EmbeddedResource Include="Ventanas\CodigoQR.resx">
       <DependentUpon>CodigoQR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dispositivos\Sensores\Giroscopio.resx">
