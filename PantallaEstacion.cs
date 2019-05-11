@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
+using System.Collections.Generic;
 using XInputDotNetPure;
 using System.Net.Sockets;
 using log4net;
@@ -52,12 +53,13 @@ namespace EstacionControl
 
         #region Threads Principales
         //Threads principales
-        Thread actualizarControles;
-        Thread dispositivosRemotos;
-        Thread capturarVideo;
-        Thread conexionConRaspberry;
+        //Thread actualizarControles;
+        //Thread dispositivosRemotos;
+        //Thread capturarVideo;
+        //Thread conexionConRaspberry;
         #endregion
 
+        SortedList<string, Thread> coleccionThreads;
 
         public PantallaEstacion()
         {
@@ -68,7 +70,8 @@ namespace EstacionControl
             this.SetStyle(ControlStyles.UserPaint, true);
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             this.SetStyle(ControlStyles.ResizeRedraw, true);
-            grabandoVideo1 = false;
+
+            coleccionThreads = new SortedList<string, Thread>();
         }
         
         //Se inician múltiples hilos del programa y se ejecutan en segundo plano
@@ -82,17 +85,27 @@ namespace EstacionControl
             controles = new ControlXBOX(socketConector,this);
             giroscopio = new Giroscopio(socketReceptor);
 
+            /*
             //Hilo para manejar el control de XBOX ONE
-            actualizarControles = new Thread(new ThreadStart(controles.ActualizarEstadoOrdenes)) { IsBackground = true };
+            Thread actualizarControles = new Thread(new ThreadStart(controles.ActualizarEstadoOrdenes)) { IsBackground = true };
+            coleccionThreads.Add("actualizarControles", actualizarControles);
             //actualizarControles.Start();
+            */
+            //CrearThreads(ListaThreads.actualizarControles);
 
+            /*
             //Hilo de verificación de comunicación de dispositivos periféricos remotos
-            dispositivosRemotos = new Thread(new ThreadStart(ComprobarDispositivosRemotos)) { IsBackground = true };
+            Thread dispositivosRemotos = new Thread(new ThreadStart(ComprobarDispositivosRemotos)) { IsBackground = true };
             dispositivosRemotos.Priority = ThreadPriority.AboveNormal;
+            */
+            CrearThreads(ListaThreads.dispositivosRemotos);
 
+            /*
             //Hilo de verificación de comunicación de dispositivos periféricos locales
             Thread verifConectividad = new Thread(new ThreadStart(ComprobarDispositivosLocales)) { IsBackground = true };
             verifConectividad.Start();
+            */
+            CrearThreads(ListaThreads.verifConectividad);
 
             PintarElementos();
 
@@ -257,14 +270,6 @@ namespace EstacionControl
             }        
         }
 
-        /*void Camara_conexion(bool estado)
-        {
-            if (!camara1_desconectar.Enabled && !recibiendo_video1 && estado)
-                camara1_conectar.Enabled = true;
-            else
-                camara1_conectar.Enabled = false;
-        }*/
-        
         void Sensores_conexion(bool estado)
         {
             indicador_temperatura.ForeColor = Color.Yellow;
@@ -391,11 +396,8 @@ namespace EstacionControl
             Camaras.GuardarFotografia(foto);
         }
 
-        
-
         private void Cerrar(object sender, FormClosingEventArgs e)
         {
-            //socketConector.CerrarConexion();
             Desconectar();
         }
 
@@ -432,15 +434,12 @@ namespace EstacionControl
                         puerto_texto.Enabled = false;
 
                         camara2_conectar.Enabled = true;
-                        actualizarControles.Start();
-                        dispositivosRemotos.IsBackground = true;
-                        dispositivosRemotos.Start();
 
                         boton_Conectar.Text = "Desconectar";
 
-                        conexionConRaspberry = new Thread(new ThreadStart(ComprobarRaspberry)) { IsBackground = true }; //Verifica 
-                        conexionConRaspberry.Priority = ThreadPriority.Highest;
-                        conexionConRaspberry.Start();
+                        CrearThreads(ListaThreads.dispositivosRemotos);
+                        CrearThreads(ListaThreads.actualizarControles);
+                        CrearThreads(ListaThreads.conexionConRaspberry);
                     }
                     else
                         MessageBox.Show("No se pudo establecer la conexión remota", "Error de conexión",
@@ -490,26 +489,25 @@ namespace EstacionControl
             puerto_texto.Enabled = true;
 
             camara2_conectar.Enabled = false;
-            if (actualizarControles != null && actualizarControles.IsAlive) 
-                actualizarControles.Interrupt();
-            if (dispositivosRemotos != null && dispositivosRemotos.IsAlive) 
-                dispositivosRemotos.Interrupt();
+            foreach(var hilo in coleccionThreads)
+            {
+                if (hilo.Value != null && hilo.Value.IsAlive)
+                    hilo.Value.Interrupt();
+            }
             DetenerRecepcionVideo();
-            if (conexionConRaspberry != null && conexionConRaspberry.IsAlive)
-                conexionConRaspberry.Interrupt();
+            
             socketConector.conexionRealizada = false;
         }
 
         private void SolicitarDatos()
         {
-            log.Debug("Llamada a método [solicitarDatos]");
             socketReceptor.SolicitarRecepcion();
         }
 
         private void AcercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AcercaDe a = new AcercaDe();
-            a.ShowDialog();
+            AcercaDe ventana = new AcercaDe();
+            ventana.ShowDialog();
         }
 
         private void Boton_generarQR_Click(object sender, EventArgs e)
@@ -551,15 +549,16 @@ namespace EstacionControl
         private void boton_video_Click(object sender, EventArgs e) //Grabación de video recibido en Visor #1
         {
             log.Info("Grabando video");
-            capturarVideo = new Thread(new ThreadStart(GrabarVideo)) { IsBackground = true };
+            //Thread capturarVideo = new Thread(new ThreadStart(GrabarVideo)) { IsBackground = true };
             if (!grabandoVideo1){
+                
                 boton_video1.Image = EstacionControl.Properties.Resources.stop_micro;
                 grabandoVideo1 = true;
-                capturarVideo.Start();
+                CrearThreads(ListaThreads.capturarVideo);
             }else{
                 boton_video1.Image = EstacionControl.Properties.Resources.video_1_micro;
                 grabandoVideo1 = false;
-                capturarVideo.Abort();
+                coleccionThreads[ListaThreads.capturarVideo].Interrupt();
             }
         }
 
@@ -667,10 +666,6 @@ namespace EstacionControl
                     socketMiniROV = new ConectividadRemota(campo_ip_MiniROV.Text);
                     try
                     {
-                        /*socketMiniROV.Conectar(campo_ip_MiniROV.Text);
-                        controles.miniROVDesplegado = true;
-                        controles.conector = socketMiniROV;*/
-                        //MessageBox.Show("El Mini ROV ha sido desplegado");
                         indicador_mini_desplegado.Text = "Desplegado";
                         indicador_mini_desplegado.ForeColor = Color.Yellow;
                         miniROVDesplegado = true;
@@ -684,14 +679,55 @@ namespace EstacionControl
                 }
                 else
                 {
-                    /*socketMiniROV.CerrarConexion();
-                    controles.conector = socketConector;*/
-                    //MessageBox.Show("El Mini ROV ha sido recuperado");
                     indicador_mini_desplegado.Text = "No Desplegado";
                     indicador_mini_desplegado.ForeColor = Color.Red;
                     miniROVDesplegado = false;
                 }
             }
         }
+
+        private void CrearThreads(string nombreThread)
+        {
+            switch(nombreThread)
+            {
+                case ListaThreads.actualizarControles:
+                    //Hilo para manejar el control de XBOX ONE
+                    Thread actualizarControles = new Thread(new ThreadStart(controles.ActualizarEstadoOrdenes)) { IsBackground = true };
+                    coleccionThreads.Add(ListaThreads.actualizarControles, actualizarControles);
+                    actualizarControles.Start();
+                    break;
+                case ListaThreads.dispositivosRemotos:
+                    Thread dispositivosRemotos = new Thread(new ThreadStart(ComprobarDispositivosRemotos)) { IsBackground = true };
+                    dispositivosRemotos.Priority = ThreadPriority.AboveNormal;
+                    coleccionThreads.Add(ListaThreads.dispositivosRemotos, dispositivosRemotos);
+                    dispositivosRemotos.Start();
+                    break;
+                case ListaThreads.verifConectividad:
+                    //Hilo de verificación de comunicación de dispositivos periféricos locales
+                    Thread verifConectividad = new Thread(new ThreadStart(ComprobarDispositivosLocales)) { IsBackground = true };
+                    coleccionThreads.Add(ListaThreads.verifConectividad, verifConectividad);
+                    verifConectividad.Start();
+                    break;
+                case ListaThreads.capturarVideo:
+                    Thread capturarVideo = new Thread(new ThreadStart(GrabarVideo)) { IsBackground = true };
+                    coleccionThreads.Add(ListaThreads.capturarVideo, capturarVideo);
+                    capturarVideo.Start();
+                    break;
+                case ListaThreads.conexionConRaspberry:
+                    Thread conexionConRaspberry = new Thread(new ThreadStart(ComprobarRaspberry)) { IsBackground = true }; //Verifica 
+                    conexionConRaspberry.Priority = ThreadPriority.Highest;
+                    conexionConRaspberry.Start();
+                    break;
+            }
+        }
+    }
+
+    class ListaThreads
+    {
+        public const string actualizarControles = "actualizarControles";
+        public const string dispositivosRemotos = "dispositivosRemotos";
+        public const string verifConectividad = "verifConectividad";
+        public const string capturarVideo = "capturarVideo";
+        public const string conexionConRaspberry = "conexionConRaspberry";
     }
 }
