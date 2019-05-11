@@ -85,26 +85,14 @@ namespace EstacionControl
             controles = new ControlXBOX(socketConector,this);
             giroscopio = new Giroscopio(socketReceptor);
 
-            /*
             //Hilo para manejar el control de XBOX ONE
-            Thread actualizarControles = new Thread(new ThreadStart(controles.ActualizarEstadoOrdenes)) { IsBackground = true };
-            coleccionThreads.Add("actualizarControles", actualizarControles);
-            //actualizarControles.Start();
-            */
             //CrearThreads(ListaThreads.actualizarControles);
 
-            /*
+            
             //Hilo de verificación de comunicación de dispositivos periféricos remotos
-            Thread dispositivosRemotos = new Thread(new ThreadStart(ComprobarDispositivosRemotos)) { IsBackground = true };
-            dispositivosRemotos.Priority = ThreadPriority.AboveNormal;
-            */
             CrearThreads(ListaThreads.dispositivosRemotos);
 
-            /*
             //Hilo de verificación de comunicación de dispositivos periféricos locales
-            Thread verifConectividad = new Thread(new ThreadStart(ComprobarDispositivosLocales)) { IsBackground = true };
-            verifConectividad.Start();
-            */
             CrearThreads(ListaThreads.verifConectividad);
 
             PintarElementos();
