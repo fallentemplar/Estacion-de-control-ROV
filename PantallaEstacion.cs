@@ -649,7 +649,7 @@ namespace EstacionControl
                 diafragmaAbierto = false;
                 diafragmaToolStripMenuItem.Text = "Abrir diafragma";
             }
-            socketConector.EnviarDatos((Byte)BotonesXBOX.Comando, (float)4);
+            socketConector.EnviarDatos((Byte)BotonesXBOX.Comando, (float)Comandos.AbrirDiafragma);
         }
 
         private void boton_Desplegar_MiniROV_Click(object sender, EventArgs e)

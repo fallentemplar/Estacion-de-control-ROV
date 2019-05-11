@@ -219,35 +219,11 @@ namespace EstacionControl
             }
             return false;
         }
-
-        /*public int GetEstado()
-        {
-            return estado;
-        }
-
-        public bool RaspberryConectada()
-        {
-            return conexionRealizada;
-        }*/
-
-        /*public float getTemperatura()
-        {
-            return temperatura;
-        }
-
-        public float getProfundidad()
-        {
-            return profundidad;
-        }
-
-        public float getAngX()
-        {
-            return angX;
-        }
-
-        public float getAngY()
-        {
-            return angY;
-        }*/
     }
+
+    public enum Comandos
+    {
+        AbrirDiafragma=4,
+    }
+
 }
