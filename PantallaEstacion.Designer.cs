@@ -67,6 +67,7 @@
             this.giroscopioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraciónDeCámarasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visorDeCámaraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modoVictoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.misionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.canonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calcularVolumenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -91,13 +92,13 @@
             this.burbuja_informacion = new System.Windows.Forms.ToolTip(this.components);
             this.campo_puerto_MiniROV = new System.Windows.Forms.TextBox();
             this.campo_ip_MiniROV = new System.Windows.Forms.TextBox();
+            this.boton_Desplegar_MiniROV = new System.Windows.Forms.Button();
             this.grupo_minirov = new System.Windows.Forms.GroupBox();
             this.etiqueta_indicador_linternas_mini = new System.Windows.Forms.Label();
             this.indicador_mini_desplegado = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.indicador_mini_luces = new System.Windows.Forms.ProgressBar();
             this.label8 = new System.Windows.Forms.Label();
-            this.boton_Desplegar_MiniROV = new System.Windows.Forms.Button();
             this.titulo = new System.Windows.Forms.Label();
             this.camera_groupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -477,7 +478,8 @@
             this.herramientasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.giroscopioToolStripMenuItem,
             this.configuraciónDeCámarasToolStripMenuItem,
-            this.visorDeCámaraToolStripMenuItem});
+            this.visorDeCámaraToolStripMenuItem,
+            this.modoVictoriaToolStripMenuItem});
             this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
             this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
             this.herramientasToolStripMenuItem.Text = "Herramientas";
@@ -487,23 +489,32 @@
             this.giroscopioToolStripMenuItem.Name = "giroscopioToolStripMenuItem";
             this.giroscopioToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.G)));
-            this.giroscopioToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.giroscopioToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.giroscopioToolStripMenuItem.Text = "Giroscopio";
             this.giroscopioToolStripMenuItem.Click += new System.EventHandler(this.giroscopioToolStripMenuItem_Click);
             // 
             // configuraciónDeCámarasToolStripMenuItem
             // 
             this.configuraciónDeCámarasToolStripMenuItem.Name = "configuraciónDeCámarasToolStripMenuItem";
-            this.configuraciónDeCámarasToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.configuraciónDeCámarasToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.configuraciónDeCámarasToolStripMenuItem.Text = "Configuración de cámaras";
             this.configuraciónDeCámarasToolStripMenuItem.Click += new System.EventHandler(this.configuraciónDeCámarasToolStripMenuItem_Click);
             // 
             // visorDeCámaraToolStripMenuItem
             // 
             this.visorDeCámaraToolStripMenuItem.Name = "visorDeCámaraToolStripMenuItem";
-            this.visorDeCámaraToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.visorDeCámaraToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.visorDeCámaraToolStripMenuItem.Text = "Visor de cámara";
             this.visorDeCámaraToolStripMenuItem.Click += new System.EventHandler(this.visorDeCámaraToolStripMenuItem_Click);
+            // 
+            // modoVictoriaToolStripMenuItem
+            // 
+            this.modoVictoriaToolStripMenuItem.Name = "modoVictoriaToolStripMenuItem";
+            this.modoVictoriaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.V)));
+            this.modoVictoriaToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.modoVictoriaToolStripMenuItem.Text = "Modo Victoria";
+            this.modoVictoriaToolStripMenuItem.Click += new System.EventHandler(this.modoVictoriaToolStripMenuItem_Click);
             // 
             // misionesToolStripMenuItem
             // 
@@ -737,6 +748,18 @@
             this.campo_ip_MiniROV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.burbuja_informacion.SetToolTip(this.campo_ip_MiniROV, "Dirección IP del servidor");
             // 
+            // boton_Desplegar_MiniROV
+            // 
+            this.boton_Desplegar_MiniROV.BackgroundImage = global::EstacionControl.Properties.Resources.minirov;
+            this.boton_Desplegar_MiniROV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.boton_Desplegar_MiniROV.Location = new System.Drawing.Point(6, 15);
+            this.boton_Desplegar_MiniROV.Name = "boton_Desplegar_MiniROV";
+            this.boton_Desplegar_MiniROV.Size = new System.Drawing.Size(103, 88);
+            this.boton_Desplegar_MiniROV.TabIndex = 0;
+            this.burbuja_informacion.SetToolTip(this.boton_Desplegar_MiniROV, "Desplegar o desactivar Mini ROV");
+            this.boton_Desplegar_MiniROV.UseVisualStyleBackColor = true;
+            this.boton_Desplegar_MiniROV.Click += new System.EventHandler(this.boton_Desplegar_MiniROV_Click);
+            // 
             // grupo_minirov
             // 
             this.grupo_minirov.Controls.Add(this.etiqueta_indicador_linternas_mini);
@@ -803,18 +826,6 @@
             this.label8.Size = new System.Drawing.Size(65, 13);
             this.label8.TabIndex = 35;
             this.label8.Text = "Dirección IP";
-            // 
-            // boton_Desplegar_MiniROV
-            // 
-            this.boton_Desplegar_MiniROV.BackgroundImage = global::EstacionControl.Properties.Resources.minirov;
-            this.boton_Desplegar_MiniROV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.boton_Desplegar_MiniROV.Location = new System.Drawing.Point(6, 15);
-            this.boton_Desplegar_MiniROV.Name = "boton_Desplegar_MiniROV";
-            this.boton_Desplegar_MiniROV.Size = new System.Drawing.Size(103, 88);
-            this.boton_Desplegar_MiniROV.TabIndex = 0;
-            this.burbuja_informacion.SetToolTip(this.boton_Desplegar_MiniROV, "Desplegar o desactivar Mini ROV");
-            this.boton_Desplegar_MiniROV.UseVisualStyleBackColor = true;
-            this.boton_Desplegar_MiniROV.Click += new System.EventHandler(this.boton_Desplegar_MiniROV_Click);
             // 
             // titulo
             // 
@@ -939,6 +950,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox indicador_mini_desplegado;
         private System.Windows.Forms.Label etiqueta_indicador_linternas_mini;
+        private System.Windows.Forms.ToolStripMenuItem modoVictoriaToolStripMenuItem;
     }
 }
 

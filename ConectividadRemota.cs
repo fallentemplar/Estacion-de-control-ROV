@@ -143,27 +143,60 @@ namespace EstacionControl
             dato[4] = valorEnBytes[3];
             try{
                 cliente.Send(dato);
-            }catch{
+            }catch(Exception){
+                log.Warn("No fue posible enviar datos");
+            }
+        }
+
+        public void EnviarDatos(byte boton, Int32 valor)
+        {
+            byte[] valorEnBytes = BitConverter.GetBytes(valor);
+            dato = new byte[5];
+            dato[0] = boton;
+            dato[1] = valorEnBytes[0];
+            dato[2] = valorEnBytes[1];
+            dato[3] = valorEnBytes[2];
+            dato[4] = valorEnBytes[3];
+            try
+            {
+                cliente.Send(dato);
+            }
+            catch (Exception)
+            {
                 log.Warn("No fue posible enviar datos");
             }
         }
 
         public void CerrarConexion()
         {
-            if(cliente!=null && servidor!=null)
+            log.Info("Intentando cerrar conexión");
+            try
             {
-                try{
+                if (cliente != null)
+                {
                     cliente.Shutdown(SocketShutdown.Both);
-                    servidor.Shutdown(SocketShutdown.Both);
                     cliente.Disconnect(true);
-                    servidor.Disconnect(true);
                     cliente.Close();
-                    servidor.Close();
-                }catch (NullReferenceException){
-                    log.Error("La conexión no ha sido inicializada, por tanto, no puede ser cerrada");
-                }catch (SocketException){
-                    log.Error("La conexión no ha sido inicializada, por tanto, no puede ser cerrada");
                 }
+                if (servidor != null)
+                {
+                    servidor.Shutdown(SocketShutdown.Both);
+                    servidor.Disconnect(true);
+                    servidor.Close();
+                }
+                log.Info("La conexión ha sido cerrada");
+            }
+            catch (NullReferenceException)
+            {
+                log.Error("La conexión no ha sido inicializada, por tanto, no puede ser cerrada");
+            }
+            catch (SocketException)
+            {
+                log.Error("La conexión no ha sido inicializada, por tanto, no puede ser cerrada");
+            }
+            catch (Exception)
+            {
+                log.Error("Excepción no controlada");
             }
         }
 
@@ -180,19 +213,30 @@ namespace EstacionControl
         {
             log.Debug("Iniciando recepción de datos en clase ConectividadRemota");
             var buffer = new Byte[25];
-            while (true)
+            try
             {
-                while (servidor.Available > 0)
-                {   
-                    var info = servidor.Receive(buffer);
-                }
-                EstadoDispositivos = (int)buffer[0];
-                Profundidad = BitConverter.ToSingle(FragmentarArrayBytes(buffer, 9), 0);
-                Temperatura = BitConverter.ToSingle(FragmentarArrayBytes(buffer, 13), 0);
-                AnguloX = BitConverter.ToSingle(FragmentarArrayBytes(buffer, 17), 0);
-                AnguloY = BitConverter.ToSingle(FragmentarArrayBytes(buffer, 21), 0);
+                while (true)
+                {
+                    while (servidor.Available > 0)
+                    {
+                        var info = servidor.Receive(buffer);
+                    }
+                    EstadoDispositivos = (int)buffer[0];
+                    Profundidad = BitConverter.ToSingle(FragmentarArrayBytes(buffer, 9), 0);
+                    Temperatura = BitConverter.ToSingle(FragmentarArrayBytes(buffer, 13), 0);
+                    AnguloX = BitConverter.ToSingle(FragmentarArrayBytes(buffer, 17), 0);
+                    AnguloY = BitConverter.ToSingle(FragmentarArrayBytes(buffer, 21), 0);
 
-                Thread.Sleep(500);
+                    Thread.Sleep(500);
+                }
+            }
+            catch (ThreadInterruptedException)
+            {
+                log.Info("Hilo de recepción de datos interrumpido");
+            }
+            catch(Exception)
+            {
+                log.Info("Se detuvo la recepción de datos");
             }
         }
 
@@ -230,5 +274,4 @@ namespace EstacionControl
     {
         AbrirDiafragma=4,
     }
-
 }

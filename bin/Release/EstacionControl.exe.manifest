@@ -4,7 +4,7 @@
   <description asmv2:iconFile="logo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="EstacionControl" version="4.0.0.0" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="EstacionControl" version="4.5.0.0" language="neutral" processorArchitecture="x86" />
     <commandLine file="EstacionControl.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -127,14 +127,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EstacionControl.exe" size="5582776">
-      <assemblyIdentity name="EstacionControl" version="4.0.0.0" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EstacionControl.exe" size="9822648">
+      <assemblyIdentity name="EstacionControl" version="4.5.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>F/2yL82yEQB0eM1R9hS46UvDzcCCGJHP5Dsp1r0wppI=</dsig:DigestValue>
+        <dsig:DigestValue>k133KPHiJwA1XwDFbPqj5SpzP/h/irA5d5tvAGaMQT8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

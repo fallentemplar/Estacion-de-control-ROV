@@ -245,6 +245,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\la cucaracha.wav" />
     <None Include="Resources\QR.jpg" />
     <None Include="Resources\minirov.bmp" />
     <None Include="Resources\micro-rov.jpg" />

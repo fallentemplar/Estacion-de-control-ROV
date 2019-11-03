@@ -110,9 +110,13 @@ namespace EstacionControl
                     ////////////////BOTONES DE ACCIÓN////////////////
                     BotonesAccion(control1, control2);
                     ////////////////FIN BOTONES DE ACCIÓN////////////
-                    Thread.Sleep(20);
+                    Thread.Sleep(50);
                 }
-            }catch (Exception){
+            }catch (ThreadInterruptedException){
+                log.Warn("ActualizarEstadoOrdenes detenido");
+            }
+            catch (Exception)
+            {
                 log.Warn("No fue posible enviar la órden del control");
             }
         }
@@ -328,23 +332,19 @@ namespace EstacionControl
         private void DPad(GamePadState control1, GamePadState control2)
         {
             #region Control1
-            if (control1.DPad.Up.ToString().Equals("Pressed") && valoresControl1.vPadVertical < 100){
-                /*vPadSup = 1;
-                estacion.ActualizarIndicadores("linternas", true);
-                conector.EnviarDatos((Byte)BotonesXBOX.DU, (float)vPadSup);*/
+            if (control1.DPad.Up.ToString().Equals("Pressed") && valoresControl1.vPadVertical < 100)
+            {
                 valoresControl1.vPadVertical += 20;
                 estacion.ActualizarIndicadores("linternas", true);
-                conector.EnviarDatos((Byte)BotonesXBOX.DU_1, (float)valoresControl1.vPadVertical);
+                conector.EnviarDatos((Byte)BotonesXBOX.DU_1, (Int32)1);
                 Console.WriteLine("DPAD-UP: Nivel de linternas: " + valoresControl1.vPadVertical);
             }
 
-            if (control1.DPad.Down.ToString().Equals("Pressed") && valoresControl1.vPadVertical > 0){
-                /*vPadInf = 1;
-                estacion.ActualizarIndicadores("linternas", false);
-                conector.EnviarDatos((Byte)BotonesXBOX.DD, (float)vPadInf);*/
+            if (control1.DPad.Down.ToString().Equals("Pressed") && valoresControl1.vPadVertical > 0)
+            {
                 valoresControl1.vPadVertical -= 20;
                 estacion.ActualizarIndicadores("linternas", false);
-                conector.EnviarDatos((Byte)BotonesXBOX.DD_1, (float)valoresControl1.vPadVertical);
+                conector.EnviarDatos((Byte)BotonesXBOX.DD_1, (Int32)1);
                 Console.WriteLine("DPAD-DOWN: Nivel de linternas: " + valoresControl1.vPadVertical);
             }
 

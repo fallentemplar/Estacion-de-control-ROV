@@ -12,6 +12,7 @@ using System.Diagnostics;
 using AForge.Video.VFW;
 using EstacionControl.Ventanas;
 using EstacionControl.Dispositivos;
+using System.Media;
 
 namespace EstacionControl
 {
@@ -173,7 +174,7 @@ namespace EstacionControl
             }
             catch (ThreadInterruptedException)
             {
-
+                log.Info("Hilo Comprobar dispositivos locales detenido");
             }
             
         }
@@ -199,9 +200,9 @@ namespace EstacionControl
                     Thread.Sleep(500);
                 }
             }
-            catch (Exception)
+            catch (ThreadInterruptedException)
             {
-
+                log.Warn("Hilo Comprobar Dispositivos remotos abortado");
             }
         }
 
@@ -301,6 +302,7 @@ namespace EstacionControl
             try
             {
                 Thread obtenerStreamVideo = new Thread(new ThreadStart(Recibir_stream_video1));
+                obtenerStreamVideo.Priority = ThreadPriority.Highest;
                 camara1_desconectar.Enabled = true;
                 camara1_conectar.Enabled = false;
 
@@ -409,6 +411,7 @@ namespace EstacionControl
                         Thread.Sleep(200);
                     }
                 }
+                catch (ThreadInterruptedException) { log.Warn("Hilo ComprobarRaspberry abortado"); }
                 catch (Exception) { }
             }   
         }
@@ -432,7 +435,8 @@ namespace EstacionControl
                         camara2_conectar.Enabled = true;
 
                         boton_Conectar.Text = "Desconectar";
-
+                        if(!coleccionThreads.ContainsKey(ListaThreads.verifConectividad))
+                            CrearThreads(ListaThreads.verifConectividad);
                         CrearThreads(ListaThreads.dispositivosRemotos);
                         CrearThreads(ListaThreads.actualizarControles);
                         CrearThreads(ListaThreads.conexionConRaspberry);
@@ -487,8 +491,11 @@ namespace EstacionControl
             camara2_conectar.Enabled = false;
             foreach(var hilo in coleccionThreads)
             {
-                if (hilo.Value != null && hilo.Value.IsAlive)
-                    hilo.Value.Interrupt();
+                if (hilo.Value.IsAlive)
+                {
+                    log.Info("------Hilo " + hilo.Key + " abortado");
+                    hilo.Value.Abort();
+                }           
             }
             coleccionThreads.Clear();
             DetenerRecepcionVideo();
@@ -555,7 +562,7 @@ namespace EstacionControl
             }else{
                 boton_video1.Image = EstacionControl.Properties.Resources.video_1_micro;
                 grabandoVideo1 = false;
-                coleccionThreads[ListaThreads.capturarVideo].Interrupt();
+                coleccionThreads[ListaThreads.capturarVideo].Abort();
             }
         }
 
@@ -601,6 +608,7 @@ namespace EstacionControl
                 camara2_conectar.Enabled = false;
 
                 obtenerStreamVideo.IsBackground = true;
+                obtenerStreamVideo.Priority = ThreadPriority.Highest;
                 obtenerStreamVideo.Start();
                 recibiendo_video2 = true;
                 boton_fotografia2.Enabled = true;
@@ -665,6 +673,8 @@ namespace EstacionControl
                     {
                         indicador_mini_desplegado.Text = "Desplegado";
                         indicador_mini_desplegado.ForeColor = Color.Yellow;
+                        campo_ip_MiniROV.Enabled = false;
+                        campo_puerto_MiniROV.Enabled = false;
                         miniROVDesplegado = true;
                     }
                     catch (Exception)
@@ -678,6 +688,8 @@ namespace EstacionControl
                 {
                     indicador_mini_desplegado.Text = "No Desplegado";
                     indicador_mini_desplegado.ForeColor = Color.Red;
+                    campo_ip_MiniROV.Enabled = true;
+                    campo_puerto_MiniROV.Enabled = true;
                     miniROVDesplegado = false;
                 }
             }
@@ -692,30 +704,42 @@ namespace EstacionControl
                     Thread actualizarControles = new Thread(new ThreadStart(controles.ActualizarEstadoOrdenes)) { IsBackground = true };
                     coleccionThreads.Add(ListaThreads.actualizarControles, actualizarControles);
                     actualizarControles.Start();
+                    log.Info("-----------Hilo Actualizar Controles------");
                     break;
                 case ListaThreads.dispositivosRemotos:
                     Thread dispositivosRemotos = new Thread(new ThreadStart(ComprobarDispositivosRemotos)) { IsBackground = true };
-                    dispositivosRemotos.Priority = ThreadPriority.AboveNormal;
+                    //dispositivosRemotos.Priority = ThreadPriority.AboveNormal;
                     coleccionThreads.Add(ListaThreads.dispositivosRemotos, dispositivosRemotos);
+                    log.Info("-----------Hilo Dispositivos remotos------");
                     dispositivosRemotos.Start();
                     break;
                 case ListaThreads.verifConectividad:
                     //Hilo de verificación de comunicación de dispositivos periféricos locales
                     Thread verifConectividad = new Thread(new ThreadStart(ComprobarDispositivosLocales)) { IsBackground = true };
                     coleccionThreads.Add(ListaThreads.verifConectividad, verifConectividad);
+                    log.Info("-----------Hilo Verificar conectividad------");
                     verifConectividad.Start();
                     break;
                 case ListaThreads.capturarVideo:
                     Thread capturarVideo = new Thread(new ThreadStart(GrabarVideo)) { IsBackground = true };
                     coleccionThreads.Add(ListaThreads.capturarVideo, capturarVideo);
+                    log.Info("-----------Hilo Capturar video------");
                     capturarVideo.Start();
                     break;
                 case ListaThreads.conexionConRaspberry:
                     Thread conexionConRaspberry = new Thread(new ThreadStart(ComprobarRaspberry)) { IsBackground = true }; //Verifica 
-                    conexionConRaspberry.Priority = ThreadPriority.Highest;
+                    //conexionConRaspberry.Priority = ThreadPriority.Highest;
+                    coleccionThreads.Add(ListaThreads.conexionConRaspberry, conexionConRaspberry);
+                    log.Info("-----------Hilo conexion con Raspberry------");
                     conexionConRaspberry.Start();
                     break;
             }
+        }
+
+        private void modoVictoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.la_cucaracha);
+            soundPlayer.Play();
         }
     }
 
