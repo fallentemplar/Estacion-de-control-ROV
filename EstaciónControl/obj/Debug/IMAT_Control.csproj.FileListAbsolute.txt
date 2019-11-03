@@ -1,0 +1,182 @@
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\bin\Debug\Csharp_RC_Car_RaspberryPi.exe.config
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\bin\Debug\Csharp_RC_Car_RaspberryPi.exe
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\bin\Debug\Csharp_RC_Car_RaspberryPi.pdb
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\xbox_controller_test.Form1.resources
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\xbox_controller_test.Properties.Resources.resources
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\IMAT_Control.csproj.GenerateResource.Cache
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\Csharp_RC_Car_RaspberryPi.exe
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\Csharp_RC_Car_RaspberryPi.pdb
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\xbox_controller_test\obj\Debug\IMAT_Control.csprojResolveAssemblyReference.cache
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\xbox_controller_test\obj\Debug\IMAT_Control.csproj.GenerateResource.Cache
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\xbox_controller_test\bin\Debug\IMAT_Control.exe.config
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\xbox_controller_test\bin\Debug\IMAT_Control.exe
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\xbox_controller_test\bin\Debug\IMAT_Control.pdb
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\xbox_controller_test\obj\Debug\IMAT.Properties.Resources.resources
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\xbox_controller_test\obj\Debug\IMAT_Control.exe
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\xbox_controller_test\obj\Debug\IMAT_Control.pdb
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\xbox_controller_test\obj\Debug\IMAT.Form1.resources
+C:\Users\AlexisArturo\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe.config
+C:\Users\AlexisArturo\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.exe
+C:\Users\AlexisArturo\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.pdb
+C:\Users\AlexisArturo\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe
+C:\Users\AlexisArturo\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.pdb
+C:\Users\AlexisArturo\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csprojResolveAssemblyReference.cache
+C:\Users\AlexisArturo\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Form1.resources
+C:\Users\AlexisArturo\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Properties.Resources.resources
+C:\Users\AlexisArturo\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.GenerateResource.Cache
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe.config
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.exe
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.pdb
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.pdb
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csprojResolveAssemblyReference.cache
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Form1.resources
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Properties.Resources.resources
+C:\Users\AlexisArturo\Desktop\rov\interfaz\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.GenerateResource.Cache
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v7\IMAT_Control\bin\Debug\IMAT_Control.exe.config
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v7\IMAT_Control\obj\Debug\IMAT_Control.exe
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v7\IMAT_Control\obj\Debug\IMAT_Control.pdb
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v7\IMAT_Control\bin\Debug\IMAT_Control.exe
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v7\IMAT_Control\bin\Debug\IMAT_Control.pdb
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v7\IMAT_Control\obj\Debug\IMAT_Control.csprojResolveAssemblyReference.cache
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v7\IMAT_Control\obj\Debug\IMAT.Form1.resources
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v7\IMAT_Control\obj\Debug\IMAT.Properties.Resources.resources
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v7\IMAT_Control\obj\Debug\IMAT_Control.csproj.GenerateResource.Cache
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\bin\Debug\IMAT_Control.exe.config
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\obj\Debug\IMAT_Control.exe
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\obj\Debug\IMAT_Control.pdb
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\bin\Debug\IMAT_Control.exe
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\bin\Debug\IMAT_Control.pdb
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\obj\Debug\IMAT_Control.csprojResolveAssemblyReference.cache
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\obj\Debug\IMAT.Form1.resources
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\obj\Debug\IMAT.Properties.Resources.resources
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\obj\Debug\IMAT_Control.csproj.GenerateResource.Cache
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\bin\Debug\IMAT_Control.exe.config
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\obj\Debug\IMAT_Control.exe
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\obj\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\bin\Debug\IMAT_Control.exe
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\bin\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\obj\Debug\IMAT_Control.csprojResolveAssemblyReference.cache
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\obj\Debug\IMAT.Form1.resources
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\obj\Debug\IMAT.Properties.Resources.resources
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\Respaldos\IMAT Estación Control v8\IMAT_Control\obj\Debug\IMAT_Control.csproj.GenerateResource.Cache
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe.config
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.exe
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csprojResolveAssemblyReference.cache
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Form1.resources
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Properties.Resources.resources
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.GenerateResource.Cache
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe
+C:\Users\Alexis\Desktop\Todo\Todo sobre ROV\rov\interfaz\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe.config
+C:\Users\Alexis\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.exe
+C:\Users\Alexis\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe
+C:\Users\Alexis\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Form1.resources
+C:\Users\Alexis\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Properties.Resources.resources
+C:\Users\Alexis\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.GenerateResource.Cache
+C:\Users\Alexis\Documents\Visual Studio 2015\Projects\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe.config
+C:\Users\Alexis\Documents\Visual Studio 2015\Projects\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.exe
+C:\Users\Alexis\Documents\Visual Studio 2015\Projects\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Documents\Visual Studio 2015\Projects\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe
+C:\Users\Alexis\Documents\Visual Studio 2015\Projects\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Documents\Visual Studio 2015\Projects\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csprojResolveAssemblyReference.cache
+C:\Users\Alexis\Documents\Visual Studio 2015\Projects\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Form1.resources
+C:\Users\Alexis\Documents\Visual Studio 2015\Projects\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Properties.Resources.resources
+C:\Users\Alexis\Documents\Visual Studio 2015\Projects\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.GenerateResource.Cache
+C:\Users\Alexis\Documents\Visual Studio 2015\Projects\IMAT Estación Control\IMAT_Control\bin\Debug\log4net.dll
+C:\Users\Alexis\Documents\Visual Studio 2015\Projects\IMAT Estación Control\IMAT_Control\bin\Debug\log4net.xml
+C:\Users\Alexis\Desktop\Escritorio\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe.config
+C:\Users\Alexis\Desktop\Escritorio\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.exe
+C:\Users\Alexis\Desktop\Escritorio\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Desktop\Escritorio\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe
+C:\Users\Alexis\Desktop\Escritorio\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Desktop\Escritorio\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csprojResolveAssemblyReference.cache
+C:\Users\Alexis\Desktop\Escritorio\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Form1.resources
+C:\Users\Alexis\Desktop\Escritorio\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Properties.Resources.resources
+C:\Users\Alexis\Desktop\Escritorio\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.GenerateResource.Cache
+C:\Users\Alexis\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\log4net.dll
+C:\Users\Alexis\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\log4net.xml
+C:\Users\Alexis\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\XInputDotNetPure.dll
+E:\A\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe.config
+E:\A\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe
+E:\A\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.pdb
+E:\A\IMAT Estación Control\IMAT_Control\bin\Debug\log4net.dll
+E:\A\IMAT Estación Control\IMAT_Control\bin\Debug\XInputDotNetPure.dll
+E:\A\IMAT Estación Control\IMAT_Control\bin\Debug\log4net.xml
+E:\A\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csprojAssemblyReference.cache
+E:\A\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Form1.resources
+E:\A\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Properties.Resources.resources
+E:\A\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.GenerateResource.cache
+E:\A\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.CoreCompileInputs.cache
+E:\A\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.CopyComplete
+E:\A\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.exe
+E:\A\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csprojAssemblyReference.cache
+C:\Users\Alexis\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.CoreCompileInputs.cache
+C:\Users\Alexis\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.CopyComplete
+C:\Users\Alexis\Desktop\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe.config
+C:\Users\Alexis\Desktop\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe
+C:\Users\Alexis\Desktop\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Desktop\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\log4net.dll
+C:\Users\Alexis\Desktop\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\XInputDotNetPure.dll
+C:\Users\Alexis\Desktop\Desktop\IMAT Estación Control\IMAT_Control\bin\Debug\log4net.xml
+C:\Users\Alexis\Desktop\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csprojAssemblyReference.cache
+C:\Users\Alexis\Desktop\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Form1.resources
+C:\Users\Alexis\Desktop\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Properties.Resources.resources
+C:\Users\Alexis\Desktop\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.GenerateResource.cache
+C:\Users\Alexis\Desktop\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.CoreCompileInputs.cache
+C:\Users\Alexis\Desktop\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.CopyComplete
+C:\Users\Alexis\Desktop\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.exe
+C:\Users\Alexis\Desktop\Desktop\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Desktop\Desktop\C#\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe.config
+C:\Users\Alexis\Desktop\Desktop\C#\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.exe
+C:\Users\Alexis\Desktop\Desktop\C#\IMAT Estación Control\IMAT_Control\bin\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Desktop\Desktop\C#\IMAT Estación Control\IMAT_Control\bin\Debug\log4net.dll
+C:\Users\Alexis\Desktop\Desktop\C#\IMAT Estación Control\IMAT_Control\bin\Debug\log4net.xml
+C:\Users\Alexis\Desktop\Desktop\C#\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csprojAssemblyReference.cache
+C:\Users\Alexis\Desktop\Desktop\C#\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Form1.resources
+C:\Users\Alexis\Desktop\Desktop\C#\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT.Properties.Resources.resources
+C:\Users\Alexis\Desktop\Desktop\C#\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.GenerateResource.cache
+C:\Users\Alexis\Desktop\Desktop\C#\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.CoreCompileInputs.cache
+C:\Users\Alexis\Desktop\Desktop\C#\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.csproj.CopyComplete
+C:\Users\Alexis\Desktop\Desktop\C#\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.exe
+C:\Users\Alexis\Desktop\Desktop\C#\IMAT Estación Control\IMAT_Control\obj\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\bin\Debug\IMAT_Control.exe.config
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\bin\Debug\IMAT_Control.exe
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\bin\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\bin\Debug\log4net.dll
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\bin\Debug\log4net.xml
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\obj\Debug\IMAT_Control.csprojAssemblyReference.cache
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\obj\Debug\IMAT.Form1.resources
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\obj\Debug\IMAT.Properties.Resources.resources
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\obj\Debug\IMAT_Control.csproj.GenerateResource.cache
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\obj\Debug\IMAT_Control.csproj.CoreCompileInputs.cache
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\obj\Debug\IMAT_Control.csproj.CopyComplete
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\obj\Debug\IMAT_Control.exe
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\obj\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\bin\Debug\log4net.config
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\obj\Debug\IMAT_Control.csprojAssemblyReference.cache
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\obj\Debug\IMAT.Form1.resources
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\obj\Debug\IMAT.Properties.Resources.resources
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\obj\Debug\IMAT_Control.csproj.GenerateResource.cache
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\obj\Debug\IMAT_Control.csproj.CoreCompileInputs.cache
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\obj\Debug\IMAT_Control.exe
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\obj\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\bin\Debug\log4net.config
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\bin\Debug\IMAT_Control.exe.config
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\bin\Debug\IMAT_Control.exe
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\bin\Debug\IMAT_Control.pdb
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\bin\Debug\log4net.dll
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\bin\Debug\log4net.xml
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\obj\Debug\IMAT_Control.csproj.CopyComplete
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\obj\Debug\IMAT.AcercaDe.resources
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\bin\Debug\QRCoder.dll
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\bin\Debug\UnityEngine.dll
+C:\Users\Alexis\Desktop\TMMx\control\IMAT_Control\obj\Debug\IMAT.CodigoQR.resources
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\bin\Debug\QRCoder.dll
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\bin\Debug\UnityEngine.dll
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\obj\Debug\IMAT.AcercaDe.resources
+C:\Users\Alexis\Documents\Visual Studio 2017\Projects\TMMx\control\IMAT_Control\obj\Debug\IMAT.CodigoQR.resources

@@ -1,0 +1,40 @@
+C:\Users\Justin\Desktop\RC_car\xbox_controller_test\xbox_controller_test\bin\Debug\xbox_controller_test.exe.config
+C:\Users\Justin\Desktop\RC_car\xbox_controller_test\xbox_controller_test\obj\Debug\xbox_controller_test.csprojResolveAssemblyReference.cache
+C:\Users\Justin\Desktop\RC_car\xbox_controller_test\xbox_controller_test\obj\Debug\xbox_controller_test.Form1.resources
+C:\Users\Justin\Desktop\RC_car\xbox_controller_test\xbox_controller_test\obj\Debug\xbox_controller_test.Properties.Resources.resources
+C:\Users\Justin\Desktop\RC_car\xbox_controller_test\xbox_controller_test\obj\Debug\xbox_controller_test.csproj.GenerateResource.Cache
+C:\Users\Justin\Desktop\RC_car\xbox_controller_test\xbox_controller_test\bin\Debug\xbox_controller_test.exe
+C:\Users\Justin\Desktop\RC_car\xbox_controller_test\xbox_controller_test\bin\Debug\xbox_controller_test.pdb
+C:\Users\Justin\Desktop\RC_car\xbox_controller_test\xbox_controller_test\obj\Debug\xbox_controller_test.exe
+C:\Users\Justin\Desktop\RC_car\xbox_controller_test\xbox_controller_test\obj\Debug\xbox_controller_test.pdb
+C:\Users\Justin\Desktop\RC_car\Xbox_controller_test\xbox_controller_test\bin\Debug\XInputDotNetPure.dll
+C:\Users\Justin\Desktop\RC_car\Csharp_RC_car_RaspberryPi\xbox_controller_test\bin\Debug\Csharp_RC_Car_RaspberryPi.exe.config
+C:\Users\Justin\Desktop\RC_car\Csharp_RC_car_RaspberryPi\xbox_controller_test\bin\Debug\Csharp_RC_Car_RaspberryPi.exe
+C:\Users\Justin\Desktop\RC_car\Csharp_RC_car_RaspberryPi\xbox_controller_test\bin\Debug\Csharp_RC_Car_RaspberryPi.pdb
+C:\Users\Justin\Desktop\RC_car\Csharp_RC_car_RaspberryPi\xbox_controller_test\bin\Debug\XInputDotNetPure.dll
+C:\Users\Justin\Desktop\RC_car\Csharp_RC_car_RaspberryPi\xbox_controller_test\obj\Debug\xbox_controller_test.csprojResolveAssemblyReference.cache
+C:\Users\Justin\Desktop\RC_car\Csharp_RC_car_RaspberryPi\xbox_controller_test\obj\Debug\xbox_controller_test.Form1.resources
+C:\Users\Justin\Desktop\RC_car\Csharp_RC_car_RaspberryPi\xbox_controller_test\obj\Debug\xbox_controller_test.Properties.Resources.resources
+C:\Users\Justin\Desktop\RC_car\Csharp_RC_car_RaspberryPi\xbox_controller_test\obj\Debug\xbox_controller_test.csproj.GenerateResource.Cache
+C:\Users\Justin\Desktop\RC_car\Csharp_RC_car_RaspberryPi\xbox_controller_test\obj\Debug\Csharp_RC_Car_RaspberryPi.exe
+C:\Users\Justin\Desktop\RC_car\Csharp_RC_car_RaspberryPi\xbox_controller_test\obj\Debug\Csharp_RC_Car_RaspberryPi.pdb
+C:\Users\angel\OneDrive\Documentos\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\bin\Debug\Csharp_RC_Car_RaspberryPi.exe.config
+C:\Users\angel\OneDrive\Documentos\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\bin\Debug\Csharp_RC_Car_RaspberryPi.exe
+C:\Users\angel\OneDrive\Documentos\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\bin\Debug\Csharp_RC_Car_RaspberryPi.pdb
+C:\Users\angel\OneDrive\Documentos\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\xbox_controller_test.csprojAssemblyReference.cache
+C:\Users\angel\OneDrive\Documentos\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\xbox_controller_test.Form1.resources
+C:\Users\angel\OneDrive\Documentos\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\xbox_controller_test.Properties.Resources.resources
+C:\Users\angel\OneDrive\Documentos\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\xbox_controller_test.csproj.GenerateResource.cache
+C:\Users\angel\OneDrive\Documentos\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\xbox_controller_test.csproj.CoreCompileInputs.cache
+C:\Users\angel\OneDrive\Documentos\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\xbox_controller_test.csproj.CopyComplete
+C:\Users\angel\OneDrive\Documentos\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\Csharp_RC_Car_RaspberryPi.exe
+C:\Users\angel\OneDrive\Documentos\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\Csharp_RC_Car_RaspberryPi.pdb
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\bin\Debug\Csharp_RC_Car_RaspberryPi.exe.config
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\Csharp_RC_Car_RaspberryPi.exe
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\Csharp_RC_Car_RaspberryPi.pdb
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\bin\Debug\Csharp_RC_Car_RaspberryPi.exe
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\bin\Debug\Csharp_RC_Car_RaspberryPi.pdb
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\xbox_controller_test.csprojResolveAssemblyReference.cache
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\xbox_controller_test.Form1.resources
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\xbox_controller_test.Properties.Resources.resources
+C:\Users\AlexisArturo\Desktop\rov\interfaz\Csharp_RC_car_RaspberryPi - Copy\xbox_controller_test\obj\Debug\xbox_controller_test.csproj.GenerateResource.Cache
