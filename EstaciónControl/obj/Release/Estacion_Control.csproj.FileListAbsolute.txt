@@ -138,3 +138,17 @@ E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\EstaciónC
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\EstaciónControl\obj\Release\Estacion_Control.csproj.CopyComplete
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\EstaciónControl\obj\Release\EstacionControl.exe
 E:\Alexis\Desarrollo\Visual Studio 2017\Projects\Estación de control\EstaciónControl\obj\Release\EstacionControl.pdb
+C:\Users\aaagu\Development\github.com\fallentemplar\estacion-de-control-ROV\EstaciónControl\obj\Release\Estacion_Control.csprojAssemblyReference.cache
+C:\Users\aaagu\Development\github.com\fallentemplar\estacion-de-control-ROV\EstaciónControl\obj\Release\EstacionControl.AcercaDe.resources
+C:\Users\aaagu\Development\github.com\fallentemplar\estacion-de-control-ROV\EstaciónControl\obj\Release\EstacionControl.CodigoQR.resources
+C:\Users\aaagu\Development\github.com\fallentemplar\estacion-de-control-ROV\EstaciónControl\obj\Release\EstacionControl.Dispositivos.Sensores.Giroscopio.resources
+C:\Users\aaagu\Development\github.com\fallentemplar\estacion-de-control-ROV\EstaciónControl\obj\Release\EstacionControl.PantallaEstacion.resources
+C:\Users\aaagu\Development\github.com\fallentemplar\estacion-de-control-ROV\EstaciónControl\obj\Release\EstacionControl.ProcesamientoImagenes.EspeciesReconocidas.resources
+C:\Users\aaagu\Development\github.com\fallentemplar\estacion-de-control-ROV\EstaciónControl\obj\Release\EstacionControl.Properties.Resources.resources
+C:\Users\aaagu\Development\github.com\fallentemplar\estacion-de-control-ROV\EstaciónControl\obj\Release\EstacionControl.Ventanas.CamaraPanel.resources
+C:\Users\aaagu\Development\github.com\fallentemplar\estacion-de-control-ROV\EstaciónControl\obj\Release\EstacionControl.Ventanas.MisionCanon.resources
+C:\Users\aaagu\Development\github.com\fallentemplar\estacion-de-control-ROV\EstaciónControl\obj\Release\EstacionControl.Ventanas.VisorCamara.resources
+C:\Users\aaagu\Development\github.com\fallentemplar\estacion-de-control-ROV\EstaciónControl\obj\Release\Estacion_Control.csproj.GenerateResource.cache
+C:\Users\aaagu\Development\github.com\fallentemplar\estacion-de-control-ROV\EstaciónControl\obj\Release\Estacion_Control.csproj.CoreCompileInputs.cache
+C:\Users\aaagu\Development\github.com\fallentemplar\estacion-de-control-ROV\EstaciónControl\obj\Release\EstacionControl.exe
+C:\Users\aaagu\Development\github.com\fallentemplar\estacion-de-control-ROV\EstaciónControl\obj\Release\EstacionControl.pdb
