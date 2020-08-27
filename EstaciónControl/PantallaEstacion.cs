@@ -87,12 +87,12 @@ namespace EstacionControl
             giroscopio = new Giroscopio(socketReceptor);
 
             //Hilo para manejar el control de XBOX ONE
-            //CrearThreads(ListaThreads.actualizarControles);
+            CrearThreads(ListaThreads.actualizarControles);
 
-            
+#if DEBUG
             //Hilo de verificación de comunicación de dispositivos periféricos remotos
-            //CrearThreads(ListaThreads.dispositivosRemotos);
-
+            CrearThreads(ListaThreads.dispositivosRemotos);
+#endif
             //Hilo de verificación de comunicación de dispositivos periféricos locales
             CrearThreads(ListaThreads.verifConectividad);
 
