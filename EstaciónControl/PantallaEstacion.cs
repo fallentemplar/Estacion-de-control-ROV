@@ -741,6 +741,15 @@ namespace EstacionControl
             SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.la_cucaracha);
             soundPlayer.Play();
         }
+
+        private void camera_groupBox_Enter(object sender, EventArgs e)
+        {
+            var a = camera_groupBox.Controls;
+            foreach (Control item in a)
+            {
+                Console.WriteLine(a.GetType());
+            }
+        }
     }
 
     class ListaThreads

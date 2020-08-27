@@ -30,36 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaEstacion));
-            this.indicador_control1 = new System.Windows.Forms.TextBox();
-            this.camera_groupBox = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lista_camaras1 = new System.Windows.Forms.ComboBox();
-            this.botonReconociento = new System.Windows.Forms.Button();
-            this.visorCamara1 = new WebEye.Controls.WinForms.StreamPlayerControl.StreamPlayerControl();
-            this.boton_generarQR = new System.Windows.Forms.Button();
-            this.boton_video1 = new System.Windows.Forms.Button();
-            this.boton_fotografia1 = new System.Windows.Forms.Button();
-            this.camara1_desconectar = new System.Windows.Forms.Button();
-            this.camara1_conectar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.raspberry_logo = new System.Windows.Forms.PictureBox();
-            this.arduino_logo = new System.Windows.Forms.PictureBox();
-            this.control2_logo = new System.Windows.Forms.PictureBox();
-            this.control1_logo = new System.Windows.Forms.PictureBox();
-            this.indicador_control2 = new System.Windows.Forms.TextBox();
-            this.indicador_arduino = new System.Windows.Forms.TextBox();
-            this.indicador_raspberry = new System.Windows.Forms.TextBox();
-            this.herramientasSensores = new System.Windows.Forms.GroupBox();
-            this.indicador_linternas = new System.Windows.Forms.ProgressBar();
-            this.indicador_inductivo = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.indicador_ph = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.indicador_profundidad = new System.Windows.Forms.TextBox();
-            this.indicador_temperatura = new System.Windows.Forms.TextBox();
-            this.etiqueta_profundidad = new System.Windows.Forms.Label();
-            this.etiqueta_temperatura = new System.Windows.Forms.Label();
             this.menuCinta = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirCarpetaDeFotografíasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,6 +45,18 @@
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualTécnicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.burbuja_informacion = new System.Windows.Forms.ToolTip(this.components);
+            this.boton_Conectar = new System.Windows.Forms.Button();
+            this.puerto_texto = new System.Windows.Forms.TextBox();
+            this.direccion_ip_texto = new System.Windows.Forms.TextBox();
+            this.raspberry_logo = new System.Windows.Forms.PictureBox();
+            this.arduino_logo = new System.Windows.Forms.PictureBox();
+            this.control2_logo = new System.Windows.Forms.PictureBox();
+            this.control1_logo = new System.Windows.Forms.PictureBox();
+            this.campo_puerto_MiniROV = new System.Windows.Forms.TextBox();
+            this.campo_ip_MiniROV = new System.Windows.Forms.TextBox();
+            this.boton_Desplegar_MiniROV = new System.Windows.Forms.Button();
+            this.groupROVPrincipal = new System.Windows.Forms.GroupBox();
             this.grupoCamaraSecundaria = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.boton_video2 = new System.Windows.Forms.Button();
@@ -83,178 +65,212 @@
             this.lista_camaras2 = new System.Windows.Forms.ComboBox();
             this.camara2_desconectar = new System.Windows.Forms.Button();
             this.visorCamara2 = new WebEye.Controls.WinForms.StreamPlayerControl.StreamPlayerControl();
+            this.herramientasSensores = new System.Windows.Forms.GroupBox();
+            this.indicador_linternas = new System.Windows.Forms.ProgressBar();
+            this.indicador_inductivo = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.indicador_ph = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.indicador_profundidad = new System.Windows.Forms.TextBox();
+            this.indicador_temperatura = new System.Windows.Forms.TextBox();
+            this.etiqueta_profundidad = new System.Windows.Forms.Label();
+            this.etiqueta_temperatura = new System.Windows.Forms.Label();
+            this.groupConectividad = new System.Windows.Forms.GroupBox();
+            this.indicador_control2 = new System.Windows.Forms.TextBox();
+            this.indicador_arduino = new System.Windows.Forms.TextBox();
+            this.indicador_raspberry = new System.Windows.Forms.TextBox();
+            this.indicador_control1 = new System.Windows.Forms.TextBox();
             this.grupo_raspberry = new System.Windows.Forms.GroupBox();
-            this.boton_Conectar = new System.Windows.Forms.Button();
-            this.puerto_texto = new System.Windows.Forms.TextBox();
-            this.direccion_ip_texto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.camera_ip_label = new System.Windows.Forms.Label();
-            this.burbuja_informacion = new System.Windows.Forms.ToolTip(this.components);
-            this.campo_puerto_MiniROV = new System.Windows.Forms.TextBox();
-            this.campo_ip_MiniROV = new System.Windows.Forms.TextBox();
-            this.boton_Desplegar_MiniROV = new System.Windows.Forms.Button();
             this.grupo_minirov = new System.Windows.Forms.GroupBox();
             this.etiqueta_indicador_linternas_mini = new System.Windows.Forms.Label();
             this.indicador_mini_desplegado = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.indicador_mini_luces = new System.Windows.Forms.ProgressBar();
             this.label8 = new System.Windows.Forms.Label();
-            this.titulo = new System.Windows.Forms.Label();
-            this.camera_groupBox.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.camera_groupBox = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lista_camaras1 = new System.Windows.Forms.ComboBox();
+            this.boton_generarQR = new System.Windows.Forms.Button();
+            this.boton_video1 = new System.Windows.Forms.Button();
+            this.boton_fotografia1 = new System.Windows.Forms.Button();
+            this.camara1_desconectar = new System.Windows.Forms.Button();
+            this.camara1_conectar = new System.Windows.Forms.Button();
+            this.visorCamara1 = new WebEye.Controls.WinForms.StreamPlayerControl.StreamPlayerControl();
+            this.botonReconociento = new System.Windows.Forms.Button();
+            this.menuCinta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.raspberry_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arduino_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.control2_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.control1_logo)).BeginInit();
-            this.herramientasSensores.SuspendLayout();
-            this.menuCinta.SuspendLayout();
+            this.groupROVPrincipal.SuspendLayout();
             this.grupoCamaraSecundaria.SuspendLayout();
+            this.herramientasSensores.SuspendLayout();
+            this.groupConectividad.SuspendLayout();
             this.grupo_raspberry.SuspendLayout();
             this.grupo_minirov.SuspendLayout();
+            this.camera_groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // indicador_control1
+            // menuCinta
             // 
-            this.indicador_control1.Enabled = false;
-            this.indicador_control1.Location = new System.Drawing.Point(51, 22);
-            this.indicador_control1.Name = "indicador_control1";
-            this.indicador_control1.Size = new System.Drawing.Size(101, 20);
-            this.indicador_control1.TabIndex = 0;
-            this.indicador_control1.Text = "Desconectado";
+            this.menuCinta.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.archivoToolStripMenuItem,
+            this.herramientasToolStripMenuItem,
+            this.misionesToolStripMenuItem,
+            this.ayudaToolStripMenuItem});
+            this.menuCinta.Location = new System.Drawing.Point(0, 0);
+            this.menuCinta.Name = "menuCinta";
+            this.menuCinta.Size = new System.Drawing.Size(1268, 24);
+            this.menuCinta.TabIndex = 68;
+            this.menuCinta.Text = "menuStrip1";
             // 
-            // camera_groupBox
+            // archivoToolStripMenuItem
             // 
-            this.camera_groupBox.Controls.Add(this.label6);
-            this.camera_groupBox.Controls.Add(this.lista_camaras1);
-            this.camera_groupBox.Controls.Add(this.botonReconociento);
-            this.camera_groupBox.Controls.Add(this.visorCamara1);
-            this.camera_groupBox.Controls.Add(this.boton_generarQR);
-            this.camera_groupBox.Controls.Add(this.boton_video1);
-            this.camera_groupBox.Controls.Add(this.boton_fotografia1);
-            this.camera_groupBox.Controls.Add(this.camara1_desconectar);
-            this.camera_groupBox.Controls.Add(this.camara1_conectar);
-            this.camera_groupBox.Location = new System.Drawing.Point(524, 27);
-            this.camera_groupBox.Name = "camera_groupBox";
-            this.camera_groupBox.Size = new System.Drawing.Size(701, 644);
-            this.camera_groupBox.TabIndex = 60;
-            this.camera_groupBox.TabStop = false;
-            this.camera_groupBox.Text = "Cámara 1";
+            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abrirCarpetaDeFotografíasToolStripMenuItem});
+            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.archivoToolStripMenuItem.Text = "Archivo";
             // 
-            // label6
+            // abrirCarpetaDeFotografíasToolStripMenuItem
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 604);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 13);
-            this.label6.TabIndex = 78;
-            this.label6.Text = "IP cámara 1";
+            this.abrirCarpetaDeFotografíasToolStripMenuItem.Name = "abrirCarpetaDeFotografíasToolStripMenuItem";
+            this.abrirCarpetaDeFotografíasToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.abrirCarpetaDeFotografíasToolStripMenuItem.Text = "Abrir carpeta de fotografías";
+            this.abrirCarpetaDeFotografíasToolStripMenuItem.Click += new System.EventHandler(this.abrirCarpetaDeFotografíasToolStripMenuItem_Click);
             // 
-            // lista_camaras1
+            // herramientasToolStripMenuItem
             // 
-            this.lista_camaras1.FormattingEnabled = true;
-            this.lista_camaras1.Location = new System.Drawing.Point(76, 601);
-            this.lista_camaras1.Name = "lista_camaras1";
-            this.lista_camaras1.Size = new System.Drawing.Size(121, 21);
-            this.lista_camaras1.TabIndex = 73;
+            this.herramientasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.giroscopioToolStripMenuItem,
+            this.configuraciónDeCámarasToolStripMenuItem,
+            this.visorDeCámaraToolStripMenuItem,
+            this.modoVictoriaToolStripMenuItem});
+            this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
+            this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.herramientasToolStripMenuItem.Text = "Herramientas";
             // 
-            // botonReconociento
+            // giroscopioToolStripMenuItem
             // 
-            this.botonReconociento.Location = new System.Drawing.Point(624, 576);
-            this.botonReconociento.Name = "botonReconociento";
-            this.botonReconociento.Size = new System.Drawing.Size(68, 68);
-            this.botonReconociento.TabIndex = 33;
-            this.botonReconociento.Text = "Identificar Especies";
-            this.burbuja_informacion.SetToolTip(this.botonReconociento, "Objeto de misión: Identificación de especies bentónicas");
-            this.botonReconociento.UseVisualStyleBackColor = true;
-            this.botonReconociento.Click += new System.EventHandler(this.botonReconociento_Click);
+            this.giroscopioToolStripMenuItem.Name = "giroscopioToolStripMenuItem";
+            this.giroscopioToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.G)));
+            this.giroscopioToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.giroscopioToolStripMenuItem.Text = "Giroscopio";
+            this.giroscopioToolStripMenuItem.Click += new System.EventHandler(this.giroscopioToolStripMenuItem_Click);
             // 
-            // visorCamara1
+            // configuraciónDeCámarasToolStripMenuItem
             // 
-            this.visorCamara1.AutoSize = true;
-            this.visorCamara1.BackgroundImage = global::EstacionControl.Properties.Resources.tmmx_nuevo;
-            this.visorCamara1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.visorCamara1.Location = new System.Drawing.Point(6, 17);
-            this.visorCamara1.Name = "visorCamara1";
-            this.visorCamara1.Size = new System.Drawing.Size(686, 557);
-            this.visorCamara1.TabIndex = 32;
+            this.configuraciónDeCámarasToolStripMenuItem.Name = "configuraciónDeCámarasToolStripMenuItem";
+            this.configuraciónDeCámarasToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.configuraciónDeCámarasToolStripMenuItem.Text = "Configuración de cámaras";
+            this.configuraciónDeCámarasToolStripMenuItem.Click += new System.EventHandler(this.configuraciónDeCámarasToolStripMenuItem_Click);
             // 
-            // boton_generarQR
+            // visorDeCámaraToolStripMenuItem
             // 
-            this.boton_generarQR.BackgroundImage = global::EstacionControl.Properties.Resources.QR;
-            this.boton_generarQR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.boton_generarQR.Location = new System.Drawing.Point(550, 576);
-            this.boton_generarQR.Name = "boton_generarQR";
-            this.boton_generarQR.Size = new System.Drawing.Size(68, 68);
-            this.boton_generarQR.TabIndex = 31;
-            this.boton_generarQR.Text = "Generar QR";
-            this.burbuja_informacion.SetToolTip(this.boton_generarQR, "Generar QR para obtener enlace de streaming para Cámara 1");
-            this.boton_generarQR.UseVisualStyleBackColor = true;
-            this.boton_generarQR.Click += new System.EventHandler(this.Boton_generarQR_Click);
+            this.visorDeCámaraToolStripMenuItem.Name = "visorDeCámaraToolStripMenuItem";
+            this.visorDeCámaraToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.visorDeCámaraToolStripMenuItem.Text = "Visor de cámara";
+            this.visorDeCámaraToolStripMenuItem.Click += new System.EventHandler(this.visorDeCámaraToolStripMenuItem_Click);
             // 
-            // boton_video1
+            // modoVictoriaToolStripMenuItem
             // 
-            this.boton_video1.Enabled = false;
-            this.boton_video1.Image = global::EstacionControl.Properties.Resources.video_1_micro;
-            this.boton_video1.Location = new System.Drawing.Point(409, 587);
-            this.boton_video1.Name = "boton_video1";
-            this.boton_video1.Size = new System.Drawing.Size(48, 47);
-            this.boton_video1.TabIndex = 30;
-            this.burbuja_informacion.SetToolTip(this.boton_video1, "Grabar video con Cámara 1");
-            this.boton_video1.UseVisualStyleBackColor = true;
-            this.boton_video1.Click += new System.EventHandler(this.boton_video_Click);
+            this.modoVictoriaToolStripMenuItem.Name = "modoVictoriaToolStripMenuItem";
+            this.modoVictoriaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.V)));
+            this.modoVictoriaToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.modoVictoriaToolStripMenuItem.Text = "Modo Victoria";
+            this.modoVictoriaToolStripMenuItem.Click += new System.EventHandler(this.modoVictoriaToolStripMenuItem_Click);
             // 
-            // boton_fotografia1
+            // misionesToolStripMenuItem
             // 
-            this.boton_fotografia1.Enabled = false;
-            this.boton_fotografia1.Image = global::EstacionControl.Properties.Resources.foto_micro;
-            this.boton_fotografia1.Location = new System.Drawing.Point(348, 587);
-            this.boton_fotografia1.Name = "boton_fotografia1";
-            this.boton_fotografia1.Size = new System.Drawing.Size(55, 47);
-            this.boton_fotografia1.TabIndex = 29;
-            this.burbuja_informacion.SetToolTip(this.boton_fotografia1, "Tomar fotografía con Cámara 1");
-            this.boton_fotografia1.UseVisualStyleBackColor = true;
-            this.boton_fotografia1.Click += new System.EventHandler(this.Boton_fotografia_Click);
+            this.misionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.canonToolStripMenuItem,
+            this.diafragmaToolStripMenuItem});
+            this.misionesToolStripMenuItem.Name = "misionesToolStripMenuItem";
+            this.misionesToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.misionesToolStripMenuItem.Text = "Misiones";
             // 
-            // camara1_desconectar
+            // canonToolStripMenuItem
             // 
-            this.camara1_desconectar.Enabled = false;
-            this.camara1_desconectar.Image = global::EstacionControl.Properties.Resources.detener_micro;
-            this.camara1_desconectar.Location = new System.Drawing.Point(272, 587);
-            this.camara1_desconectar.Name = "camara1_desconectar";
-            this.camara1_desconectar.Size = new System.Drawing.Size(70, 47);
-            this.camara1_desconectar.TabIndex = 24;
-            this.burbuja_informacion.SetToolTip(this.camara1_desconectar, "Detener transmisión de video de cámara 1");
-            this.camara1_desconectar.UseVisualStyleBackColor = true;
-            this.camara1_desconectar.Click += new System.EventHandler(this.Camara_desconectar_Clic);
+            this.canonToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calcularVolumenToolStripMenuItem});
+            this.canonToolStripMenuItem.Name = "canonToolStripMenuItem";
+            this.canonToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.canonToolStripMenuItem.Text = "Cañón";
             // 
-            // camara1_conectar
+            // calcularVolumenToolStripMenuItem
             // 
-            this.camara1_conectar.Enabled = false;
-            this.camara1_conectar.Image = global::EstacionControl.Properties.Resources.play_1_micro;
-            this.camara1_conectar.Location = new System.Drawing.Point(204, 587);
-            this.camara1_conectar.Name = "camara1_conectar";
-            this.camara1_conectar.Size = new System.Drawing.Size(62, 47);
-            this.camara1_conectar.TabIndex = 23;
-            this.burbuja_informacion.SetToolTip(this.camara1_conectar, "Iniciar transmisión de video con Cámara 1");
-            this.camara1_conectar.UseVisualStyleBackColor = true;
-            this.camara1_conectar.Click += new System.EventHandler(this.Camara_conectar_Clic);
+            this.calcularVolumenToolStripMenuItem.Name = "calcularVolumenToolStripMenuItem";
+            this.calcularVolumenToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.calcularVolumenToolStripMenuItem.Text = "Calcular Volúmen";
+            this.calcularVolumenToolStripMenuItem.Click += new System.EventHandler(this.calcularVolumenToolStripMenuItem_Click);
             // 
-            // groupBox1
+            // diafragmaToolStripMenuItem
             // 
-            this.groupBox1.Controls.Add(this.raspberry_logo);
-            this.groupBox1.Controls.Add(this.arduino_logo);
-            this.groupBox1.Controls.Add(this.control2_logo);
-            this.groupBox1.Controls.Add(this.control1_logo);
-            this.groupBox1.Controls.Add(this.indicador_control2);
-            this.groupBox1.Controls.Add(this.indicador_arduino);
-            this.groupBox1.Controls.Add(this.indicador_raspberry);
-            this.groupBox1.Controls.Add(this.indicador_control1);
-            this.groupBox1.Location = new System.Drawing.Point(162, 27);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(356, 113);
-            this.groupBox1.TabIndex = 61;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Conectividad";
+            this.diafragmaToolStripMenuItem.Name = "diafragmaToolStripMenuItem";
+            this.diafragmaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.L)));
+            this.diafragmaToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.diafragmaToolStripMenuItem.Text = "Abrir diafragma";
+            this.diafragmaToolStripMenuItem.Click += new System.EventHandler(this.diafragmaToolStripMenuItem_Click);
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.acercaDeToolStripMenuItem,
+            this.manualTécnicoToolStripMenuItem});
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.acercaDeToolStripMenuItem.Text = "Acerca de";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.AcercaDeToolStripMenuItem_Click);
+            // 
+            // manualTécnicoToolStripMenuItem
+            // 
+            this.manualTécnicoToolStripMenuItem.Name = "manualTécnicoToolStripMenuItem";
+            this.manualTécnicoToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.manualTécnicoToolStripMenuItem.Text = "Manual Técnico";
+            // 
+            // boton_Conectar
+            // 
+            this.boton_Conectar.Location = new System.Drawing.Point(0, 85);
+            this.boton_Conectar.Name = "boton_Conectar";
+            this.boton_Conectar.Size = new System.Drawing.Size(145, 28);
+            this.boton_Conectar.TabIndex = 34;
+            this.boton_Conectar.Text = "¡Conectar!";
+            this.burbuja_informacion.SetToolTip(this.boton_Conectar, "Conectar a ROV Principal");
+            this.boton_Conectar.UseVisualStyleBackColor = true;
+            // 
+            // puerto_texto
+            // 
+            this.puerto_texto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.puerto_texto.Location = new System.Drawing.Point(69, 56);
+            this.puerto_texto.Name = "puerto_texto";
+            this.puerto_texto.Size = new System.Drawing.Size(70, 20);
+            this.puerto_texto.TabIndex = 33;
+            this.puerto_texto.Text = "7000";
+            this.puerto_texto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.burbuja_informacion.SetToolTip(this.puerto_texto, "Puerto de escucha del servidor");
+            // 
+            // direccion_ip_texto
+            // 
+            this.direccion_ip_texto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.direccion_ip_texto.Location = new System.Drawing.Point(71, 22);
+            this.direccion_ip_texto.Name = "direccion_ip_texto";
+            this.direccion_ip_texto.Size = new System.Drawing.Size(70, 20);
+            this.direccion_ip_texto.TabIndex = 31;
+            this.direccion_ip_texto.Text = "192.168.0.7";
+            this.direccion_ip_texto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.burbuja_informacion.SetToolTip(this.direccion_ip_texto, "Dirección IP del servidor");
             // 
             // raspberry_logo
             // 
@@ -296,32 +312,147 @@
             this.control1_logo.TabStop = false;
             this.burbuja_informacion.SetToolTip(this.control1_logo, "Control 1");
             // 
-            // indicador_control2
+            // campo_puerto_MiniROV
             // 
-            this.indicador_control2.Enabled = false;
-            this.indicador_control2.Location = new System.Drawing.Point(248, 22);
-            this.indicador_control2.Name = "indicador_control2";
-            this.indicador_control2.Size = new System.Drawing.Size(100, 20);
-            this.indicador_control2.TabIndex = 6;
-            this.indicador_control2.Text = "Desconectado";
+            this.campo_puerto_MiniROV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.campo_puerto_MiniROV.Location = new System.Drawing.Point(6, 216);
+            this.campo_puerto_MiniROV.Name = "campo_puerto_MiniROV";
+            this.campo_puerto_MiniROV.Size = new System.Drawing.Size(103, 20);
+            this.campo_puerto_MiniROV.TabIndex = 36;
+            this.campo_puerto_MiniROV.Text = "7000";
+            this.campo_puerto_MiniROV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.burbuja_informacion.SetToolTip(this.campo_puerto_MiniROV, "Puerto de escucha del servidor");
             // 
-            // indicador_arduino
+            // campo_ip_MiniROV
             // 
-            this.indicador_arduino.Enabled = false;
-            this.indicador_arduino.Location = new System.Drawing.Point(248, 73);
-            this.indicador_arduino.Name = "indicador_arduino";
-            this.indicador_arduino.Size = new System.Drawing.Size(100, 20);
-            this.indicador_arduino.TabIndex = 5;
-            this.indicador_arduino.Text = "Desconectado";
+            this.campo_ip_MiniROV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.campo_ip_MiniROV.Location = new System.Drawing.Point(6, 176);
+            this.campo_ip_MiniROV.Name = "campo_ip_MiniROV";
+            this.campo_ip_MiniROV.Size = new System.Drawing.Size(103, 20);
+            this.campo_ip_MiniROV.TabIndex = 35;
+            this.campo_ip_MiniROV.Text = "192.168.0.8";
+            this.campo_ip_MiniROV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.burbuja_informacion.SetToolTip(this.campo_ip_MiniROV, "Dirección IP del servidor");
             // 
-            // indicador_raspberry
+            // boton_Desplegar_MiniROV
             // 
-            this.indicador_raspberry.Enabled = false;
-            this.indicador_raspberry.Location = new System.Drawing.Point(52, 73);
-            this.indicador_raspberry.Name = "indicador_raspberry";
-            this.indicador_raspberry.Size = new System.Drawing.Size(100, 20);
-            this.indicador_raspberry.TabIndex = 3;
-            this.indicador_raspberry.Text = "Desconectado";
+            this.boton_Desplegar_MiniROV.BackgroundImage = global::EstacionControl.Properties.Resources.minirov;
+            this.boton_Desplegar_MiniROV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.boton_Desplegar_MiniROV.Location = new System.Drawing.Point(6, 15);
+            this.boton_Desplegar_MiniROV.Name = "boton_Desplegar_MiniROV";
+            this.boton_Desplegar_MiniROV.Size = new System.Drawing.Size(103, 88);
+            this.boton_Desplegar_MiniROV.TabIndex = 0;
+            this.burbuja_informacion.SetToolTip(this.boton_Desplegar_MiniROV, "Desplegar o desactivar Mini ROV");
+            this.boton_Desplegar_MiniROV.UseVisualStyleBackColor = true;
+            // 
+            // groupROVPrincipal
+            // 
+            this.groupROVPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupROVPrincipal.Controls.Add(this.camera_groupBox);
+            this.groupROVPrincipal.Controls.Add(this.grupoCamaraSecundaria);
+            this.groupROVPrincipal.Controls.Add(this.herramientasSensores);
+            this.groupROVPrincipal.Controls.Add(this.groupConectividad);
+            this.groupROVPrincipal.Controls.Add(this.grupo_raspberry);
+            this.groupROVPrincipal.Location = new System.Drawing.Point(12, 27);
+            this.groupROVPrincipal.Name = "groupROVPrincipal";
+            this.groupROVPrincipal.Size = new System.Drawing.Size(1130, 672);
+            this.groupROVPrincipal.TabIndex = 71;
+            this.groupROVPrincipal.TabStop = false;
+            this.groupROVPrincipal.Text = "ROV Principal";
+            // 
+            // grupoCamaraSecundaria
+            // 
+            this.grupoCamaraSecundaria.Controls.Add(this.label5);
+            this.grupoCamaraSecundaria.Controls.Add(this.boton_video2);
+            this.grupoCamaraSecundaria.Controls.Add(this.camara2_conectar);
+            this.grupoCamaraSecundaria.Controls.Add(this.boton_fotografia2);
+            this.grupoCamaraSecundaria.Controls.Add(this.lista_camaras2);
+            this.grupoCamaraSecundaria.Controls.Add(this.camara2_desconectar);
+            this.grupoCamaraSecundaria.Controls.Add(this.visorCamara2);
+            this.grupoCamaraSecundaria.Location = new System.Drawing.Point(6, 223);
+            this.grupoCamaraSecundaria.Name = "grupoCamaraSecundaria";
+            this.grupoCamaraSecundaria.Size = new System.Drawing.Size(507, 440);
+            this.grupoCamaraSecundaria.TabIndex = 73;
+            this.grupoCamaraSecundaria.TabStop = false;
+            this.grupoCamaraSecundaria.Text = "Cámara 2";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 406);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 13);
+            this.label5.TabIndex = 77;
+            this.label5.Text = "IP cámara 2";
+            // 
+            // boton_video2
+            // 
+            this.boton_video2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.boton_video2.Enabled = false;
+            this.boton_video2.Image = global::EstacionControl.Properties.Resources.video_1_micro;
+            this.boton_video2.Location = new System.Drawing.Point(445, 387);
+            this.boton_video2.Name = "boton_video2";
+            this.boton_video2.Size = new System.Drawing.Size(48, 47);
+            this.boton_video2.TabIndex = 76;
+            this.boton_video2.UseVisualStyleBackColor = true;
+            // 
+            // camara2_conectar
+            // 
+            this.camara2_conectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.camara2_conectar.Enabled = false;
+            this.camara2_conectar.Image = global::EstacionControl.Properties.Resources.play_1_micro;
+            this.camara2_conectar.Location = new System.Drawing.Point(244, 387);
+            this.camara2_conectar.Name = "camara2_conectar";
+            this.camara2_conectar.Size = new System.Drawing.Size(62, 47);
+            this.camara2_conectar.TabIndex = 70;
+            this.camara2_conectar.UseVisualStyleBackColor = true;
+            // 
+            // boton_fotografia2
+            // 
+            this.boton_fotografia2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.boton_fotografia2.Enabled = false;
+            this.boton_fotografia2.Image = global::EstacionControl.Properties.Resources.foto_micro;
+            this.boton_fotografia2.Location = new System.Drawing.Point(385, 387);
+            this.boton_fotografia2.Name = "boton_fotografia2";
+            this.boton_fotografia2.Size = new System.Drawing.Size(55, 47);
+            this.boton_fotografia2.TabIndex = 75;
+            this.boton_fotografia2.UseVisualStyleBackColor = true;
+            // 
+            // lista_camaras2
+            // 
+            this.lista_camaras2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lista_camaras2.FormattingEnabled = true;
+            this.lista_camaras2.Location = new System.Drawing.Point(83, 401);
+            this.lista_camaras2.Name = "lista_camaras2";
+            this.lista_camaras2.Size = new System.Drawing.Size(121, 21);
+            this.lista_camaras2.TabIndex = 72;
+            // 
+            // camara2_desconectar
+            // 
+            this.camara2_desconectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.camara2_desconectar.Enabled = false;
+            this.camara2_desconectar.Image = global::EstacionControl.Properties.Resources.detener_micro;
+            this.camara2_desconectar.Location = new System.Drawing.Point(309, 387);
+            this.camara2_desconectar.Name = "camara2_desconectar";
+            this.camara2_desconectar.Size = new System.Drawing.Size(70, 47);
+            this.camara2_desconectar.TabIndex = 74;
+            this.camara2_desconectar.UseVisualStyleBackColor = true;
+            // 
+            // visorCamara2
+            // 
+            this.visorCamara2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.visorCamara2.AutoSize = true;
+            this.visorCamara2.BackgroundImage = global::EstacionControl.Properties.Resources.sin_senal_480x360;
+            this.visorCamara2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.visorCamara2.Location = new System.Drawing.Point(13, 19);
+            this.visorCamara2.Name = "visorCamara2";
+            this.visorCamara2.Size = new System.Drawing.Size(481, 362);
+            this.visorCamara2.TabIndex = 70;
             // 
             // herramientasSensores
             // 
@@ -335,10 +466,10 @@
             this.herramientasSensores.Controls.Add(this.indicador_temperatura);
             this.herramientasSensores.Controls.Add(this.etiqueta_profundidad);
             this.herramientasSensores.Controls.Add(this.etiqueta_temperatura);
-            this.herramientasSensores.Location = new System.Drawing.Point(12, 146);
+            this.herramientasSensores.Location = new System.Drawing.Point(6, 138);
             this.herramientasSensores.Name = "herramientasSensores";
-            this.herramientasSensores.Size = new System.Drawing.Size(506, 80);
-            this.herramientasSensores.TabIndex = 62;
+            this.herramientasSensores.Size = new System.Drawing.Size(507, 79);
+            this.herramientasSensores.TabIndex = 72;
             this.herramientasSensores.TabStop = false;
             this.herramientasSensores.Text = "Herramientas y sensores";
             // 
@@ -445,219 +576,58 @@
             this.etiqueta_temperatura.TabIndex = 0;
             this.etiqueta_temperatura.Text = "Temperatura";
             // 
-            // menuCinta
+            // groupConectividad
             // 
-            this.menuCinta.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.archivoToolStripMenuItem,
-            this.herramientasToolStripMenuItem,
-            this.misionesToolStripMenuItem,
-            this.ayudaToolStripMenuItem});
-            this.menuCinta.Location = new System.Drawing.Point(0, 0);
-            this.menuCinta.Name = "menuCinta";
-            this.menuCinta.Size = new System.Drawing.Size(1268, 24);
-            this.menuCinta.TabIndex = 68;
-            this.menuCinta.Text = "menuStrip1";
+            this.groupConectividad.Controls.Add(this.raspberry_logo);
+            this.groupConectividad.Controls.Add(this.arduino_logo);
+            this.groupConectividad.Controls.Add(this.control2_logo);
+            this.groupConectividad.Controls.Add(this.control1_logo);
+            this.groupConectividad.Controls.Add(this.indicador_control2);
+            this.groupConectividad.Controls.Add(this.indicador_arduino);
+            this.groupConectividad.Controls.Add(this.indicador_raspberry);
+            this.groupConectividad.Controls.Add(this.indicador_control1);
+            this.groupConectividad.Location = new System.Drawing.Point(157, 19);
+            this.groupConectividad.Name = "groupConectividad";
+            this.groupConectividad.Size = new System.Drawing.Size(356, 113);
+            this.groupConectividad.TabIndex = 62;
+            this.groupConectividad.TabStop = false;
+            this.groupConectividad.Text = "Conectividad";
             // 
-            // archivoToolStripMenuItem
+            // indicador_control2
             // 
-            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.abrirCarpetaDeFotografíasToolStripMenuItem});
-            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.archivoToolStripMenuItem.Text = "Archivo";
+            this.indicador_control2.Enabled = false;
+            this.indicador_control2.Location = new System.Drawing.Point(248, 22);
+            this.indicador_control2.Name = "indicador_control2";
+            this.indicador_control2.Size = new System.Drawing.Size(100, 20);
+            this.indicador_control2.TabIndex = 6;
+            this.indicador_control2.Text = "Desconectado";
             // 
-            // abrirCarpetaDeFotografíasToolStripMenuItem
+            // indicador_arduino
             // 
-            this.abrirCarpetaDeFotografíasToolStripMenuItem.Name = "abrirCarpetaDeFotografíasToolStripMenuItem";
-            this.abrirCarpetaDeFotografíasToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.abrirCarpetaDeFotografíasToolStripMenuItem.Text = "Abrir carpeta de fotografías";
-            this.abrirCarpetaDeFotografíasToolStripMenuItem.Click += new System.EventHandler(this.abrirCarpetaDeFotografíasToolStripMenuItem_Click);
+            this.indicador_arduino.Enabled = false;
+            this.indicador_arduino.Location = new System.Drawing.Point(248, 73);
+            this.indicador_arduino.Name = "indicador_arduino";
+            this.indicador_arduino.Size = new System.Drawing.Size(100, 20);
+            this.indicador_arduino.TabIndex = 5;
+            this.indicador_arduino.Text = "Desconectado";
             // 
-            // herramientasToolStripMenuItem
+            // indicador_raspberry
             // 
-            this.herramientasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.giroscopioToolStripMenuItem,
-            this.configuraciónDeCámarasToolStripMenuItem,
-            this.visorDeCámaraToolStripMenuItem,
-            this.modoVictoriaToolStripMenuItem});
-            this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
-            this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
-            this.herramientasToolStripMenuItem.Text = "Herramientas";
+            this.indicador_raspberry.Enabled = false;
+            this.indicador_raspberry.Location = new System.Drawing.Point(52, 73);
+            this.indicador_raspberry.Name = "indicador_raspberry";
+            this.indicador_raspberry.Size = new System.Drawing.Size(100, 20);
+            this.indicador_raspberry.TabIndex = 3;
+            this.indicador_raspberry.Text = "Desconectado";
             // 
-            // giroscopioToolStripMenuItem
+            // indicador_control1
             // 
-            this.giroscopioToolStripMenuItem.Name = "giroscopioToolStripMenuItem";
-            this.giroscopioToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.G)));
-            this.giroscopioToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.giroscopioToolStripMenuItem.Text = "Giroscopio";
-            this.giroscopioToolStripMenuItem.Click += new System.EventHandler(this.giroscopioToolStripMenuItem_Click);
-            // 
-            // configuraciónDeCámarasToolStripMenuItem
-            // 
-            this.configuraciónDeCámarasToolStripMenuItem.Name = "configuraciónDeCámarasToolStripMenuItem";
-            this.configuraciónDeCámarasToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.configuraciónDeCámarasToolStripMenuItem.Text = "Configuración de cámaras";
-            this.configuraciónDeCámarasToolStripMenuItem.Click += new System.EventHandler(this.configuraciónDeCámarasToolStripMenuItem_Click);
-            // 
-            // visorDeCámaraToolStripMenuItem
-            // 
-            this.visorDeCámaraToolStripMenuItem.Name = "visorDeCámaraToolStripMenuItem";
-            this.visorDeCámaraToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.visorDeCámaraToolStripMenuItem.Text = "Visor de cámara";
-            this.visorDeCámaraToolStripMenuItem.Click += new System.EventHandler(this.visorDeCámaraToolStripMenuItem_Click);
-            // 
-            // modoVictoriaToolStripMenuItem
-            // 
-            this.modoVictoriaToolStripMenuItem.Name = "modoVictoriaToolStripMenuItem";
-            this.modoVictoriaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.V)));
-            this.modoVictoriaToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.modoVictoriaToolStripMenuItem.Text = "Modo Victoria";
-            this.modoVictoriaToolStripMenuItem.Click += new System.EventHandler(this.modoVictoriaToolStripMenuItem_Click);
-            // 
-            // misionesToolStripMenuItem
-            // 
-            this.misionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.canonToolStripMenuItem,
-            this.diafragmaToolStripMenuItem});
-            this.misionesToolStripMenuItem.Name = "misionesToolStripMenuItem";
-            this.misionesToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.misionesToolStripMenuItem.Text = "Misiones";
-            // 
-            // canonToolStripMenuItem
-            // 
-            this.canonToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.calcularVolumenToolStripMenuItem});
-            this.canonToolStripMenuItem.Name = "canonToolStripMenuItem";
-            this.canonToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
-            this.canonToolStripMenuItem.Text = "Cañón";
-            // 
-            // calcularVolumenToolStripMenuItem
-            // 
-            this.calcularVolumenToolStripMenuItem.Name = "calcularVolumenToolStripMenuItem";
-            this.calcularVolumenToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.calcularVolumenToolStripMenuItem.Text = "Calcular Volúmen";
-            this.calcularVolumenToolStripMenuItem.Click += new System.EventHandler(this.calcularVolumenToolStripMenuItem_Click);
-            // 
-            // diafragmaToolStripMenuItem
-            // 
-            this.diafragmaToolStripMenuItem.Name = "diafragmaToolStripMenuItem";
-            this.diafragmaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.L)));
-            this.diafragmaToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
-            this.diafragmaToolStripMenuItem.Text = "Abrir diafragma";
-            this.diafragmaToolStripMenuItem.Click += new System.EventHandler(this.diafragmaToolStripMenuItem_Click);
-            // 
-            // ayudaToolStripMenuItem
-            // 
-            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.acercaDeToolStripMenuItem,
-            this.manualTécnicoToolStripMenuItem});
-            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.ayudaToolStripMenuItem.Text = "Ayuda";
-            // 
-            // acercaDeToolStripMenuItem
-            // 
-            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.acercaDeToolStripMenuItem.Text = "Acerca de";
-            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.AcercaDeToolStripMenuItem_Click);
-            // 
-            // manualTécnicoToolStripMenuItem
-            // 
-            this.manualTécnicoToolStripMenuItem.Name = "manualTécnicoToolStripMenuItem";
-            this.manualTécnicoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.manualTécnicoToolStripMenuItem.Text = "Manual Técnico";
-            // 
-            // grupoCamaraSecundaria
-            // 
-            this.grupoCamaraSecundaria.Controls.Add(this.label5);
-            this.grupoCamaraSecundaria.Controls.Add(this.boton_video2);
-            this.grupoCamaraSecundaria.Controls.Add(this.camara2_conectar);
-            this.grupoCamaraSecundaria.Controls.Add(this.boton_fotografia2);
-            this.grupoCamaraSecundaria.Controls.Add(this.lista_camaras2);
-            this.grupoCamaraSecundaria.Controls.Add(this.camara2_desconectar);
-            this.grupoCamaraSecundaria.Controls.Add(this.visorCamara2);
-            this.grupoCamaraSecundaria.Location = new System.Drawing.Point(12, 233);
-            this.grupoCamaraSecundaria.Name = "grupoCamaraSecundaria";
-            this.grupoCamaraSecundaria.Size = new System.Drawing.Size(506, 438);
-            this.grupoCamaraSecundaria.TabIndex = 69;
-            this.grupoCamaraSecundaria.TabStop = false;
-            this.grupoCamaraSecundaria.Text = "Cámara 2";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 404);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 13);
-            this.label5.TabIndex = 77;
-            this.label5.Text = "IP cámara 2";
-            // 
-            // boton_video2
-            // 
-            this.boton_video2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.boton_video2.Enabled = false;
-            this.boton_video2.Image = global::EstacionControl.Properties.Resources.video_1_micro;
-            this.boton_video2.Location = new System.Drawing.Point(445, 385);
-            this.boton_video2.Name = "boton_video2";
-            this.boton_video2.Size = new System.Drawing.Size(48, 47);
-            this.boton_video2.TabIndex = 76;
-            this.boton_video2.UseVisualStyleBackColor = true;
-            // 
-            // camara2_conectar
-            // 
-            this.camara2_conectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.camara2_conectar.Enabled = false;
-            this.camara2_conectar.Image = global::EstacionControl.Properties.Resources.play_1_micro;
-            this.camara2_conectar.Location = new System.Drawing.Point(243, 385);
-            this.camara2_conectar.Name = "camara2_conectar";
-            this.camara2_conectar.Size = new System.Drawing.Size(62, 47);
-            this.camara2_conectar.TabIndex = 70;
-            this.camara2_conectar.UseVisualStyleBackColor = true;
-            this.camara2_conectar.Click += new System.EventHandler(this.camara2_conectar_Click);
-            // 
-            // boton_fotografia2
-            // 
-            this.boton_fotografia2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.boton_fotografia2.Enabled = false;
-            this.boton_fotografia2.Image = global::EstacionControl.Properties.Resources.foto_micro;
-            this.boton_fotografia2.Location = new System.Drawing.Point(384, 385);
-            this.boton_fotografia2.Name = "boton_fotografia2";
-            this.boton_fotografia2.Size = new System.Drawing.Size(55, 47);
-            this.boton_fotografia2.TabIndex = 75;
-            this.boton_fotografia2.UseVisualStyleBackColor = true;
-            // 
-            // lista_camaras2
-            // 
-            this.lista_camaras2.FormattingEnabled = true;
-            this.lista_camaras2.Location = new System.Drawing.Point(83, 399);
-            this.lista_camaras2.Name = "lista_camaras2";
-            this.lista_camaras2.Size = new System.Drawing.Size(121, 21);
-            this.lista_camaras2.TabIndex = 72;
-            // 
-            // camara2_desconectar
-            // 
-            this.camara2_desconectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.camara2_desconectar.Enabled = false;
-            this.camara2_desconectar.Image = global::EstacionControl.Properties.Resources.detener_micro;
-            this.camara2_desconectar.Location = new System.Drawing.Point(308, 385);
-            this.camara2_desconectar.Name = "camara2_desconectar";
-            this.camara2_desconectar.Size = new System.Drawing.Size(70, 47);
-            this.camara2_desconectar.TabIndex = 74;
-            this.camara2_desconectar.UseVisualStyleBackColor = true;
-            this.camara2_desconectar.Click += new System.EventHandler(this.camara2_desconectar_Click);
-            // 
-            // visorCamara2
-            // 
-            this.visorCamara2.BackgroundImage = global::EstacionControl.Properties.Resources.sin_senal_480x360;
-            this.visorCamara2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.visorCamara2.Location = new System.Drawing.Point(13, 19);
-            this.visorCamara2.Name = "visorCamara2";
-            this.visorCamara2.Size = new System.Drawing.Size(480, 360);
-            this.visorCamara2.TabIndex = 70;
+            this.indicador_control1.Enabled = false;
+            this.indicador_control1.Location = new System.Drawing.Point(51, 22);
+            this.indicador_control1.Name = "indicador_control1";
+            this.indicador_control1.Size = new System.Drawing.Size(101, 20);
+            this.indicador_control1.TabIndex = 0;
+            this.indicador_control1.Text = "Desconectado";
             // 
             // grupo_raspberry
             // 
@@ -666,45 +636,12 @@
             this.grupo_raspberry.Controls.Add(this.direccion_ip_texto);
             this.grupo_raspberry.Controls.Add(this.label1);
             this.grupo_raspberry.Controls.Add(this.camera_ip_label);
-            this.grupo_raspberry.Location = new System.Drawing.Point(12, 27);
+            this.grupo_raspberry.Location = new System.Drawing.Point(6, 19);
             this.grupo_raspberry.Name = "grupo_raspberry";
             this.grupo_raspberry.Size = new System.Drawing.Size(145, 113);
-            this.grupo_raspberry.TabIndex = 11;
+            this.grupo_raspberry.TabIndex = 12;
             this.grupo_raspberry.TabStop = false;
             this.grupo_raspberry.Text = "Servidor";
-            // 
-            // boton_Conectar
-            // 
-            this.boton_Conectar.Location = new System.Drawing.Point(0, 85);
-            this.boton_Conectar.Name = "boton_Conectar";
-            this.boton_Conectar.Size = new System.Drawing.Size(145, 28);
-            this.boton_Conectar.TabIndex = 34;
-            this.boton_Conectar.Text = "¡Conectar!";
-            this.burbuja_informacion.SetToolTip(this.boton_Conectar, "Conectar a ROV Principal");
-            this.boton_Conectar.UseVisualStyleBackColor = true;
-            this.boton_Conectar.Click += new System.EventHandler(this.Boton_Conectar_Click);
-            // 
-            // puerto_texto
-            // 
-            this.puerto_texto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.puerto_texto.Location = new System.Drawing.Point(69, 56);
-            this.puerto_texto.Name = "puerto_texto";
-            this.puerto_texto.Size = new System.Drawing.Size(70, 20);
-            this.puerto_texto.TabIndex = 33;
-            this.puerto_texto.Text = "7000";
-            this.puerto_texto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.burbuja_informacion.SetToolTip(this.puerto_texto, "Puerto de escucha del servidor");
-            // 
-            // direccion_ip_texto
-            // 
-            this.direccion_ip_texto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.direccion_ip_texto.Location = new System.Drawing.Point(71, 22);
-            this.direccion_ip_texto.Name = "direccion_ip_texto";
-            this.direccion_ip_texto.Size = new System.Drawing.Size(70, 20);
-            this.direccion_ip_texto.TabIndex = 31;
-            this.direccion_ip_texto.Text = "192.168.0.7";
-            this.direccion_ip_texto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.burbuja_informacion.SetToolTip(this.direccion_ip_texto, "Dirección IP del servidor");
             // 
             // label1
             // 
@@ -726,42 +663,10 @@
             this.camera_ip_label.TabIndex = 30;
             this.camera_ip_label.Text = "Dirección IP";
             // 
-            // campo_puerto_MiniROV
-            // 
-            this.campo_puerto_MiniROV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.campo_puerto_MiniROV.Location = new System.Drawing.Point(6, 188);
-            this.campo_puerto_MiniROV.Name = "campo_puerto_MiniROV";
-            this.campo_puerto_MiniROV.Size = new System.Drawing.Size(103, 20);
-            this.campo_puerto_MiniROV.TabIndex = 36;
-            this.campo_puerto_MiniROV.Text = "7000";
-            this.campo_puerto_MiniROV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.burbuja_informacion.SetToolTip(this.campo_puerto_MiniROV, "Puerto de escucha del servidor");
-            // 
-            // campo_ip_MiniROV
-            // 
-            this.campo_ip_MiniROV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.campo_ip_MiniROV.Location = new System.Drawing.Point(6, 148);
-            this.campo_ip_MiniROV.Name = "campo_ip_MiniROV";
-            this.campo_ip_MiniROV.Size = new System.Drawing.Size(103, 20);
-            this.campo_ip_MiniROV.TabIndex = 35;
-            this.campo_ip_MiniROV.Text = "192.168.0.8";
-            this.campo_ip_MiniROV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.burbuja_informacion.SetToolTip(this.campo_ip_MiniROV, "Dirección IP del servidor");
-            // 
-            // boton_Desplegar_MiniROV
-            // 
-            this.boton_Desplegar_MiniROV.BackgroundImage = global::EstacionControl.Properties.Resources.minirov;
-            this.boton_Desplegar_MiniROV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.boton_Desplegar_MiniROV.Location = new System.Drawing.Point(6, 15);
-            this.boton_Desplegar_MiniROV.Name = "boton_Desplegar_MiniROV";
-            this.boton_Desplegar_MiniROV.Size = new System.Drawing.Size(103, 88);
-            this.boton_Desplegar_MiniROV.TabIndex = 0;
-            this.burbuja_informacion.SetToolTip(this.boton_Desplegar_MiniROV, "Desplegar o desactivar Mini ROV");
-            this.boton_Desplegar_MiniROV.UseVisualStyleBackColor = true;
-            this.boton_Desplegar_MiniROV.Click += new System.EventHandler(this.boton_Desplegar_MiniROV_Click);
-            // 
             // grupo_minirov
             // 
+            this.grupo_minirov.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grupo_minirov.Controls.Add(this.etiqueta_indicador_linternas_mini);
             this.grupo_minirov.Controls.Add(this.indicador_mini_desplegado);
             this.grupo_minirov.Controls.Add(this.campo_puerto_MiniROV);
@@ -770,9 +675,9 @@
             this.grupo_minirov.Controls.Add(this.campo_ip_MiniROV);
             this.grupo_minirov.Controls.Add(this.label8);
             this.grupo_minirov.Controls.Add(this.boton_Desplegar_MiniROV);
-            this.grupo_minirov.Location = new System.Drawing.Point(1231, 27);
+            this.grupo_minirov.Location = new System.Drawing.Point(1148, 27);
             this.grupo_minirov.Name = "grupo_minirov";
-            this.grupo_minirov.Size = new System.Drawing.Size(115, 644);
+            this.grupo_minirov.Size = new System.Drawing.Size(115, 672);
             this.grupo_minirov.TabIndex = 70;
             this.grupo_minirov.TabStop = false;
             this.grupo_minirov.Text = "Mini ROV";
@@ -803,7 +708,7 @@
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 172);
+            this.label7.Location = new System.Drawing.Point(3, 200);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(38, 13);
             this.label7.TabIndex = 36;
@@ -821,21 +726,136 @@
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 132);
+            this.label8.Location = new System.Drawing.Point(3, 160);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(65, 13);
             this.label8.TabIndex = 35;
             this.label8.Text = "Dirección IP";
             // 
-            // titulo
+            // camera_groupBox
             // 
-            this.titulo.AutoSize = true;
-            this.titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titulo.Location = new System.Drawing.Point(1161, 674);
-            this.titulo.Name = "titulo";
-            this.titulo.Size = new System.Drawing.Size(64, 9);
-            this.titulo.TabIndex = 70;
-            this.titulo.Text = "By Alexis Aguirre";
+            this.camera_groupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.camera_groupBox.Controls.Add(this.label6);
+            this.camera_groupBox.Controls.Add(this.lista_camaras1);
+            this.camera_groupBox.Controls.Add(this.boton_generarQR);
+            this.camera_groupBox.Controls.Add(this.boton_video1);
+            this.camera_groupBox.Controls.Add(this.boton_fotografia1);
+            this.camera_groupBox.Controls.Add(this.camara1_desconectar);
+            this.camera_groupBox.Controls.Add(this.camara1_conectar);
+            this.camera_groupBox.Controls.Add(this.visorCamara1);
+            this.camera_groupBox.Controls.Add(this.botonReconociento);
+            this.camera_groupBox.Location = new System.Drawing.Point(519, 19);
+            this.camera_groupBox.Name = "camera_groupBox";
+            this.camera_groupBox.Size = new System.Drawing.Size(604, 644);
+            this.camera_groupBox.TabIndex = 74;
+            this.camera_groupBox.TabStop = false;
+            this.camera_groupBox.Text = "Cámara 1";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label6.Location = new System.Drawing.Point(10, 601);
+            this.label6.Margin = new System.Windows.Forms.Padding(0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.TabIndex = 105;
+            this.label6.Text = "IP cámara 1";
+            // 
+            // lista_camaras1
+            // 
+            this.lista_camaras1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lista_camaras1.FormattingEnabled = true;
+            this.lista_camaras1.Location = new System.Drawing.Point(77, 598);
+            this.lista_camaras1.Name = "lista_camaras1";
+            this.lista_camaras1.Size = new System.Drawing.Size(115, 21);
+            this.lista_camaras1.TabIndex = 104;
+            // 
+            // boton_generarQR
+            // 
+            this.boton_generarQR.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.boton_generarQR.BackgroundImage = global::EstacionControl.Properties.Resources.QR;
+            this.boton_generarQR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.boton_generarQR.Location = new System.Drawing.Point(470, 576);
+            this.boton_generarQR.Name = "boton_generarQR";
+            this.boton_generarQR.Size = new System.Drawing.Size(62, 62);
+            this.boton_generarQR.TabIndex = 102;
+            this.boton_generarQR.Text = "Generar QR";
+            this.burbuja_informacion.SetToolTip(this.boton_generarQR, "Generar QR para obtener enlace de streaming para Cámara 1");
+            this.boton_generarQR.UseVisualStyleBackColor = true;
+            // 
+            // boton_video1
+            // 
+            this.boton_video1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.boton_video1.Enabled = false;
+            this.boton_video1.Image = global::EstacionControl.Properties.Resources.video_1_micro;
+            this.boton_video1.Location = new System.Drawing.Point(402, 576);
+            this.boton_video1.Name = "boton_video1";
+            this.boton_video1.Size = new System.Drawing.Size(62, 62);
+            this.boton_video1.TabIndex = 101;
+            this.burbuja_informacion.SetToolTip(this.boton_video1, "Grabar video con Cámara 1");
+            this.boton_video1.UseVisualStyleBackColor = true;
+            // 
+            // boton_fotografia1
+            // 
+            this.boton_fotografia1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.boton_fotografia1.Enabled = false;
+            this.boton_fotografia1.Image = global::EstacionControl.Properties.Resources.foto_micro;
+            this.boton_fotografia1.Location = new System.Drawing.Point(334, 576);
+            this.boton_fotografia1.Name = "boton_fotografia1";
+            this.boton_fotografia1.Size = new System.Drawing.Size(62, 62);
+            this.boton_fotografia1.TabIndex = 100;
+            this.burbuja_informacion.SetToolTip(this.boton_fotografia1, "Tomar fotografía con Cámara 1");
+            this.boton_fotografia1.UseVisualStyleBackColor = true;
+            // 
+            // camara1_desconectar
+            // 
+            this.camara1_desconectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.camara1_desconectar.Enabled = false;
+            this.camara1_desconectar.Image = global::EstacionControl.Properties.Resources.detener_micro;
+            this.camara1_desconectar.Location = new System.Drawing.Point(266, 576);
+            this.camara1_desconectar.Name = "camara1_desconectar";
+            this.camara1_desconectar.Size = new System.Drawing.Size(62, 62);
+            this.camara1_desconectar.TabIndex = 99;
+            this.burbuja_informacion.SetToolTip(this.camara1_desconectar, "Detener transmisión de video de cámara 1");
+            this.camara1_desconectar.UseVisualStyleBackColor = true;
+            // 
+            // camara1_conectar
+            // 
+            this.camara1_conectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.camara1_conectar.Enabled = false;
+            this.camara1_conectar.Image = global::EstacionControl.Properties.Resources.play_1_micro;
+            this.camara1_conectar.Location = new System.Drawing.Point(198, 576);
+            this.camara1_conectar.Name = "camara1_conectar";
+            this.camara1_conectar.Size = new System.Drawing.Size(62, 62);
+            this.camara1_conectar.TabIndex = 98;
+            this.burbuja_informacion.SetToolTip(this.camara1_conectar, "Iniciar transmisión de video con Cámara 1");
+            this.camara1_conectar.UseVisualStyleBackColor = true;
+            // 
+            // visorCamara1
+            // 
+            this.visorCamara1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.visorCamara1.AutoSize = true;
+            this.visorCamara1.BackgroundImage = global::EstacionControl.Properties.Resources.tmmx_nuevo;
+            this.visorCamara1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.visorCamara1.Location = new System.Drawing.Point(13, 17);
+            this.visorCamara1.Name = "visorCamara1";
+            this.visorCamara1.Size = new System.Drawing.Size(581, 543);
+            this.visorCamara1.TabIndex = 103;
+            // 
+            // botonReconociento
+            // 
+            this.botonReconociento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.botonReconociento.Location = new System.Drawing.Point(536, 576);
+            this.botonReconociento.Name = "botonReconociento";
+            this.botonReconociento.Size = new System.Drawing.Size(62, 62);
+            this.botonReconociento.TabIndex = 97;
+            this.botonReconociento.Text = "Identificar Especies";
+            this.burbuja_informacion.SetToolTip(this.botonReconociento, "Objeto de misión: Identificación de especies bentónicas");
+            this.botonReconociento.UseVisualStyleBackColor = true;
             // 
             // PantallaEstacion
             // 
@@ -843,12 +863,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1268, 729);
             this.Controls.Add(this.grupo_minirov);
-            this.Controls.Add(this.titulo);
-            this.Controls.Add(this.grupo_raspberry);
-            this.Controls.Add(this.grupoCamaraSecundaria);
-            this.Controls.Add(this.herramientasSensores);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.camera_groupBox);
+            this.Controls.Add(this.groupROVPrincipal);
             this.Controls.Add(this.menuCinta);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuCinta;
@@ -856,101 +871,101 @@
             this.Text = "Estación de Control - Tecnologías Marinas México";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Cerrar);
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.camera_groupBox.ResumeLayout(false);
-            this.camera_groupBox.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.menuCinta.ResumeLayout(false);
+            this.menuCinta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.raspberry_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arduino_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.control2_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.control1_logo)).EndInit();
-            this.herramientasSensores.ResumeLayout(false);
-            this.herramientasSensores.PerformLayout();
-            this.menuCinta.ResumeLayout(false);
-            this.menuCinta.PerformLayout();
+            this.groupROVPrincipal.ResumeLayout(false);
             this.grupoCamaraSecundaria.ResumeLayout(false);
             this.grupoCamaraSecundaria.PerformLayout();
+            this.herramientasSensores.ResumeLayout(false);
+            this.herramientasSensores.PerformLayout();
+            this.groupConectividad.ResumeLayout(false);
+            this.groupConectividad.PerformLayout();
             this.grupo_raspberry.ResumeLayout(false);
             this.grupo_raspberry.PerformLayout();
             this.grupo_minirov.ResumeLayout(false);
             this.grupo_minirov.PerformLayout();
+            this.camera_groupBox.ResumeLayout(false);
+            this.camera_groupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox indicador_control1;
-        private System.Windows.Forms.Button camara1_conectar;
-        private System.Windows.Forms.Button camara1_desconectar;
-        private System.Windows.Forms.GroupBox camera_groupBox;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox indicador_arduino;
-        private System.Windows.Forms.TextBox indicador_raspberry;
-        private System.Windows.Forms.TextBox indicador_control2;
-        private System.Windows.Forms.GroupBox herramientasSensores;
-        private System.Windows.Forms.TextBox indicador_profundidad;
-        private System.Windows.Forms.TextBox indicador_temperatura;
-        private System.Windows.Forms.Label etiqueta_profundidad;
-        private System.Windows.Forms.Label etiqueta_temperatura;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button boton_video1;
-        private System.Windows.Forms.Button boton_fotografia1;
-        private System.Windows.Forms.PictureBox control2_logo;
-        private System.Windows.Forms.PictureBox control1_logo;
-        private System.Windows.Forms.PictureBox raspberry_logo;
-        private System.Windows.Forms.PictureBox arduino_logo;
         private System.Windows.Forms.MenuStrip menuCinta;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem herramientasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manualTécnicoToolStripMenuItem;
-        private System.Windows.Forms.Button boton_generarQR;
         private System.Windows.Forms.ToolStripMenuItem giroscopioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem abrirCarpetaDeFotografíasToolStripMenuItem;
-        private System.Windows.Forms.Button botonReconociento;
-        private System.Windows.Forms.TextBox indicador_ph;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox indicador_inductivo;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox grupoCamaraSecundaria;
         private System.Windows.Forms.ToolStripMenuItem configuraciónDeCámarasToolStripMenuItem;
-        private WebEye.Controls.WinForms.StreamPlayerControl.StreamPlayerControl visorCamara1;
-        private WebEye.Controls.WinForms.StreamPlayerControl.StreamPlayerControl visorCamara2;
-        private System.Windows.Forms.ComboBox lista_camaras2;
-        private System.Windows.Forms.ComboBox lista_camaras1;
+        private System.Windows.Forms.ToolTip burbuja_informacion;
+        private System.Windows.Forms.ToolStripMenuItem visorDeCámaraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem misionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem canonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calcularVolumenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem diafragmaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modoVictoriaToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupROVPrincipal;
+        private System.Windows.Forms.GroupBox grupo_minirov;
+        private System.Windows.Forms.Label etiqueta_indicador_linternas_mini;
+        private System.Windows.Forms.TextBox indicador_mini_desplegado;
+        private System.Windows.Forms.TextBox campo_puerto_MiniROV;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ProgressBar indicador_mini_luces;
+        private System.Windows.Forms.TextBox campo_ip_MiniROV;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button boton_Desplegar_MiniROV;
+        private System.Windows.Forms.GroupBox grupoCamaraSecundaria;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button boton_video2;
         private System.Windows.Forms.Button camara2_conectar;
         private System.Windows.Forms.Button boton_fotografia2;
+        private System.Windows.Forms.ComboBox lista_camaras2;
         private System.Windows.Forms.Button camara2_desconectar;
+        private WebEye.Controls.WinForms.StreamPlayerControl.StreamPlayerControl visorCamara2;
+        private System.Windows.Forms.GroupBox herramientasSensores;
+        private System.Windows.Forms.ProgressBar indicador_linternas;
+        private System.Windows.Forms.TextBox indicador_inductivo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox indicador_ph;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox indicador_profundidad;
+        private System.Windows.Forms.TextBox indicador_temperatura;
+        private System.Windows.Forms.Label etiqueta_profundidad;
+        private System.Windows.Forms.Label etiqueta_temperatura;
+        private System.Windows.Forms.GroupBox groupConectividad;
+        private System.Windows.Forms.PictureBox raspberry_logo;
+        private System.Windows.Forms.PictureBox arduino_logo;
+        private System.Windows.Forms.PictureBox control2_logo;
+        private System.Windows.Forms.PictureBox control1_logo;
+        private System.Windows.Forms.TextBox indicador_control2;
+        private System.Windows.Forms.TextBox indicador_arduino;
+        private System.Windows.Forms.TextBox indicador_raspberry;
+        private System.Windows.Forms.TextBox indicador_control1;
         private System.Windows.Forms.GroupBox grupo_raspberry;
+        private System.Windows.Forms.Button boton_Conectar;
         private System.Windows.Forms.TextBox puerto_texto;
         private System.Windows.Forms.TextBox direccion_ip_texto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label camera_ip_label;
-        private System.Windows.Forms.ToolTip burbuja_informacion;
-        private System.Windows.Forms.Button boton_Conectar;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox camera_groupBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ToolStripMenuItem visorDeCámaraToolStripMenuItem;
-        private System.Windows.Forms.GroupBox grupo_minirov;
-        private System.Windows.Forms.Button boton_Desplegar_MiniROV;
-        private System.Windows.Forms.ProgressBar indicador_mini_luces;
-        private System.Windows.Forms.Label titulo;
-        private System.Windows.Forms.ToolStripMenuItem misionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem canonToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem calcularVolumenToolStripMenuItem;
-        private System.Windows.Forms.ProgressBar indicador_linternas;
-        private System.Windows.Forms.ToolStripMenuItem diafragmaToolStripMenuItem;
-        private System.Windows.Forms.TextBox campo_puerto_MiniROV;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox campo_ip_MiniROV;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox indicador_mini_desplegado;
-        private System.Windows.Forms.Label etiqueta_indicador_linternas_mini;
-        private System.Windows.Forms.ToolStripMenuItem modoVictoriaToolStripMenuItem;
+        private System.Windows.Forms.ComboBox lista_camaras1;
+        private System.Windows.Forms.Button boton_generarQR;
+        private System.Windows.Forms.Button boton_video1;
+        private System.Windows.Forms.Button boton_fotografia1;
+        private System.Windows.Forms.Button camara1_desconectar;
+        private System.Windows.Forms.Button camara1_conectar;
+        private WebEye.Controls.WinForms.StreamPlayerControl.StreamPlayerControl visorCamara1;
+        private System.Windows.Forms.Button botonReconociento;
     }
 }
 

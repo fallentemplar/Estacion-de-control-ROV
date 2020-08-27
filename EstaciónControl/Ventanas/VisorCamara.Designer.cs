@@ -38,6 +38,7 @@
             // 
             // lista_camaras1
             // 
+            this.lista_camaras1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lista_camaras1.FormattingEnabled = true;
             this.lista_camaras1.Location = new System.Drawing.Point(13, 589);
             this.lista_camaras1.Name = "lista_camaras1";
@@ -47,6 +48,7 @@
             // 
             // boton_video1
             // 
+            this.boton_video1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.boton_video1.Enabled = false;
             this.boton_video1.Image = global::EstacionControl.Properties.Resources.video_1_micro;
             this.boton_video1.Location = new System.Drawing.Point(335, 575);
@@ -57,6 +59,7 @@
             // 
             // boton_fotografia1
             // 
+            this.boton_fotografia1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.boton_fotografia1.Enabled = false;
             this.boton_fotografia1.Image = global::EstacionControl.Properties.Resources.foto_micro;
             this.boton_fotografia1.Location = new System.Drawing.Point(267, 576);
@@ -68,6 +71,7 @@
             // 
             // camara1_desconectar
             // 
+            this.camara1_desconectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.camara1_desconectar.Enabled = false;
             this.camara1_desconectar.Image = global::EstacionControl.Properties.Resources.detener_micro;
             this.camara1_desconectar.Location = new System.Drawing.Point(208, 576);
@@ -79,6 +83,7 @@
             // 
             // camara1_conectar
             // 
+            this.camara1_conectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.camara1_conectar.Image = global::EstacionControl.Properties.Resources.play_1_micro;
             this.camara1_conectar.Location = new System.Drawing.Point(140, 576);
             this.camara1_conectar.Name = "camara1_conectar";
@@ -89,6 +94,10 @@
             // 
             // visorCamara1
             // 
+            this.visorCamara1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.visorCamara1.AutoSize = true;
             this.visorCamara1.BackgroundImage = global::EstacionControl.Properties.Resources.tmmx_nuevo;
             this.visorCamara1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.visorCamara1.Location = new System.Drawing.Point(13, 13);
@@ -107,12 +116,12 @@
             this.Controls.Add(this.camara1_desconectar);
             this.Controls.Add(this.camara1_conectar);
             this.Controls.Add(this.visorCamara1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "VisorCamara";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cámara 3";
+            this.Text = "Visor de cámara";
             this.Load += new System.EventHandler(this.VisorCamara_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
